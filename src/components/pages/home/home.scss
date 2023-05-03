@@ -1,0 +1,111 @@
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.home_page {
+  width: 100%;
+  padding: 30px 100px 100px 100px;
+  background-color: #0e0e0e;
+
+  .text_home {
+    margin-top: 3.9rem;
+    width: 100%;
+    padding: 100px 100px 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text_wrap {
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #ffffff;
+        display: flex;
+      }
+
+      .typeau {
+        color: #ffffff;
+        font-size: 3rem;
+        font-weight: 600;
+
+        span {
+          color: blue;
+        }
+      }
+    }
+  }
+  .wrap_helper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &:nth-child(3) {
+      .photo_miniab {
+        margin-top: 100px;
+        order: 1;
+        background-color: #111928;
+        .photo {
+          background-image: url("https://thumbs.gfycat.com/TenderSadAmericanalligator-max-1mb.gif");
+          width: 40%;
+        }
+      }
+    }
+
+    .photo_miniab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 80%;
+      background: #111928;
+      border-radius: 30px;
+
+      .photo {
+        background-image: url("https://media4.giphy.com/media/ijsYTyxaMzZh6/giphy.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 90%;
+        border-radius: 15px;
+
+        h1 {
+          color: #ffffff;
+        }
+      }
+
+      .miniabout {
+        width: 100vw;
+        max-width: 500px;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 10px;
+
+        h1 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: start;
+          align-items: end;
+          color: #ffffff;
+          text-shadow: 0 0 3px white;
+          font-weight: bold;
+        }
+
+        .aboutpar {
+          margin-top: 15px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}
