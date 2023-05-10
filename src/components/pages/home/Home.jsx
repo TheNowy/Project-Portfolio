@@ -44,7 +44,37 @@ const home = () => {
                 />
               </div>
               <div className="title">
-                <h3>Hello World</h3>
+                <h3>About Me</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                  <br />
+                  Repellendus ipsa deserunt impedit sit in culpa odio incidunt{" "}
+                  <br />
+                  nobis tempore natus a assumenda corrupti iusto, veritatis{" "}
+                  <br />
+                  tempora non? Accusamus, deleniti ipsa!
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                  <br />
+                  Repellendus ipsa deserunt impedit sit in culpa odio incidunt{" "}
+                  <br />
+                  nobis tempore natus a assumenda corrupti iusto, veritatis{" "}
+                  <br />
+                  tempora non? Accusamus, deleniti ipsa!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="box_container">
+            <div className="box_title">
+              <div className="photo">
+                <img
+                  src="https://www.pngplay.com/wp-content/uploads/12/Killua-Zoldyck-Transparent-PNG.png"
+                  alt=""
+                />
+              </div>
+              <div className="title">
+                <h3>Project</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                   <br />
