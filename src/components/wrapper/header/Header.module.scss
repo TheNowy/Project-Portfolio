@@ -9,39 +9,61 @@
   width: 100%;
   padding: 20px 10%;
 
-  background-color: #0e0e0e;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000000;
   transition: 0.3s;
+  border-bottom: solid 1px rgb(174, 173, 173);
 
   &.active {
-    background-color: #0e0e0e;
+    background-color: rgb(255, 255, 255);
     transition: 0.3s;
-    padding: 10px 3%;
+    padding: 5px 2%;
   }
 
   .logo {
-    color: white;
-    width: 80px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 25px;
+    padding: 5px 10px;
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
+
+    span {
+      color: orange;
+    }
   }
 
   .header_wrap {
     display: flex;
+    .gitlink {
+      margin-left: 50px;
+      background-color: orange;
+      color: rgb(255, 255, 255);
+      border-radius: 14px;
+      padding: 10px 10px;
+      transition: .5s;
+
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        border: solid 1px orange;
+        color: orange;
+      }
+    }
     .link {
       display: flex;
       justify-content: center;
+      align-items: center;
 
       width: 80px;
+      padding: 10px 15px;
       margin-left: 10px;
-      color: white;
-      border-radius: 2px;
-      padding: 1px 10px;
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
       font-family: "Rubik", sans-serif;
-      transition: 0.5s;
+      transition: 0.6s;
     }
   }
 }

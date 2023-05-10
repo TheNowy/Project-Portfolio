@@ -1,78 +1,56 @@
 import React from "react";
-import Typical from "react-typical";
+import { Typewriter } from "react-simple-typewriter";
 import "./home.scss";
 
 const home = () => {
   return (
-    <div>
-      <div className="home_page">
-        <div className="text_home">
-          <div className="text_wrap">
-            <h1>Hi, I'm Jhusup👋🏻</h1>
-            <span className="typeau">
-              I{" "}
-              <span>
-                <Typical
-                  loop={Infinity}
-                  wrapper="d"
-                  steps={[
-                    "develop",
-                    2000,
-                    "create",
-                    2000,
-                    "desing",
-                    2000,
-                  ]}></Typical>
-              </span>
-              user-friendly products.
-            </span>
-          </div>
-        </div>
-        <div className="wrap_helper">
-          <div className="photo_miniab">
-            <div className="miniabout">
-              <h1>About Me</h1>
-              <p className="aboutpar">
-                My name is Zhusup Toktosunov. I am a student software developer.
-                I believe in design quality and always pay attention to details
-                because that's what makes a great product.
-              </p>
-              <p className="aboutpar">
-                I have led a team of students as a Designer and a Lead Developer
-                to create TinyDesk - a web application to help you manage your
-                bookmarks and boost your productivity.
-              </p>
-              <p className="aboutpar">
-                I am currently pursuing an undergraduate degree in Computer
-                Science with a specialization in AI and Data Science at Stony
-                Brook University.
-              </p>
+    <>
+      <div className="page_wrapper">
+        <div className="container">
+          <div className="home_content">
+            <div className="home_image"></div>
+
+            <div className="home_title">
+              <h3>
+                Hi! I Am Jhusup Toktosunov{" "}
+                <span className="fullstack">
+                  <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
+                    FullStack
+                  </a>
+                </span>{" "}
+                <br />
+                And I
+                <span className="text_animation">
+                  <Typewriter
+                    words={[" develop", " design", " create"]}
+                    loop={true}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={80}
+                    deleteSpeed={100}
+                    delaySpeed={1000}
+                  />
+                </span>
+                user-friendly products.
+              </h3>
             </div>
-            <div className="photo"></div>
           </div>
-        </div>
-        <div className="wrap_helper">
-          <div className="photo_miniab">
-            <div className="photo"></div>
-            <div className="miniabout">
-              <h1>Project</h1>
-              <p className="aboutpar">
-                TinyDesk is a web application that lets users manage bookmarks
-                and boost their productivity with handy widgets.
-              </p>
-              <p className="aboutpar">
-                The project was supervised by Alex Kuhn (ex-Apple Engineer) and
-                was led by me as a Lead Developer and Designer. I was mainly
-                responsible for system architecture and user interface design.
-              </p>
-              <p className="aboutpar">
-                It was built with GatsbyJS & Material UI and deployed to Heroku.
-              </p>
+          <div className="box_container">
+            <div className="box_title">
+              <div className="title">
+                <h3>Hello World</h3>
+              </div>
+              <div className="photo">
+                <img
+                  src="https://media3.giphy.com/media/ijsYTyxaMzZh6/giphy.gif"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

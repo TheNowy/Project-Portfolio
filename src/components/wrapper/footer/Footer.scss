@@ -1,122 +1,15 @@
 footer {
   .footer_cont {
+    background-color: black;
     width: 100%;
-    background-color: #2d2d2d;
     display: flex;
     justify-content: center;
-
-    .main_cont {
-      padding: 30px 30px 30px 30px;
-      width: 90%;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 15px 0 30px;
-      justify-content: space-between;
-  
-
-      .info {
-        width: 20%;
-
-
-      .logo_text {
-        color: #ffffff;
-        font-size: 23px;
-        font-weight: 600;
-
-      }      
-      p {
+    align-items: center;
+    
+      h1{
         color: rgb(255, 255, 255);
-        font-size: 13px;
-        font-weight: 700;
-        text-align: start;
-        cursor: default;
-      }
-      .protected {
-        border-top: #ffffff solid;
-        width: 100%;
-        margin-top: 59px;
         font-size: 1.1rem;
         font-weight: 500;
-        color: #ffffff;
       }
-    }
-    .prices {
-      width: 20%;
-      display: flex;
-      flex-flow: column;
-      margin-right: 30px;
-      
-
-      .price {
-        margin-bottom: 5px;
-        color: rgb(193, 193, 193);
-        font-size: 16px;
-        font-weight: 700;
-        text-align: start;
-        transition: .5s;
-        
-
-        &:hover {
-          color: rgb(255, 255, 255);
-        }
-      }
-
-
-      .price_logo {
-        color: #ffffff;
-        font-size: 23px;
-        font-weight: 600;
-      }
-    }
-    .nowy_dev{
-      width: 20%;
-      display: flex;
-      flex-flow: column;
-      margin-right: 30px;
-
-      h1 {
-        color: #ffffff;
-        font-size: 23px;
-        font-weight: 700;
-      }
-
-      .nowyab {
-        margin-bottom: 5px;
-        color: rgb(193, 193, 193);
-        font-size: 14px;
-        font-weight: 700;
-        text-align: start;
-        transition: .5s;
-
-        &:hover {
-          color: rgb(255, 255, 255);
-        }
-      }
-    }
-    .meet_us {
-      width: 20%;
-      display: flex;
-      flex-flow: column;
-      margin-right: 30px;
-
-      .contactLogo {
-        color: #ffffff;
-        font-size: 23px;
-        font-weight: 700;
-      }
-      .contactUS {
-        margin-bottom: 5px;
-        color: rgb(193, 193, 193);
-        font-size: 17px;
-        font-weight: 700;
-        text-align: start;
-        transition: .5s;
-
-        &:hover {
-          color: rgb(255, 255, 255);
-        }
-      }
-    }
-   }
   }
 }
