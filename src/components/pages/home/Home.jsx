@@ -37,14 +37,31 @@ const home = () => {
           </div>
           <div className="box_container">
             <div className="box_title">
-              <div className="title">
-                <h3>Hello World</h3>
-              </div>
               <div className="photo">
                 <img
-                  src="https://media3.giphy.com/media/ijsYTyxaMzZh6/giphy.gif"
+                  src="https://www.pngmart.com/files/13/Killua-Zoldyck-PNG-Image.png"
                   alt=""
                 />
+              </div>
+              <div className="title">
+                <h3>Hello World</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                  <br />
+                  Repellendus ipsa deserunt impedit sit in culpa odio incidunt{" "}
+                  <br />
+                  nobis tempore natus a assumenda corrupti iusto, veritatis{" "}
+                  <br />
+                  tempora non? Accusamus, deleniti ipsa!
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                  <br />
+                  Repellendus ipsa deserunt impedit sit in culpa odio incidunt{" "}
+                  <br />
+                  nobis tempore natus a assumenda corrupti iusto, veritatis{" "}
+                  <br />
+                  tempora non? Accusamus, deleniti ipsa!
+                </p>
               </div>
             </div>
           </div>
