@@ -1,14 +1,27 @@
 import React from "react";
-import "./contacts.scss";
+import scss from "./Conctacts.module.scss";
 
 
 const Contacts = () => {
+
   return (
-    <div>
-      <div className="Contacts">
-          <h1>Contacts</h1>
-      </div>
-    </div>
+    <>
+      {/* <div className={scss.page_wrapper}>
+        <div className={scss.container}>
+          <div className={scss.home_content}>
+            <div className={scss.home_input_text}>
+              <input type="text" />
+              <input type="text" />
+              <input type="submit" />
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+
+
+
+    </>
   );
 };
 

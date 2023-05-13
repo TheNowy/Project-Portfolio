@@ -1,0 +1,29 @@
+.DropDownMenu {
+  position: fixed;
+  top: 3.6rem;
+  right: 2.5rem;
+  padding: 15px;
+  width: 100px;
+  background-color: rgb(0, 0, 0);
+  border: solid 2px orange;
+  border-radius: 14px;
+  transition: .5s;
+  z-index: 110000000000000000000000000;
+
+  .gap_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    li {
+      color: orange;
+      position: relative;
+      left: -20px;
+    }
+  }
+}
+@media (min-width: 930px) {
+  .DropDownMenu {
+    display: none;
+  }
+}

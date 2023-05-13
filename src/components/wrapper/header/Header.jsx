@@ -1,32 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import DropDownMenu from "../../wrapper/header/DropDownMenu/DropDown";
 import scss from "./Header.module.scss";
 
 export const Header = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
+  const [openProfile, closeProfile] = useState(false);
 
   const activeLink = ({ isActive }) => {
     return {
-      border: isActive ? "solid 1px rgb(182, 180, 180)" : "none",
+      border: isActive ? "solid 1px rgb(182, 180, 180)" : "none"
     };
   };
 
-  useEffect(() => {
-    const changeBackground = () => {
-      if (typeof window !== "undefined" && window.scrollY >= 10) {
-        setHeaderScroll(true);
-      } else {
-        setHeaderScroll(false);
-      }
-    };
+  // useEffect(() => {
+  //   const changeBackground = () => {
+  //     if (typeof window !== "undefined" && window.scrollY >= 10) {
+  //       setHeaderScroll(true);
+  //     } else {
+  //       setHeaderScroll(false);
+  //     }
+  //   };
 
-    changeBackground();
-    window.addEventListener("scroll", changeBackground);
+  //   changeBackground();
+  //   -window.addEventListener("scroll", changeBackground);
 
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", changeBackground);
+  //   };
+  // }, []);
 
   return (
     <nav>
@@ -52,8 +54,13 @@ export const Header = () => {
             className={`${scss.gitlink} ${scss.activeLink}`}>
             GitHub
           </NavLink>
+          <div className={scss.burger_menu} onClick={() => closeProfile((prev) => !prev)}>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </header>
+      {openProfile && <DropDownMenu />}
     </nav>
   );
 };
