@@ -2,8 +2,8 @@
   position: fixed;
   top: 3.6rem;
   right: 2.5rem;
-  padding: 15px;
-  width: 100px;
+  padding: 30px 0 30px;
+  width: 120px;
   background-color: rgb(0, 0, 0);
   border: solid 2px orange;
   border-radius: 14px;
@@ -15,7 +15,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    li {
+    .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      padding: 10px;
+      border-radius: 13px;
+      color: rgb(255, 255, 255);
+      position: relative;
+      left: -20px;
+    }
+    .gitlink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      padding: 10px;
+      background-color: black;
       color: orange;
       position: relative;
       left: -20px;
