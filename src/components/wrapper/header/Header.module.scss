@@ -9,7 +9,7 @@
   width: 100%;
   padding: 20px 10%;
 
-  border-bottom: solid 2px orange;
+  border-bottom: solid 2px blue;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@
     text-transform: uppercase;
 
     span {
-      color: orange;
+      color: blue;
     }
   }
 
@@ -41,7 +41,7 @@
     display: flex;
     .gitlink {
       margin-left: 50px;
-      background-color: orange;
+      background-color: blue;
       color: rgb(255, 255, 255);
       border-radius: 14px;
       padding: 10px 10px;
@@ -49,8 +49,8 @@
 
       &:hover {
         background-color: rgb(255, 255, 255);
-        border: solid 1px orange;
-        color: orange;
+        border: solid 1px blue;
+        color: blue;
       }
     }
     .link {
@@ -105,7 +105,7 @@
           transition: 0.2s;
 
           &:nth-child(2) {
-            background-color: orange;
+            background-color: blue;
           }
         }
       }
