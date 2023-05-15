@@ -9,7 +9,7 @@ export const Header = () => {
 
   const activeLink = ({ isActive }) => {
     return {
-      border: isActive ? "solid 1px rgb(182, 180, 180)" : "none"
+      border: isActive ? "solid 1px orange" : "none"
     };
   };
 
