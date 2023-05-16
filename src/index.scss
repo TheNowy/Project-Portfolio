@@ -3,13 +3,14 @@
 * {
   font-family: 'Rubik', sans-serif;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
 }
 
 ::selection {
-  background: rgba(255, 166, 0, 0.684);
+  background: blue;
 }
 ::-webkit-scrollbar {
   width: 0;

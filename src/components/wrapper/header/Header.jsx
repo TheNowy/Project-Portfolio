@@ -9,29 +9,29 @@ export const Header = () => {
 
   const activeLink = ({ isActive }) => {
     return {
-      border: isActive ? "solid 1px blue" : "none"
+      border: isActive ? "solid 1px blue" : "none",
     };
   };
 
-  // useEffect(() => {
-  //   const changeBackground = () => {
-  //     if (typeof window !== "undefined" && window.scrollY >= 10) {
-  //       setHeaderScroll(true);
-  //     } else {
-  //       setHeaderScroll(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const changeBackground = () => {
+      if (typeof window !== "undefined" && window.scrollY >= 10) {
+        setHeaderScroll(true);
+      } else {
+        setHeaderScroll(false);
+      }
+    };
 
-  //   changeBackground();
-  //   -window.addEventListener("scroll", changeBackground);
+    changeBackground();
+    -window.addEventListener("scroll", changeBackground);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", changeBackground);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
 
   return (
-    <nav>
+    <nav className={scss.nav}>
       <header
         className={
           headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
@@ -54,7 +54,9 @@ export const Header = () => {
             className={`${scss.gitlink} ${scss.activeLink}`}>
             GitHub
           </NavLink>
-          <div className={scss.burger_menu} onClick={() => closeProfile((prev) => !prev)}>
+          <div
+            className={scss.burger_menu}
+            onClick={() => closeProfile((prev) => !prev)}>
             <span></span>
             <span></span>
           </div>
