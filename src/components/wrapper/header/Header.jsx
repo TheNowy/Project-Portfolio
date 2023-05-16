@@ -13,22 +13,22 @@ export const Header = () => {
     };
   };
 
-  useEffect(() => {
-    const changeBackground = () => {
-      if (typeof window !== "undefined" && window.scrollY >= 10) {
-        setHeaderScroll(true);
-      } else {
-        setHeaderScroll(false);
-      }
-    };
+  // useEffect(() => {
+  //   const changeBackground = () => {
+  //     if (typeof window !== "undefined" && window.scrollY >= 10) {
+  //       setHeaderScroll(true);
+  //     } else {
+  //       setHeaderScroll(false);
+  //     }
+  //   };
 
-    changeBackground();
-    -window.addEventListener("scroll", changeBackground);
+  //   changeBackground();
+  //   -window.addEventListener("scroll", changeBackground);
 
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", changeBackground);
+  //   };
+  // }, []);
 
   return (
     <nav className={scss.nav}>
