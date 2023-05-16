@@ -11,7 +11,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgb(33, 28, 28);
+      background-color: rgb(255, 255, 255);
 
       min-height: 100vh;
 
@@ -27,8 +27,10 @@
         padding: 1rem;
 
         background-color: rgb(89, 89, 89);
+        border-radius: 13px;
 
-        gap: 1rem;
+        gap: 1.5rem;
+
 
         .input,
         .message {
@@ -49,6 +51,12 @@
           font-family: "Rubik", sans-serif;
 
           padding: 1rem;
+        }
+
+        .button {
+          padding: 1rem;
+          border: none;
+          background-color: #ffbf00;
         }
       }
     }

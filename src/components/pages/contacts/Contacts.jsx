@@ -11,23 +11,23 @@ const Contacts = () => {
               <input
                 className={scss.input}
                 type="text"
-                placeholder="Nickname"
+                placeholder="Your fucking name"
                 required
               />
 
               <input
                 className={scss.input}
                 type="text"
-                placeholder="Password"
+                placeholder="Payment sum $"
                 required
               />
 
               <textarea
                 className={scss.message}
-                placeholder="Message"
+                placeholder="Why you wan't me?"
                 required ></textarea>
 
-              <input type="submit" value="Отправить" />
+              <button className={scss.button}>Fuck ME</button>
             </form>
           </div>
         </div>
