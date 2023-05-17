@@ -1,10 +1,8 @@
 import React from "react";
 import scss from "./Conctacts.module.scss";
 
-
 const Contacts = () => {
   const handleSubmit = () => {
-    window.location.href = '/contacts';
   };
 
   return (
@@ -15,21 +13,21 @@ const Contacts = () => {
             <div className={scss.gif_image}>
               <h1>Contact</h1>
             </div>
-            <form className={scss.form}>
-              <label htmlFor="...">
+            <form className={scss.form} onSubmit={handleSubmit}>
+              <label htmlFor="name">
                 Name:
-                <input className={scss.input} type="text" required />
+                <input id="name" className={scss.input} type="text" required />
               </label>
-              <label htmlFor="...">
+              <label htmlFor="email">
                 Email:
-                <input className={scss.input} type="text" required />
+                <input id="email" className={scss.input} type="email" required />
               </label>
-              <label htmlFor="...">
+              <label htmlFor="comment">
                 Comment:
-                <textarea className={scss.message} required></textarea>
+                <textarea id="comment" className={scss.message} required></textarea>
               </label>
 
-              <button className={scss.button} onClick={handleSubmit}>Submit</button>
+              <button type="submit" className={scss.button}>Submit</button>
             </form>
           </div>
         </div>
@@ -39,3 +37,4 @@ const Contacts = () => {
 };
 
 export default Contacts;
+
