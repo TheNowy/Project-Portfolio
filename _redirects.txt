@@ -1,9 +1,0 @@
-Project1
-├── src/
-│   ├── index.js
-│   └── ...
-├── public/
-│   ├── index.html
-│   └── ...
-├── package.json
-└── _redirects
