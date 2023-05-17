@@ -12,7 +12,6 @@ export const Main = () => {
         <Route path="/" element={<Home />} />
         <Route path="/author" element={<Author />} />
         <Route path="/contacts" element={<Contacts />} />
-        <Route path="/contacts?" element={<Contacts />} />
       </Routes>
     </div>
   );

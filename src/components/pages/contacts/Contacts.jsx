@@ -1,7 +1,12 @@
 import React from "react";
 import scss from "./Conctacts.module.scss";
 
+
 const Contacts = () => {
+  const handleSubmit = () => {
+    window.location.href = '/contacts';
+  };
+
   return (
     <>
       <div className={scss.page_wrapper}>
@@ -13,28 +18,18 @@ const Contacts = () => {
             <form className={scss.form}>
               <label htmlFor="...">
                 Name:
-                <input
-                  className={scss.input}
-                  type="text"
-                  required
-                />
+                <input className={scss.input} type="text" required />
               </label>
               <label htmlFor="...">
                 Email:
-                <input
-                  className={scss.input}
-                  type="text"
-                  required
-                />
+                <input className={scss.input} type="text" required />
               </label>
               <label htmlFor="...">
                 Comment:
-                <textarea
-                  className={scss.message}
-                  required></textarea>
+                <textarea className={scss.message} required></textarea>
               </label>
-              
-              <button className={scss.button}>Submit</button>
+
+              <button className={scss.button} onClick={handleSubmit}>Submit</button>
             </form>
           </div>
         </div>
