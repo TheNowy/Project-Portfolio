@@ -39,28 +39,22 @@ const home = () => {
             <div className="box_title">
               <div className="photo">
                 <img
-                  src="https://www.pngmart.com/files/13/Killua-Zoldyck-PNG-Image.png"
+                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/zSEb/zjAhso2TC"
                   alt=""
                 />
               </div>
               <div className="title">
                 <h3>About Me</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  Repellendus ipsa deserunt impedit sit in culpa odio incidunt{" "}
-                  <br />
-                  nobis tempore natus a assumenda corrupti iusto, veritatis{" "}
-                  <br />
-                  tempora non? Accusamus, deleniti ipsa!
-                  <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  Repellendus ipsa deserunt impedit sit in culpa odio incidunt{" "}
-                  <br />
-                  nobis tempore natus a assumenda corrupti iusto, veritatis{" "}
-                  <br />
-                  tempora non? Accusamus, deleniti ipsa!
+                  16 years old, Passionate and dedicated Full Stack Developer <br />
+                  with limited experience but a strong skill set in React, <br />
+                  NodeJS, JavaScript, MySQL, HTML, CSS, SASS, and SCSS. A <br />
+                  collaborative team player with excellent soft skills, I excel <br />
+                  in communication and problem-solving. Eager to learn and adapt <br />
+                  quickly to new technologies, I am committed to delivering <br />
+                  innovative solutions. Seeking opportunities to contribute <br />
+                  effectively to development projects and grow as a Full Stack
+                  Developer
                 </p>
               </div>
             </div>
@@ -69,7 +63,7 @@ const home = () => {
             <div className="box_title">
               <div className="photo">
                 <img
-                  src="https://www.pngplay.com/wp-content/uploads/12/Killua-Zoldyck-Transparent-PNG.png"
+                  src='https://thumb.cloud.mail.ru/weblink/thumb/xw1/jYxV/svVVUH2qe'
                   alt=""
                 />
               </div>
