@@ -46,13 +46,33 @@ const home = () => {
               <div className="title">
                 <h3>About Me</h3>
                 <p>
-                  16 years old, Passionate and dedicated Full Stack Developer <br />
-                  with limited experience but a strong skill set in React, <br />
+                  16 years old, Passionate and dedicated Full Stack Developer{" "}
+                  <br />
+                </p>
+                <p>
+                  with limited experience but a strong skill set in React,{" "}
+                  <br />
+                </p>
+                <p>
                   NodeJS, JavaScript, MySQL, HTML, CSS, SASS, and SCSS. A <br />
-                  collaborative team player with excellent soft skills, I excel <br />
-                  in communication and problem-solving. Eager to learn and adapt <br />
-                  quickly to new technologies, I am committed to delivering <br />
-                  innovative solutions. Seeking opportunities to contribute <br />
+                </p>
+                <p>
+                  collaborative team player with excellent soft skills, I excel{" "}
+                  <br />
+                </p>
+                <p>
+                  in communication and problem-solving. Eager to learn and adapt{" "}
+                  <br />
+                </p>
+                <p>
+                  quickly to new technologies, I am committed to delivering{" "}
+                  <br />
+                </p>
+                <p>
+                  innovative solutions. Seeking opportunities to contribute{" "}
+                  <br />
+                </p>
+                <p>
                   effectively to development projects and grow as a Full Stack
                   Developer
                 </p>
@@ -63,28 +83,22 @@ const home = () => {
             <div className="box_title">
               <div className="photo">
                 <img
-                  src='https://thumb.cloud.mail.ru/weblink/thumb/xw1/jYxV/svVVUH2qe'
+                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/jYxV/svVVUH2qe"
                   alt=""
                 />
               </div>
               <div className="title">
                 <h3>Project</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                  16 years old, Passionate and dedicated Full Stack Developer{" "}
                   <br />
-                  Repellendus ipsa deserunt impedit sit in culpa odio incidunt{" "}
+                </p>
+                <p>
+                  with limited experience but a strong skill set in React,{" "}
                   <br />
-                  nobis tempore natus a assumenda corrupti iusto, veritatis{" "}
-                  <br />
-                  tempora non? Accusamus, deleniti ipsa!
-                  <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  Repellendus ipsa deserunt impedit sit in culpa odio incidunt{" "}
-                  <br />
-                  nobis tempore natus a assumenda corrupti iusto, veritatis{" "}
-                  <br />
-                  tempora non? Accusamus, deleniti ipsa!
+                </p>
+                <p>
+                  NodeJS, JavaScript, MySQL, HTML, CSS, SASS, and SCSS. A <br />
                 </p>
               </div>
             </div>
