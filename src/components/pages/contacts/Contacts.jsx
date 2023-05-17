@@ -8,26 +8,29 @@ const Contacts = () => {
         <div className={scss.container}>
           <div className={scss.home_content}>
             <form className={scss.form}>
-              <input
-                className={scss.input}
-                type="text"
-                placeholder="Your fucking name"
-                required
-              />
-
-              <input
-                className={scss.input}
-                type="text"
-                placeholder="Payment sum $"
-                required
-              />
-
-              <textarea
-                className={scss.message}
-                placeholder="Why you wan't me?"
-                required ></textarea>
-
-              <button className={scss.button}>Fuck ME</button>
+              <label htmlFor="...">
+                Name:
+                <input
+                  className={scss.input}
+                  type="text"
+                  required
+                />
+              </label>
+              <label htmlFor="...">
+                Email:
+                <input
+                  className={scss.input}
+                  type="text"
+                  required
+                />
+              </label>
+              <label htmlFor="...">
+                Comment:
+                <textarea
+                  className={scss.message}
+                  required></textarea>
+              </label>
+              <button className={scss.button}>Submit</button>
             </form>
           </div>
         </div>
