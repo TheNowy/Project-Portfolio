@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const DropDown = () => {
   const activeLink = ({ isActive }) => {
     return {
-      border: isActive ? "solid 1px blue" : "none"
+      border: isActive ? "solid 1px #4d01ff" : "none"
     };
   };
 

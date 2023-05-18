@@ -80,11 +80,7 @@
       li {
         display: none;
       }
-      .burger_menu {
-        position: absolute;
-        left: 47rem;
-        bottom: 1rem;
-      }
+      
     }
     .header_wrap {
       .gitlink {
@@ -104,13 +100,9 @@
           width: 40px;
           height: 7px;
           margin: 6px auto;
-          background-color: #000000;
+          background-color: #4d01ff;
           border-radius: 12px;
           transition: 0.2s;
-          
-          &:nth-child(2) {
-            background-color: blue;
-          }
         }
       }
     }
