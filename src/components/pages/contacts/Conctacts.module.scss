@@ -14,6 +14,7 @@
       background-color: rgb(255, 255, 255);
 
       min-height: 130vh;
+     
 
       padding: 5rem 7rem;
 
@@ -97,9 +98,17 @@
   .page_wrapper {
     .container {
       .home_content {
+        display: flex;
+        flex-direction: column;
         padding: 8rem 3rem;
         .gif_image {
-          display: none;
+          display: flex;
+          margin-right: 0;
+          border-radius: 13px;
+          min-width: 400px;
+          max-width: 400px;
+          padding: 2rem;
+
         }
           .form {
             min-width: 400px;
@@ -108,13 +117,14 @@
       }
     }
   }
-  @media (max-width: 435px) {
+  @media (max-width: 414px) {
     .page_wrapper {
       .container {
         .home_content {
           padding: 8rem 3rem;
           .gif_image {
-            display: none;
+            min-width: 300px;
+            max-width: 400px;
           }
             .form {
               min-width: 300px;
