@@ -97,6 +97,8 @@
   .page_wrapper {
     .container {
       .home_content {
+        display: flex;
+        align-items: start;
         .gif_image {
           display: none;
         }
