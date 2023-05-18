@@ -97,8 +97,7 @@
   .page_wrapper {
     .container {
       .home_content {
-        display: flex;
-        align-items: start;
+        padding: 8rem 3rem;
         .gif_image {
           display: none;
         }
@@ -113,7 +112,7 @@
     .page_wrapper {
       .container {
         .home_content {
-          padding: 1rem;
+          padding: 8rem 3rem;
           .gif_image {
             display: none;
           }
