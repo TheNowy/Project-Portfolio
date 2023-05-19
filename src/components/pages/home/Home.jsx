@@ -39,7 +39,7 @@ const home = () => {
             <div className="box_title">
               <div className="photo">
                 <img
-                  src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-contact-512.png"
+                  src="https://cdn.britannica.com/05/236505-050-17B6E34A/Elon-Musk-2022.jpg"
                   alt=""
                 />
               </div>

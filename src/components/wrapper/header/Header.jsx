@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import DropDownMenu from "../../wrapper/header/DropDownMenu/DropDown";
+import QuickDrop from "../../wrapper/header/QuickMenu/Quick";
 import scss from "./Header.module.scss";
 
 export const Header = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
   const [openProfile, closeProfile] = useState(false);
+  const [openProfile2, closeProfile2] = useState(false);
 
   const activeLink = ({ isActive }) => {
     return {
@@ -46,6 +48,9 @@ export const Header = () => {
           <NavLink to="/contacts" className={`${scss.link}`} style={activeLink}>
             Contact
           </NavLink>
+          <NavLink className={`${scss.resume}`} onClick={() => closeProfile2((prev) => !prev)}>
+            Resume
+          </NavLink>
           <NavLink
             to="https://github.com/NowyTeam"
             className={`${scss.gitlink} ${scss.activeLink}`}>
@@ -60,6 +65,7 @@ export const Header = () => {
         </div>
       </header>
       {openProfile && <DropDownMenu />}
+      {openProfile2 && <QuickDrop />}
     </nav>
   );
 };
