@@ -43,9 +43,9 @@
     display: flex;
     .gitlink {
       margin-left: 20px;
-      background-color: blue;
+      background-color: #4d01ff;
       color: rgb(255, 255, 255);
-      border-radius: 14px;
+      border-radius: 5px;
       padding: 10px 10px;
       transition: 0.5s;
 
@@ -83,6 +83,11 @@
       font-weight: 700;
       color: white;
       margin-left: 50px;
+      transition: .5s;
+
+      &:hover {
+        background-color: blue;
+      }
     }
     .burger_menu {
       display: none;
