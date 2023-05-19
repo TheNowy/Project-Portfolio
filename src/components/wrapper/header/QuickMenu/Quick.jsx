@@ -10,7 +10,7 @@ const Quick = () => {
         <NavLink to="/" className={`${scss.link}`}>
           Quick View
         </NavLink>
-        <NavLink to="/contacts" className={`${scss.link}`}>
+        <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
           Download
         </NavLink>
       </ul>
