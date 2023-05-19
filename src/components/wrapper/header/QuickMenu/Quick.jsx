@@ -7,7 +7,7 @@ const Quick = () => {
   return (
     <div className={`${scss.flex} ${scss.flex_col} ${scss.DropDownMenu}`}>
       <ul className={`${scss.flex} ${scss.flex_col} ${scss.gap_4}`}>
-        <NavLink to="/" className={`${scss.link}`}>
+        <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
           Quick View
         </NavLink>
         <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
