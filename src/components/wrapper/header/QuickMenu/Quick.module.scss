@@ -2,12 +2,16 @@
   position: fixed;
   top: 4rem;
   right: 13rem;
-  padding: 10px 0 10px;
   width: 150px;
   background-color: rgb(0, 0, 0);
   border-radius: 14px;
-  transition: 0.5s;
+  transition: 0.3s;
   z-index: 110000000000000000000000000;
+
+  &.active {
+      position: fixed;
+      right: 4.5rem;
+  }
 
   .gap_4 {
     display: flex;

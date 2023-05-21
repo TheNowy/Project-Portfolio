@@ -1,14 +1,19 @@
 .DropDownMenu {
   position: fixed;
   top: 4rem;
-  right: 3.6rem;
+  right: 4rem;
   padding: 10px 0 10px;
   width: 150px;
   background-color: rgb(0, 0, 0);
   border: solid 2px orange;
   border-radius: 14px;
-  transition: 0.5s;
+  transition: 0.3s;
   z-index: 110000000000000000000000000;
+
+  &.active {
+    position: fixed;
+    right: 1rem;
+  }
 
   .gap_4 {
     display: flex;
@@ -52,5 +57,14 @@
 @media (min-width: 1015px) {
   .DropDownMenu {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+  .DropDownMenu {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    padding: 10px 0 10px;
+    width: 150px;
   }
 }
