@@ -39,7 +39,7 @@ const home = () => {
             <div className="box_title">
               <div className="photo">
                 <img
-                  src="https://cdn.britannica.com/05/236505-050-17B6E34A/Elon-Musk-2022.jpg"
+                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/SkZU/ztXxZ5k2S"
                   alt=""
                 />
               </div>
