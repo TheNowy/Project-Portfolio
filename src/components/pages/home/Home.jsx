@@ -81,12 +81,6 @@ const home = () => {
           </div>
           <div className="box_container">
             <div className="box_title">
-              <div className="photo">
-                <img
-                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kac1/3ce5VQwcL"
-                  alt=""
-                />
-              </div>
               <div className="title">
                 <h3>Project</h3>
                 <p>
@@ -97,6 +91,12 @@ const home = () => {
                 interactions, Design and mockups of products for companies.{" "}
                   <br />
                 </p>
+              </div>
+              <div className="photo">
+                <img
+                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kac1/3ce5VQwcL"
+                  alt=""
+                />
               </div>
             </div>
           </div>
