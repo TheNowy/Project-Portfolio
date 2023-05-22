@@ -46,18 +46,18 @@ const home = () => {
               <div className="title">
                 <h3>About Me</h3>
                 <p>
-                  16 years old, Passionate and dedicated Full Stack Developer{" "}
+                  16 years old, Passionate and dedicated <span>Full Stack Developer</span>{" "}
                   <br />
                 </p>
                 <p>
-                  with limited experience but a strong skill set in React,{" "}
+                  with limited experience but a strong skill set in <span>React</span>,{" "}
                   <br />
                 </p>
                 <p>
-                  NodeJS, JavaScript, MySQL, HTML, CSS, SASS, and SCSS. A <br />
+                <span>NodeJS, JavaScript, MySQL, HTML, CSS, SASS</span>,<span>and SCSS</span>. A <br />
                 </p>
                 <p>
-                  collaborative team player with excellent soft skills, I excel{" "}
+                  collaborative team player with excellent <span>Soft Skills</span>, I excel{" "}
                   <br />
                 </p>
                 <p>
@@ -73,8 +73,8 @@ const home = () => {
                   <br />
                 </p>
                 <p>
-                  effectively to development projects and grow as a Full Stack
-                  Developer
+                  effectively to development projects and grow as a <span>Full Stack
+                  Developer</span>
                 </p>
               </div>
             </div>
@@ -84,11 +84,11 @@ const home = () => {
               <div className="title">
                 <h3>Project</h3>
                 <p>
-                I develop the user interface, Web page development, I create UX element{" "}
+                I develop the user interface, Web page development, I create <span>UX element</span>{" "}
                   <br />
                 </p>
                 <p>
-                interactions, Design and mockups of products for companies.{" "}
+                interactions, <span>Design and mockups</span> of products for companies.{" "}
                   <br />
                 </p>
               </div>
