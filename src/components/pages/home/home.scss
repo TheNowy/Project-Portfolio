@@ -76,19 +76,17 @@
         &:hover {
           filter: drop-shadow(0 0 2em rgb(3, 6, 192));
         }
-
         .photo {
           width: 600px;
           display: flex;
           justify-content: start;
           align-items: center;
-          background-color: white;
+
 
           img {
             width: 500px;
             padding: 0;
-
-          }
+          } 
         }
         .title {
           width: 100%;

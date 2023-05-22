@@ -39,7 +39,7 @@ const home = () => {
             <div className="box_title">
               <div className="photo">
                 <img
-                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kG4R/oTzaL3hw2"
+                  src="https://cdn.britannica.com/05/236505-050-17B6E34A/Elon-Musk-2022.jpg"
                   alt=""
                 />
               </div>
@@ -83,22 +83,19 @@ const home = () => {
             <div className="box_title">
               <div className="photo">
                 <img
-                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/jYxV/svVVUH2qe"
+                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kac1/3ce5VQwcL"
                   alt=""
                 />
               </div>
               <div className="title">
                 <h3>Project</h3>
                 <p>
-                  16 years old, Passionate and dedicated Full Stack Developer{" "}
+                I develop the user interface, Web page development, I create UX element{" "}
                   <br />
                 </p>
                 <p>
-                  with limited experience but a strong skill set in React,{" "}
+                interactions, Design and mockups of products for companies.{" "}
                   <br />
-                </p>
-                <p>
-                  NodeJS, JavaScript, MySQL, HTML, CSS, SASS, and SCSS. A <br />
                 </p>
               </div>
             </div>
