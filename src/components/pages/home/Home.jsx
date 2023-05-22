@@ -54,7 +54,7 @@ const home = () => {
                   <br />
                 </p>
                 <p>
-                <span>NodeJS, JavaScript, MySQL, HTML, CSS, SASS</span>,<span>and SCSS</span>. A <br />
+                <span>NodeJS, JavaScript, MySQL, HTML, CSS, SASS</span>,and <span>SCSS</span>. A <br />
                 </p>
                 <p>
                   collaborative team player with excellent <span>Soft Skills</span>, I excel{" "}
