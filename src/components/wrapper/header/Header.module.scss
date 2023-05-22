@@ -20,7 +20,8 @@
 
   &.active {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.57);
+    backdrop-filter: blur(10px);
     transition: 0.3s;
     padding: 20px 1% 20px 1%;
   }
