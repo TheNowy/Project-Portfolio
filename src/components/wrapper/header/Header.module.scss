@@ -66,14 +66,19 @@
   .header_wrap {
     display: flex;
     .gitlink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
       margin-left: 20px;
       background-color: #4d01ff;
       color: rgb(255, 255, 255);
       border-radius: 5px;
       padding: 10px 10px;
-      transition: 0.5s;
+      transition: 0.2s;
 
       &:hover {
+        width: 5rem;
         background-color: rgb(255, 255, 255);
         border: solid 1px blue;
         color: blue;
