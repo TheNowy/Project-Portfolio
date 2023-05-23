@@ -35,7 +35,7 @@ export const Header = () => {
   return (
     <nav className={scss.nav}>
       <header className={scss.beta}>
-        <h1>!Сайт находится в Бета-Тесте!</h1>
+        <h1>Beta-Test</h1>
       </header>
       <header
         className={

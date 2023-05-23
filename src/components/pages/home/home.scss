@@ -64,6 +64,18 @@
       transition: 0.3s;
 
       &:nth-child(3) {
+        .box_title {
+          margin: 1rem;
+          margin-bottom: -10px;
+
+          .photo {
+            width: 650px;
+
+            img {
+              width: 650px;
+            }
+          }
+        }
         &:hover {
           .box_title {
             filter: drop-shadow(0 0 2em rgba(14, 6, 255, 0));
@@ -75,6 +87,18 @@
         }
         }
       }
+      // &:nth-child(4) {
+      //   .box_title {
+      //     .photo {
+      //       width: 100%;
+      //       padding: 0 10px;
+
+      //       img {
+      //         width: 40vw;
+      //       }
+      //     }
+      //   }
+      // }
 
       .box_title {
         width: 80vw;

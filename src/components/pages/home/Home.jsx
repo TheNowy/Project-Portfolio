@@ -50,30 +50,26 @@ const home = () => {
                   <br />
                 </p>
                 <p>
-                  with limited experience but a strong skill set in <span>React</span>,{" "}
+                  with limited experience but a strong skill set in{" "}
                   <br />
                 </p>
                 <p>
-                <span>NodeJS, JavaScript, MySQL, HTML, CSS, SASS</span>,and <span>SCSS</span>. A <br />
+                <span>React, NodeJS, JavaScript, MySQL, HTML, CSS, SASS</span>,and <span>SCSS</span>.<br />
                 </p>
                 <p>
-                  collaborative team player with excellent <span>Soft Skills</span>, I excel{" "}
+                  A collaborative team player with excellent <span>Soft Skills</span>, {" "}
                   <br />
                 </p>
                 <p>
-                  in communication and problem-solving. Eager to learn and adapt{" "}
+                I excel in communication and problem-solving.{" "}
                   <br />
                 </p>
                 <p>
-                  quickly to new technologies, I am committed to delivering{" "}
+                Eager to learn and adapt quickly to new technologies, I am committed to delivering innovative solutions. {" "}
                   <br />
                 </p>
                 <p>
-                  innovative solutions. Seeking opportunities to contribute{" "}
-                  <br />
-                </p>
-                <p>
-                  effectively to development projects and grow as a <span>Full Stack
+                Seeking opportunities to contribute{" "} effectively to development projects and grow as a <span>Full Stack
                   Developer</span>
                 </p>
               </div>
@@ -84,11 +80,11 @@ const home = () => {
               <div className="title">
                 <h3>Project</h3>
                 <p>
-                I develop the user interface, Web page development, I create <span>UX element</span>{" "}
+                I develop the user interface, Web page development, I create <span>UX element interactions</span>,{" "}
                   <br />
                 </p>
                 <p>
-                interactions, <span>Design and mockups</span> of products for companies.{" "}
+               <span>Design and mockups</span> of products for companies.{" "}
                   <br />
                 </p>
               </div>
@@ -100,28 +96,6 @@ const home = () => {
               </div>
             </div>
           </div>
-          <div className="box_container">
-            <div className="box_title">
-              <div className="title">
-                <h3>Project</h3>
-                <p>
-                I develop the user interface, Web page development, I create <span>UX element</span>{" "}
-                  <br />
-                </p>
-                <p>
-                interactions, <span>Design and mockups</span> of products for companies.{" "}
-                  <br />
-                </p>
-              </div>
-              <div className="photo">
-                <img
-                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kac1/3ce5VQwcL"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </>
