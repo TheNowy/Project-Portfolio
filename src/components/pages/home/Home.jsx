@@ -100,6 +100,28 @@ const home = () => {
               </div>
             </div>
           </div>
+          <div className="box_container">
+            <div className="box_title">
+              <div className="title">
+                <h3>Project</h3>
+                <p>
+                I develop the user interface, Web page development, I create <span>UX element</span>{" "}
+                  <br />
+                </p>
+                <p>
+                interactions, <span>Design and mockups</span> of products for companies.{" "}
+                  <br />
+                </p>
+              </div>
+              <div className="photo">
+                <img
+                  src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kac1/3ce5VQwcL"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </>

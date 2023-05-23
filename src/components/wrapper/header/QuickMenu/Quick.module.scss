@@ -1,16 +1,22 @@
 .DropDownMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 4rem;
-  right: 13rem;
+  right: 8rem;
+  padding: 10px;
   width: 150px;
   background-color: rgb(0, 0, 0);
   border-radius: 14px;
   transition: 0.3s;
-  z-index: 110000000000000000000000000;
-  
+  z-index: 100000000;
+
+  &.active2 {
+    right: 13rem;
+  }
 
   &.active {
-      position: fixed;
       right: 4.5rem;
   }
 

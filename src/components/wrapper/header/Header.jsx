@@ -38,6 +38,8 @@ export const Header = () => {
         className={
           headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
         }>
+          
+          
         <NavLink to="/" className={scss.logo}>
           Jhusup<span>.</span>
         </NavLink>

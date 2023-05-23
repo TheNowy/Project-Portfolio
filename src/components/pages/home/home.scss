@@ -63,7 +63,7 @@
       align-items: center;
       transition: 0.3s;
 
-      &:last-child {
+      &:nth-child(3) {
         &:hover {
           .box_title {
             filter: drop-shadow(0 0 2em rgba(14, 6, 255, 0));
