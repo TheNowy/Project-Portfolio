@@ -33,7 +33,12 @@
       padding: 10px 0;
       justify-content: center;
       align-items: center;
+      transition: .2s;
       color: rgb(255, 255, 255);
+
+      &:hover {
+        color: rgb(164, 160, 160);
+      }
     }
   }
 }
