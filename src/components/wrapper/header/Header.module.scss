@@ -155,6 +155,10 @@
           background-color: #4d01ff;
           border-radius: 12px;
           transition: 0.2s;
+
+          &:last-child {
+            width: 30px;
+          }
         }
       }
     }
