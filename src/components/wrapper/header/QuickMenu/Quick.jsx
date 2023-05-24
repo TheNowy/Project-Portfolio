@@ -51,10 +51,10 @@ const Quick = () => {
       }
     >
       <ul className={`${scss.gap_4}`}>
-        <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
+        <NavLink to="https://cloud.mail.ru/public/MaXo/vZTgfh65W" className={`${scss.link}`}>
           Quick View
         </NavLink>
-        <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
+        <NavLink to="https://cloud.mail.ru/public/MaXo/vZTgfh65W" className={`${scss.link}`}>
           Download
         </NavLink>
       </ul>
