@@ -11,7 +11,7 @@ const Contacts = () => {
         <div className={scss.container}>
           <div className={scss.home_content}>
             <div className={scss.gif_image}>
-              <h1>Contact</h1>
+              <h1>Contact Me</h1>
             </div>
             <form className={scss.form} onSubmit={handleSubmit}>
               <label htmlFor="name">
