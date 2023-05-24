@@ -23,7 +23,7 @@
         border-radius: 13px;
         min-width: 600px;
         max-width: 2000px;
-        padding: 18.4rem 14rem;
+        padding: 18.4rem 13rem;
         border: solid 1px #0d1117;
         background-image: url("https://cutewallpaper.org/21/space-wallpaper-gif/DsD_N_N_D_D_DsD-DzDz-D_D_DzN_DzN_N-universe-gifs-Galaxy-screensaver-.gif");
         background-position: center;
@@ -126,7 +126,11 @@
           .gif_image {
             min-width: 300px;
             max-width: 200px;
-            padding: 8rem 3.5rem;
+            padding: 2rem 3.5rem;
+
+            h1 {
+              font-size: 20px;
+            }
           }
             .form {
               min-width: 300px;
