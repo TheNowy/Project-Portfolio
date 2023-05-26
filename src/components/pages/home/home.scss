@@ -68,8 +68,7 @@
       &:nth-child(4) {
         .box_title {
           margin: 1rem;
-          margin-bottom: -10px;
-
+          border-radius: 15px 15px 0 0;
           .photo {
             width: 550px;
 
@@ -151,26 +150,64 @@
       justify-content: center;
       align-items: center;
       transition: 0.3s;
+      gap: 7px;
 
       .box_project {
-        margin-top: 10px;
-        width: 40vw;
+        padding: 0;
+        width: 39.8vw;
         background-color: rgba(0, 0, 0, 0);
-        border-radius: 15px;
         border: solid 2px #d4d4d4;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 0.2s;
         overflow: hidden;
+
+       &:first-child {
+        border-radius: 0 0 0 0.75rem;
+       }
+       &:last-child {
+        border-radius: 0 0 0.75rem 0;
+       }
+
+      
         .project_img {
-          width: 40vw;
+          width: 100vw;
           display: flex;
-          justify-content: start;
+          justify-content: center;
           align-items: center;
-          img {
+          
+          .left_photo {
             width: 100%;
-            padding: -14rem;
+            transition: .3s;
+
+            &:hover {
+              transform: scale(1.10);
+            }
+          }
+
+          .right_photo {
+            width: 97.1%;
+            transition: .3s;
+            transform: scale(1.03);
+
+            &:hover {
+              transform: scale(1.10);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1365px) {
+  .page_wrapper {
+    .container {
+      .home_content {
+        .home_title {
+          padding: 150px 0;
+          h3 {
+            font-weight: 500;
+            font-size: 40px;
           }
         }
       }
@@ -185,7 +222,7 @@
           padding: 150px 0;
           h3 {
             font-weight: 500;
-            font-size: 40px;
+            font-size: 30px;
           }
         }
 

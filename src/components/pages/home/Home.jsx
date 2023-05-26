@@ -100,13 +100,13 @@ const home = () => {
             <div className="project_container">
               <div className="box_project">
                 <div className="project_img">
-                  <img src="https://cdn.dribbble.com/users/1346196/screenshots/6176280/attachments/1324203/web_mockup.png" alt="" />
+                  <img className="left_photo" src="https://cdn.dribbble.com/users/1346196/screenshots/6176280/attachments/1324203/web_mockup.png" alt="" />
 
                 </div>
               </div>
               <div className="box_project">
                 <div className="project_img">
-                  <img src="https://assets.justinmind.com/wp-content/uploads/2020/08/travel-ecommerce-app-mockup.png" alt="" />
+                  <img className="right_photo" src="https://assets.justinmind.com/wp-content/uploads/2020/08/travel-ecommerce-app-mockup.png" alt="" />
                   
                 </div>
               </div>
