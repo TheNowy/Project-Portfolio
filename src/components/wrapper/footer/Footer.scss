@@ -1,11 +1,12 @@
 footer {
   .footer_cont {
-    min-width: 20vw;
+    width: 100%;
+    margin-top: 1.5rem;
     padding: 2rem 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    
+    justify-content: center;
+      
       h1{
         font-family: sans-serif;
         color: rgb(0, 0, 0);

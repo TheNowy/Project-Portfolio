@@ -1,9 +1,9 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Home from "../../pages/home/Home";
 import Contacts from "../../pages/contacts/Contacts";
 import Blog from "../../pages/blog/Blog";
-
+import NotFound from "../../pages/error/Error";
 
 export const Main = () => {
   return (
@@ -12,6 +12,8 @@ export const Main = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/Blog" element={<Blog />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

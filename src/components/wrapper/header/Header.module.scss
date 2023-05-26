@@ -33,7 +33,7 @@
   width: 100%;
   padding: 20px 10%;
 
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -166,6 +166,31 @@
           }
         }
       }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    margin-bottom: 3rem;
+    position: fixed;
+    left: 0;
+    top: 1.1rem;
+  
+    width: 100%;
+    padding: 20px 10%;
+  
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: none;
+  
+    &.active {
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      backdrop-filter: none;
+      padding: 20px 10%;
+      border-bottom: none;
     }
   }
 }
