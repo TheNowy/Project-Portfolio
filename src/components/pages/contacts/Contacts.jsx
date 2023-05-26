@@ -15,15 +15,15 @@ const Contacts = () => {
             </div>
             <form className={scss.form} onSubmit={handleSubmit}>
               <label htmlFor="name">
-                Name:
+                Name
                 <input id="name" className={scss.input} type="text" required />
               </label>
               <label htmlFor="email">
-                Email:
+                Email
                 <input id="email" className={scss.input} type="email" required />
               </label>
               <label htmlFor="comment">
-                Comment:
+                Message
                 <textarea id="comment" className={scss.message} required></textarea>
               </label>
 

@@ -12,8 +12,7 @@ const home = () => {
 
             <div className="home_title">
               <h3>
-                Hi! I Am Toktosunov Jhusup{" "}
-                <span className="span2">(Zhusup)</span>{" "}
+                Hi! I Am Toktosunov Jhusup <span className="span2">(Nowy)</span>{" "}
                 <span className="fullstack">
                   <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
                     FullStack
@@ -88,7 +87,6 @@ const home = () => {
                   <p>
                     <span>Design and mockups</span> of products for companies.{" "}
                     <br />
-                    
                   </p>
                 </div>
                 <div className="photo">
@@ -96,6 +94,20 @@ const home = () => {
                     src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kac1/3ce5VQwcL"
                     alt=""
                   />
+                </div>
+              </div>
+            </div>
+            <div className="project_container">
+              <div className="box_project">
+                <div className="project_img">
+                  <img src="https://cdn.dribbble.com/users/1346196/screenshots/6176280/attachments/1324203/web_mockup.png" alt="" />
+
+                </div>
+              </div>
+              <div className="box_project">
+                <div className="project_img">
+                  <img src="https://assets.justinmind.com/wp-content/uploads/2020/08/travel-ecommerce-app-mockup.png" alt="" />
+                  
                 </div>
               </div>
             </div>
