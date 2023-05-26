@@ -79,7 +79,7 @@ const home = () => {
             <div className="box_container">
               <div className="box_title">
                 <div className="title">
-                  <h3>Project</h3>
+                  <h3>Projects</h3>
                   <p>
                     I develop the user interface, Web page development, I create{" "}
                     <span>UX element interactions</span>, <br />

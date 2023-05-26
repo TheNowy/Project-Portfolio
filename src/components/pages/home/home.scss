@@ -1,3 +1,7 @@
+*{
+  transition: .3s;
+}
+
 .page_wrapper {
   width: 100vw;
   max-width: 2000px;
@@ -63,12 +67,19 @@
 
       justify-content: center;
       align-items: center;
-      transition: 0.3s;
+      
 
       &:nth-child(4) {
         .box_title {
           margin: 1rem;
           border-radius: 15px 15px 0 0;
+
+
+          &:hover {
+            img {
+              filter: drop-shadow(0 0 2em rgb(14, 6, 255));
+            }
+          }
           .photo {
             width: 550px;
 
@@ -77,29 +88,7 @@
             }
           }
         }
-        &:hover {
-          .box_title {
-            filter: drop-shadow(0 0 2em rgba(14, 6, 255, 0));
-
-            img {
-              filter: drop-shadow(0 0 2em rgb(14, 6, 255));
-              transition: 0.3s;
-            }
-          }
-        }
       }
-      // &:nth-child(4) {
-      //   .box_title {
-      //     .photo {
-      //       width: 100%;
-      //       padding: 0 10px;
-
-      //       img {
-      //         width: 40vw;
-      //       }
-      //     }
-      //   }
-      // }
 
       .box_title {
         width: 80vw;
@@ -162,36 +151,35 @@
         align-items: center;
         overflow: hidden;
 
-       &:first-child {
-        border-radius: 0 0 0 0.75rem;
-       }
-       &:last-child {
-        border-radius: 0 0 0.75rem 0;
-       }
+        &:first-child {
+          border-radius: 0 0 0 0.75rem;
+        }
+        &:last-child {
+          border-radius: 0 0 0.75rem 0;
+        }
 
-      
         .project_img {
           width: 100vw;
           display: flex;
           justify-content: center;
           align-items: center;
-          
+
           .left_photo {
             width: 100%;
-            transition: .3s;
+            transition: 0.3s;
 
             &:hover {
-              transform: scale(1.10);
+              transform: scale(1.1);
             }
           }
 
           .right_photo {
             width: 97.1%;
-            transition: .3s;
+            transition: 0.3s;
             transform: scale(1.03);
 
             &:hover {
-              transform: scale(1.10);
+              transform: scale(1.1);
             }
           }
         }
