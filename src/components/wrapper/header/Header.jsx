@@ -48,6 +48,9 @@ export const Header = () => {
           <NavLink to="/" className={`${scss.link}`} style={activeLink}>
             Home
           </NavLink>
+          <NavLink to="/blog" className={`${scss.link}`} style={activeLink}>
+            Blog
+          </NavLink>
           <NavLink to="/contacts" className={`${scss.link}`} style={activeLink}>
             Contact
           </NavLink>

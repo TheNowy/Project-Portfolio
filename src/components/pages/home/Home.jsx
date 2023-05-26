@@ -39,7 +39,7 @@ const home = () => {
               <div className="box_title">
                 <div className="photo">
                   <img
-                    src="https://wallpaperaccess.com/full/1802097.jpg"
+                    src="https://media.tenor.com/SSY2V0RrU3IAAAAd/rick-roll-rick-rolled.gif"
                     alt=""
                   />
                 </div>
