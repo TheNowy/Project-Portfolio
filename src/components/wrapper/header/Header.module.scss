@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik:500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Rubik:200,300,400,500,600,700,800,900);
 
 .beta {
   margin-bottom: 3rem;
@@ -52,7 +52,7 @@
 
   .logo {
     color: rgb(0, 0, 0);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 25px;
     padding: 5px 10px;
     font-family: "Rubik", sans-serif;
@@ -81,6 +81,8 @@
       border-radius: 5px;
       padding: 10px 10px;
       transition: 0.2s;
+      font-weight: 400;
+      font-family: 'Rubik', sans-serif;
 
       &:hover {
         width: 5rem;
@@ -100,7 +102,7 @@
       color: rgb(0, 0, 0);
       border-radius: 5px;
       font-family: "Rubik", sans-serif;
-      font-weight: 500;
+      font-weight: 400;
       transition: 0.3s;
 
       &:hover {
@@ -119,7 +121,7 @@
 
       border-radius: 5px;
       font-family: "Rubik", sans-serif;
-      font-weight: 700;
+      font-weight: 300;
       color: white;
       margin-left: 50px;
       transition: 0.5s;
