@@ -239,6 +239,13 @@
           .box_project {
             width: 80vw;
             flex-direction: column;
+
+            &:first-child {
+              border-radius: 0;
+            }
+            &:last-child {
+              border-radius: 0;
+            }
             .project_img {
               width: 80vw;
               display: flex;
