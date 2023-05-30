@@ -10,7 +10,9 @@ export const Main = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/contact" element={<Contacts />} />
         <Route path="/Blog" element={<Blog />} />
 
         <Route path="*" element={<NotFound />} />
