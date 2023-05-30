@@ -9,7 +9,7 @@ const Blog = () => {
         <div className={scss.home_content}>
           <div className={scss.blog_title}>
             <div className={scss.title}>
-              <h3>Jhusup Toktosunov | Personal Blog</h3>
+              <h3>Zhusup Toktosunov | Personal Blog</h3>
               <p>
                 Welcome to my personal blog. Here I share my stories and ideas
                 with the world. I am very passionate about programming and
@@ -26,7 +26,7 @@ const Blog = () => {
 
           <div className={scss.blog_img}>
             <img
-              src="https://wallpaperaccess.com/full/2161353.jpg"
+              src="https://s.abcnews.com/images/Business/elon-musk-file-gty-jef-220711_1657563938913_hpMain_4x3_992.jpg"
               alt="Logo"
             />
           </div>

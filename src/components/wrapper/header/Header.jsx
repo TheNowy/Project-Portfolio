@@ -42,7 +42,7 @@ export const Header = () => {
           headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
         }>
         <NavLink to="/" className={scss.logo}>
-          Jhusup<span>.</span>
+          Zhusup<span>.</span>
         </NavLink>
         <div className={scss.header_wrap}>
           <NavLink to="/" className={`${scss.link}`} style={activeLink}>

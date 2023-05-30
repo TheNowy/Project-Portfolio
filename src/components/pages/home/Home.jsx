@@ -12,7 +12,7 @@ const home = () => {
 
             <div className="home_title">
               <h3>
-                Hi! I Am Toktosunov Jhusup <span className="span2">(Nowy)</span>{" "}
+                Hi! I Am Toktosunovhusup <span className="span2">(Nowy)</span>{" "}
                 <span className="fullstack">
                   <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
                     FullStack
@@ -38,7 +38,7 @@ const home = () => {
               <div className="box_title">
                 <div className="photo">
                   <img
-                    src="https://media.tenor.com/SSY2V0RrU3IAAAAd/rick-roll-rick-rolled.gif"
+                    src="https://i.pinimg.com/originals/8b/90/3e/8b903e622251c9a3b959cb28ffdb86c1.jpg"
                     alt=""
                   />
                 </div>

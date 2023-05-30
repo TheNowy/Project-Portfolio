@@ -58,6 +58,11 @@
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
 
+    &:hover {
+      background-color: rgb(236, 236, 236);
+      border-radius: 7px;
+    }
+
     span {
       color: blue;
     }
