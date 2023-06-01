@@ -18,7 +18,6 @@
       align-items: center;
       justify-content: center;
       background-color: rgb(255, 255, 255);
-
       min-height: 45vh;
 
       .projects_carus {
@@ -125,7 +124,6 @@
       width: 100vw;
       max-width: 100%;
       display: flex;
-
       justify-content: center;
       align-items: center;
 
@@ -194,7 +192,6 @@
       width: 100vw;
       max-width: 100%;
       display: flex;
-
       justify-content: center;
       align-items: center;
       transition: 0.3s;
@@ -246,6 +243,7 @@
     }
   }
 }
+
 @media (max-width: 1365px) {
   .page_wrapper {
     .container {
@@ -261,6 +259,7 @@
     }
   }
 }
+
 @media (max-width: 1280px) {
   .page_wrapper {
     .container {
@@ -269,21 +268,13 @@
           .carus_main {
             &::before {
               left: 6rem;
-              background: linear-gradient(
-                to right,
-                #ffffff 0%,
-                transparent 100%
-              );
+              background: linear-gradient(to right, #ffffff 0%, transparent 100%);
             }
             &::after {
               right: 6rem;
-              background: linear-gradient(
-                to left,
-                #ffffff 0%,
-                transparent 100%
-              );
+              background: linear-gradient(to left, #ffffff 0%, transparent 100%);
             }
-            .Title_Animation {
+            .Title_Anim {
               font-size: 1rem;
             }
           }
@@ -292,6 +283,7 @@
     }
   }
 }
+
 @media (max-width: 1100px) {
   .page_wrapper {
     .container {
@@ -352,6 +344,7 @@
     }
   }
 }
+
 @media (max-width: 960px) {
   .page_wrapper {
     .container {
@@ -360,19 +353,11 @@
           .carus_main {
             &::before {
               left: 4rem;
-              background: linear-gradient(
-                to right,
-                #ffffff 0%,
-                transparent 100%
-              );
+              background: linear-gradient(to right, #ffffff 0%, transparent 100%);
             }
             &::after {
               right: 4rem;
-              background: linear-gradient(
-                to left,
-                #ffffff 0%,
-                transparent 100%
-              );
+              background: linear-gradient(to left, #ffffff 0%, transparent 100%);
             }
             .Title_Anim {
               font-size: 3rem;
@@ -384,6 +369,7 @@
     }
   }
 }
+
 @media (max-width: 754px) {
   .page_wrapper {
     .container {
