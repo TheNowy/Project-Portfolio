@@ -14,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.4.0",
+    "framer-motion": "^10.12.16",
     "iconify": "^1.4.0",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.5.2",
@@ -21,6 +22,7 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.1",
     "react-simple-typewriter": "^5.0.1",
+    "react-transition-group": "^4.4.5",
     "react-typical": "^0.1.3",
     "sass": "^1.62.0"
   },

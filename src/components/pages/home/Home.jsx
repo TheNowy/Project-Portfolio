@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import "./home.scss";
+import "./Home.scss";
 
 const home = () => {
   return (
@@ -76,6 +76,16 @@ const home = () => {
                 </div>
               </div>
             </div>
+            <div className="projects_carus">
+                <div className="carus_main">
+                  <h1 className="Title_Anim">Projects</h1>
+                  <h1 className="Title_Anim">Projects</h1>
+                  <h1 className="Title_Anim">Projects</h1>
+                  <h1 className="Title_Anim">Projects</h1>
+                  <h1 className="Title_Anim">Projects</h1>
+                  <h1 className="Title_Anim">Projects</h1>
+                </div>
+            </div>
             <div className="box_container">
               <div className="box_title">
                 <div className="title">
@@ -100,14 +110,20 @@ const home = () => {
             <div className="project_container">
               <div className="box_project">
                 <div className="project_img">
-                  <img className="left_photo" src="https://cdn.dribbble.com/users/1346196/screenshots/6176280/attachments/1324203/web_mockup.png" alt="" />
-
+                  <img
+                    className="left_photo"
+                    src="https://cdn.dribbble.com/users/1346196/screenshots/6176280/attachments/1324203/web_mockup.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <div className="box_project">
                 <div className="project_img">
-                  <img className="right_photo" src="https://assets.justinmind.com/wp-content/uploads/2020/08/travel-ecommerce-app-mockup.png" alt="" />
-                  
+                  <img
+                    className="right_photo"
+                    src="https://assets.justinmind.com/wp-content/uploads/2020/08/travel-ecommerce-app-mockup.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>

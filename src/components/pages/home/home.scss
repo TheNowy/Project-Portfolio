@@ -1,5 +1,6 @@
-*{
-  transition: .3s;
+* {
+  transition: 0.3s;
+  box-sizing: border-box;
 }
 
 .page_wrapper {
@@ -14,11 +15,68 @@
       margin-left: auto;
       margin-right: auto;
       display: flex;
-      align-items: start;
+      align-items: center;
       justify-content: center;
       background-color: rgb(255, 255, 255);
 
       min-height: 45vh;
+
+      .projects_carus {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .carus_main {
+          padding: 0 15px;
+          width: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 10rem;
+            height: 100%;
+            z-index: 20;
+          }
+
+          &::before {
+            left: 8rem;
+            background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+          }
+
+          &::after {
+            right: 8rem;
+            background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+          }
+
+          .Title_Anim {
+            padding: 0 20px;
+            color: transparent;
+            -webkit-text-stroke: 2px #4d01ff;
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            flex-shrink: 0;
+            animation: animation 6s linear infinite;
+
+            @keyframes animation {
+              from {
+                transform: translateX(0);
+              }
+              to {
+                transform: translate3d(-100%, 0, 0);
+              }
+            }
+          }
+        }
+      }
 
       .home_title {
         width: 100%;
@@ -67,13 +125,11 @@
 
       justify-content: center;
       align-items: center;
-      
 
       &:nth-child(4) {
         .box_title {
           margin: 1rem;
           border-radius: 15px 15px 0 0;
-
 
           &:hover {
             img {
@@ -202,6 +258,37 @@
     }
   }
 }
+@media (max-width: 1280px) {
+  .page_wrapper {
+    .container {
+      .home_content {
+        .projects_carus {
+          .carus_main {
+            &::before {
+              left: 6rem;
+              background: linear-gradient(
+                to right,
+                #ffffff 0%,
+                transparent 100%
+              );
+            }
+            &::after {
+              right: 6rem;
+              background: linear-gradient(
+                to left,
+                #ffffff 0%,
+                transparent 100%
+              );
+            }
+            .Title_Animation {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1100px) {
   .page_wrapper {
     .container {
@@ -262,6 +349,38 @@
     }
   }
 }
+@media (max-width: 960px) {
+  .page_wrapper {
+    .container {
+      .home_content {
+        .projects_carus {
+          .carus_main {
+            &::before {
+              left: 4rem;
+              background: linear-gradient(
+                to right,
+                #ffffff 0%,
+                transparent 100%
+              );
+            }
+            &::after {
+              right: 4rem;
+              background: linear-gradient(
+                to left,
+                #ffffff 0%,
+                transparent 100%
+              );
+            }
+            .Title_Anim {
+              font-size: 3rem;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 754px) {
   .page_wrapper {
     .container {
@@ -273,6 +392,29 @@
 
             .fullstack {
               display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .page_wrapper {
+    .container {
+      .home_content {
+        .projects_carus {
+          .carus_main {
+            &::before {
+              background: none;
+            }
+            &::after {
+              background: none;
+            }
+            .Title_Anim {
+              font-size: 2rem;
+              font-weight: 800;
             }
           }
         }
