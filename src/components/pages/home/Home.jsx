@@ -1,26 +1,26 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import "./Home.scss";
+import scss from "./Home.module.scss";
 
 const home = () => {
   return (
     <>
-      <div className="page_wrapper">
-        <div className="container">
-          <div className="home_content">
-            <div className="home_image"></div>
+      <div className={scss.page_wrapper}>
+        <div className={scss.container}>
+          <div className={scss.home_content}>
+            <div className={scss.home_image}></div>
 
-            <div className="home_title">
+            <div className={scss.home_title}>
               <h3>
                 Hi! I Am Toktosunov Zhusup <span className="span2">(Nowy)</span>{" "}
-                <span className="fullstack">
+                <span className={scss.fullstack}>
                   <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
                     FullStack
                   </a>
                 </span>
                 <br />
                 And I
-                <span className="text_animation">
+                <span className={scss.text_animation}>
                   <Typewriter
                     words={[" develop", " design", " create"]}
                     loop={true}
@@ -34,15 +34,15 @@ const home = () => {
                 user-friendly products.
               </h3>
             </div>
-            <div className="box_container">
-              <div className="box_title">
-                <div className="photo">
+            <div className={scss.box_container}>
+              <div className={scss.box_title}>
+                <div className={scss.photo}>
                   <img
                     src="https://i.pinimg.com/originals/8b/90/3e/8b903e622251c9a3b959cb28ffdb86c1.jpg"
                     alt=""
                   />
                 </div>
-                <div className="title">
+                <div className={scss.title}>
                   <h3>About Me</h3>
                   <p>
                     16 years old, Passionate and dedicated
@@ -76,19 +76,19 @@ const home = () => {
                 </div>
               </div>
             </div>
-            <div className="projects_carus">
-              <div className="carus_main">
-                <h1 className="Title_Anim">Projects</h1>
-                <h1 className="Title_Anim">Projects</h1>
-                <h1 className="Title_Anim">Projects</h1>
-                <h1 className="Title_Anim">Projects</h1>
-                <h1 className="Title_Anim">Projects</h1>
-                <h1 className="Title_Anim">Projects</h1>
+            <div className={scss.projects_carus}>
+              <div className={scss.carus_main}>
+              <h1 className={scss.Title_Anim}>Projects</h1>
+              <h1 className={scss.Title_Anim}>Projects</h1>
+              <h1 className={scss.Title_Anim}>Projects</h1>
+              <h1 className={scss.Title_Anim}>Projects</h1>
+              <h1 className={scss.Title_Anim}>Projects</h1>
+              <h1 className={scss.Title_Anim}>Projects</h1>
               </div>
             </div>
-            <div className="box_container">
-              <div className="box_title">
-                <div className="title">
+            <div className={scss.box_container}>
+              <div className={scss.box_title}>
+                <div className={scss.title}>
                   <h3>Projects</h3>
                   <p>
                     I develop the user interface, Web page development, I create
@@ -99,7 +99,7 @@ const home = () => {
                     <br />
                   </p>
                 </div>
-                <div className="photo">
+                <div className={scss.photo}>
                   <img
                     src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kac1/3ce5VQwcL"
                     alt=""
@@ -107,20 +107,20 @@ const home = () => {
                 </div>
               </div>
             </div>
-            <div className="project_container">
-              <div className="box_project">
-                <div className="project_img">
+            <div className={scss.project_container}>
+              <div className={scss.box_project}>
+                <div className={scss.project_img}>
                   <img
-                    className="left_photo"
+                    className={scss.left_photo}
                     src="https://cdn.dribbble.com/users/1346196/screenshots/6176280/attachments/1324203/web_mockup.png"
                     alt=""
                   />
                 </div>
               </div>
-              <div className="box_project">
-                <div className="project_img">
+              <div className={scss.box_project}>
+                <div className={scss.project_img}>
                   <img
-                    className="right_photo"
+                    className={scss.right_photo}
                     src="https://assets.justinmind.com/wp-content/uploads/2020/08/travel-ecommerce-app-mockup.png"
                     alt=""
                   />
