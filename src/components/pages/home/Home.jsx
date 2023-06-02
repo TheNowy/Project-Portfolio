@@ -34,7 +34,7 @@ const home = () => {
                 user-friendly products.
               </h3>
             </div>
-            <div className="box_container">
+            <div className="box_container"> 
               <div className="box_title">
                 <div className="photo">
                   <img
