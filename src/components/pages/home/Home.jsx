@@ -17,7 +17,7 @@ const home = () => {
                   <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
                     FullStack
                   </a>
-                </span>{" "}
+                </span>
                 <br />
                 And I
                 <span className="text_animation">
@@ -45,7 +45,7 @@ const home = () => {
                 <div className="title">
                   <h3>About Me</h3>
                   <p>
-                    16 years old, Passionate and dedicated{" "}
+                    16 years old, Passionate and dedicated
                     <span>Full Stack Developer</span> <br />
                   </p>
                   <p>
@@ -58,7 +58,7 @@ const home = () => {
                     ,and <span>SCSS</span>.<br />
                   </p>
                   <p>
-                    A collaborative team player with excellent{" "}
+                    A collaborative team player with excellent
                     <span>Soft Skills</span>, <br />
                   </p>
                   <p>
@@ -70,7 +70,7 @@ const home = () => {
                   </p>
                   <p>
                     Seeking opportunities to contribute effectively to
-                    development projects and grow as a{" "}
+                    development projects and grow as a
                     <span>Full Stack Developer</span>
                   </p>
                 </div>
@@ -91,11 +91,11 @@ const home = () => {
                 <div className="title">
                   <h3>Projects</h3>
                   <p>
-                    I develop the user interface, Web page development, I create{" "}
+                    I develop the user interface, Web page development, I create
                     <span>UX element interactions</span>, <br />
                   </p>
                   <p>
-                    <span>Design and mockups</span> of products for companies.{" "}
+                    <span>Design and mockups</span> of products for companies.
                     <br />
                   </p>
                 </div>
