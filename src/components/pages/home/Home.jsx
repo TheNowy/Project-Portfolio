@@ -34,7 +34,7 @@ const home = () => {
                 user-friendly products.
               </h3>
             </div>
-            <div className="box_container"> 
+            <div className="box_container">
               <div className="box_title">
                 <div className="photo">
                   <img
@@ -77,14 +77,14 @@ const home = () => {
               </div>
             </div>
             <div className="projects_carus">
-                <div className="carus_main">
-                  <h1 className="Title_Anim">Projects</h1>
-                  <h1 className="Title_Anim">Projects</h1>
-                  <h1 className="Title_Anim">Projects</h1>
-                  <h1 className="Title_Anim">Projects</h1>
-                  <h1 className="Title_Anim">Projects</h1>
-                  <h1 className="Title_Anim">Projects</h1>
-                </div>
+              <div className="carus_main">
+                <h1 className="Title_Anim">Projects</h1>
+                <h1 className="Title_Anim">Projects</h1>
+                <h1 className="Title_Anim">Projects</h1>
+                <h1 className="Title_Anim">Projects</h1>
+                <h1 className="Title_Anim">Projects</h1>
+                <h1 className="Title_Anim">Projects</h1>
+              </div>
             </div>
             <div className="box_container">
               <div className="box_title">
@@ -128,7 +128,7 @@ const home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </>
   );
