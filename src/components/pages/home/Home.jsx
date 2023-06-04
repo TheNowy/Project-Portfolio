@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import scss from "./Home.module.scss";
 
-const home = () => {
+const Home = () => {
+  const [headerScroll, setHeaderScroll] = useState(false);
+
+  useEffect(() => {
+    const changeBackground = () => {
+      if (typeof window !== "undefined" && window.scrollY >= 10) {
+        setHeaderScroll(true);
+      } else {
+        setHeaderScroll(false);
+      }
+    };
+
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
+
   return (
     <>
       <div className={scss.page_wrapper}>
@@ -10,8 +29,8 @@ const home = () => {
           <div className={scss.home_content}>
             <div className={scss.home_image}></div>
 
-            <div className={scss.home_title}>
-              <h3>
+            <div className={`${scss.home_title} ${headerScroll ? scss.active : ""}`}>
+              <h3 className={`${scss.h3} ${headerScroll ? scss.active : ""}`}>
                 Hi! I Am Toktosunov Zhusup <span className="span2">(Nowy)</span>{" "}
                 <span className={scss.fullstack}>
                   <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
@@ -78,12 +97,12 @@ const home = () => {
             </div>
             <div className={scss.projects_carus}>
               <div className={scss.carus_main}>
-              <h1 className={scss.Title_Anim}>Projects</h1>
-              <h1 className={scss.Title_Anim}>Projects</h1>
-              <h1 className={scss.Title_Anim}>Projects</h1>
-              <h1 className={scss.Title_Anim}>Projects</h1>
-              <h1 className={scss.Title_Anim}>Projects</h1>
-              <h1 className={scss.Title_Anim}>Projects</h1>
+                <h1 className={scss.Title_Anim}>Projects</h1>
+                <h1 className={scss.Title_Anim}>Projects</h1>
+                <h1 className={scss.Title_Anim}>Projects</h1>
+                <h1 className={scss.Title_Anim}>Projects</h1>
+                <h1 className={scss.Title_Anim}>Projects</h1>
+                <h1 className={scss.Title_Anim}>Projects</h1>
               </div>
             </div>
             <div className={scss.box_container}>
@@ -128,10 +147,10 @@ const home = () => {
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </>
   );
 };
 
-export default home;
+export default Home;

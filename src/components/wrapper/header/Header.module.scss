@@ -23,7 +23,6 @@
   }
 }
 
-
 .header {
   margin-bottom: 3rem;
   position: fixed;
@@ -48,7 +47,6 @@
     padding: 20px 1% 20px 1%;
     border-bottom: solid 2px blue;
   }
-  
 
   .logo {
     color: rgb(0, 0, 0);
@@ -57,6 +55,10 @@
     padding: 5px 10px;
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
+
+    &.activeLinks {
+      color: white;
+    }
 
     &:hover {
       background-color: rgb(236, 236, 236);
@@ -82,7 +84,7 @@
       padding: 10px 10px;
       transition: 0.2s;
       font-weight: 400;
-      font-family: 'Rubik', sans-serif;
+      font-family: "Rubik", sans-serif;
 
       &:hover {
         width: 5rem;
@@ -105,9 +107,13 @@
       font-weight: 400;
       transition: 0.3s;
 
+      &.activeLinks {
+        color: white;
+      }
+
       &:hover {
         background-color: rgba(209, 209, 209, 0.221);
-        color:#4d01ff;
+        color: #4d01ff;
       }
     }
     .resume {
@@ -182,16 +188,16 @@
     position: fixed;
     left: 0;
     top: 1.1rem;
-  
+
     width: 100%;
     padding: 20px 10%;
-  
+
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: none;
-  
+
     &.active {
       width: 100%;
       background-color: rgb(255, 255, 255);

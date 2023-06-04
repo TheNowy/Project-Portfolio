@@ -5,6 +5,7 @@ import QuickDrop from "../../wrapper/header/QuickMenu/Quick";
 import scss from "./Header.module.scss";
 
 export const Header = () => {
+  const [headerScroll3, setHeaderScroll3] = useState(false);
   const [headerScroll, setHeaderScroll] = useState(false);
   const [openProfile, closeProfile] = useState(false);
   const [openProfile2, closeProfile2] = useState(false);
@@ -32,6 +33,25 @@ export const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const changeBackground = () => {
+      if (typeof window !== "undefined") {
+        if (window.scrollY >= 0 && window.scrollY < 10) {
+          setHeaderScroll3(true);
+        } else if (window.scrollY >= 10) {
+          setHeaderScroll3(false);
+        }
+      }
+    };
+
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
+
   return (
     <nav className={scss.nav}>
       <header className={scss.beta}>
@@ -41,20 +61,47 @@ export const Header = () => {
         className={
           headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
         }>
-        <NavLink to="/" className={scss.logo}>
+        <NavLink
+          to="/"
+          className={
+            headerScroll3 ? `${scss.logo} ${scss.activeLinks}` : `${scss.logo}`
+          }>
           Zhusup<span>.</span>
         </NavLink>
         <div className={scss.header_wrap}>
-          <NavLink to="/" className={`${scss.link}`} style={activeLink}>
+          <NavLink
+            to="/"
+            className={
+              headerScroll3
+                ? `${scss.link} ${scss.activeLinks}`
+                : `${scss.link}`
+            }
+            style={activeLink}>
             Home
           </NavLink>
-          <NavLink to="/blog" className={`${scss.link}`} style={activeLink}>
+          <NavLink
+            to="/blog"
+            className={
+              headerScroll3
+                ? `${scss.link} ${scss.activeLinks}`
+                : `${scss.link}`
+            }
+            style={activeLink}>
             Blog
           </NavLink>
-          <NavLink to="/contacts" className={`${scss.link}`} style={activeLink}>
+          <NavLink
+            to="/contacts"
+            className={
+              headerScroll3
+                ? `${scss.link} ${scss.activeLinks}`
+                : `${scss.link}`
+            }
+            style={activeLink}>
             Contact
           </NavLink>
-          <NavLink className={`${scss.resume}`} onClick={() => closeProfile2((prev) => !prev)}>
+          <NavLink
+            className={`${scss.resume}`}
+            onClick={() => closeProfile2((prev) => !prev)}>
             Resume
           </NavLink>
           <NavLink
