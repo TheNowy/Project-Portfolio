@@ -86,7 +86,7 @@
 
         &.active {
           padding: 14% 0;
-          transition: 1s ease;
+          transition: .5s ease;
           background-color: #fff;
         }
         .h3 {
@@ -133,6 +133,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: black;
+      transition: 1s ease;
+
+
+      &.active {
+        transition: .5s ease;
+        background-color: #fff;
+      }
 
       &:nth-child(5) {
         .box_title {
@@ -456,6 +464,14 @@
               &.active {
                 color: rgb(0, 0, 0);
               }
+            }
+          }
+          .box_container {
+            background-color: rgb(255, 255, 255);
+      
+      
+            &.active {
+              background-color: #fff;
             }
           }
         }

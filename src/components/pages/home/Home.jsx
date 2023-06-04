@@ -53,7 +53,7 @@ const Home = () => {
                 user-friendly products.
               </h3>
             </div>
-            <div className={scss.box_container}>
+            <div className={`${scss.box_container} ${headerScroll ? scss.active : ""}`}>
               <div className={scss.box_title}>
                 <div className={scss.photo}>
                   <img
@@ -105,7 +105,7 @@ const Home = () => {
                 <h1 className={scss.Title_Anim}>Projects</h1>
               </div>
             </div>
-            <div className={scss.box_container}>
+            <div className={`${scss.box_container} ${headerScroll ? scss.active : ""}`}>
               <div className={scss.box_title}>
                 <div className={scss.title}>
                   <h3>Projects</h3>
