@@ -434,3 +434,31 @@
     }
   }
 }
+@media (max-width: 500px) {
+  .page_wrapper {
+    .container {
+      .home_content {
+          .home_title {
+            width: 100%;
+            padding: 40% 0 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+
+            &.active {
+              padding: 40% 0 20%;
+              background-color: #fff;
+            }
+            .h3 {
+              color: rgb(0, 0, 0);
+
+              &.active {
+                color: rgb(0, 0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
