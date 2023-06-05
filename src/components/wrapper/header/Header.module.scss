@@ -59,6 +59,10 @@
     &.activeLinks {
       color: white;
     }
+    &.activeLinks:hover {
+      background-color: rgb(54, 54, 54);
+      border-radius: 7px;
+    }
 
     &:hover {
       background-color: rgb(236, 236, 236);
