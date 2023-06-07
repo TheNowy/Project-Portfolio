@@ -54,9 +54,9 @@ export const Header = () => {
 
   return (
     <nav className={scss.nav}>
-      <header className={scss.beta}>
+      {/* <header className={scss.beta}>
         <h1>Beta-Test</h1>
-      </header>
+      </header> */}
       <header
         className={
           headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`

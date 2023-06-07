@@ -11,13 +11,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
 
       min-height: 130vh;
      
 
       padding: 5rem 7rem;
 
+      &.active {
+        background-color: #fff;
+      }
       .gif_image {
         margin-right: 50px;
         border-radius: 13px;
@@ -25,7 +28,7 @@
         max-width: 2000px;
         padding: 18.4rem 13rem;
         border: solid 1px #0d1117;
-        background-image: url("https://static.wixstatic.com/media/ae9adc_b2caaa51696b4cc4b13ce7e504531a41~mv2.gif");
+        background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -34,8 +37,17 @@
         align-items: center;
         overflow: hidden;
 
-        h1 {
-          color: white;
+        &.active {
+          background-image: url(https://images.unsplash.com/photo-1627324676650-2c311d3c74b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
+        }
+
+        .h1 {
+          color: #e46300;
+          text-shadow: 0 0 10px #ffffff;
+
+          &.active {
+            color: white;
+          }
         }
       }
 
@@ -49,18 +61,26 @@
 
         padding: 2rem;
 
-        background-color: #f7f8fe;
+        background-color: #212121;
         border: solid 1px rgb(189, 189, 189);
         border-radius: 13px;
 
         gap: 3rem;
 
-        label {
-          color: rgb(4, 4, 4);
+        &.active {
+          background-color: #fff;
+        }
+
+        .label {
+          color: rgb(255, 255, 255);
           width: 100%;
           margin-bottom: 13px;
           font-weight: 100;
           font-family: sans-serif;
+
+          &.active {
+            color: black;
+          }
           .input,
           .message {
             border-radius: 9px;
@@ -132,7 +152,7 @@
             max-width: 200px;
             padding: 2rem 3.5rem;
 
-            h1 {
+            .h1 {
               font-size: 20px;
             }
           }

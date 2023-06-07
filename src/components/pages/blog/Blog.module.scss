@@ -1,5 +1,5 @@
 .page_wrapper {
-  margin-top: 4rem;
+  margin-top: 0;
   width: 100%;
   max-width: 2000px;
   margin-left: auto;
@@ -12,12 +12,21 @@
       justify-content: center;
 
       padding: 20px 12%;
+      background-color: black;
+      min-height: 80vh;
 
-      min-height: 86vh;
+      &.active {
+        background-color: #fff;
+      }
 
       .blog_title {
         .title {
           line-height: 1.3;
+          color: white;
+
+          &.active {
+            color: rgb(0, 0, 0);
+          }
 
           h3 {
             font-size: 2.5rem;
@@ -65,6 +74,18 @@
         img {
           width: 100%;
           transform: scale(1.6);
+        }
+      }
+    }
+    .home_content:last-child {
+      min-height: 60vh;
+      .blog_title {
+        .title {
+          h3 {
+            font-family: sans-serif;
+            font-size: 9rem;
+            font-weight: 700;
+          }
         }
       }
     }

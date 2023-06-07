@@ -1,14 +1,33 @@
-import React from "react";
-import scss from "./Blog.module.scss";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import scss from "./Blog.module.scss";
 
 const Blog = () => {
+  const [headerScroll, setHeaderScroll] = useState(false);
+
+  useEffect(() => {
+    const changeBackground = () => {
+      if (typeof window !== "undefined" && window.scrollY >= 10) {
+        setHeaderScroll(true);
+      } else {
+        setHeaderScroll(false);
+      }
+    };
+
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
   return (
     <div className={scss.page_wrapper}>
       <div className={scss.container}>
-        <div className={scss.home_content}>
+        <div
+          className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>
           <div className={scss.blog_title}>
-            <div className={scss.title}>
+            <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
               <h3>Zhusup Toktosunov | Personal Blog</h3>
               <p>
                 Welcome to my personal blog. Here I share my stories and ideas
@@ -29,6 +48,14 @@ const Blog = () => {
               src="https://s.abcnews.com/images/Business/elon-musk-file-gty-jef-220711_1657563938913_hpMain_4x3_992.jpg"
               alt="Logo"
             />
+          </div>
+        </div>
+        <div
+          className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>
+          <div className={scss.blog_title}>
+            <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
+              <h3>SOON</h3>
+            </div>
           </div>
         </div>
       </div>
