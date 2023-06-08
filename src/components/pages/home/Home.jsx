@@ -75,21 +75,21 @@ const Home = () => {
                 <div className={scss.title}>
                   <h3>About Me</h3>
                   <p>
-                    16 years old, Passionate and dedicated
-                    <span>Full Stack Developer</span> <br />
+                    16 years old, Passionate and dedicated 
+                    <span> Full Stack Developer</span> <br />
                   </p>
                   <p>
                     with limited experience but a strong skill set in <br />
                   </p>
                   <p>
                     <span>
-                      React, NodeJS, JavaScript, MySQL, HTML, CSS, SASS
+                      React, NodeJS, JavaScript, MySQL, HTML, CSS, SASS 
                     </span>
-                    ,and <span>SCSS</span>.<br />
+                    ,and <span> SCSS</span>.<br />
                   </p>
                   <p>
                     A collaborative team player with excellent
-                    <span>Soft Skills</span>, <br />
+                    <span> Soft Skills</span>, <br />
                   </p>
                   <p>
                     I excel in communication and problem-solving. <br />
@@ -101,7 +101,7 @@ const Home = () => {
                   <p>
                     Seeking opportunities to contribute effectively to
                     development projects and grow as a
-                    <span>Full Stack Developer</span>
+                    <span> Full Stack Developer</span>
                   </p>
                 </div>
               </div>
@@ -124,8 +124,8 @@ const Home = () => {
                 <div className={scss.title}>
                   <h3>Projects</h3>
                   <p>
-                    I develop the user interface, Web page development, I create
-                    <span>UX element interactions</span>, <br />
+                    I develop the user interface, Web page development, I create <br />
+                    <span> UX element interactions</span>, <br />
                   </p>
                   <p>
                     <span>Design and mockups</span> of products for companies.
