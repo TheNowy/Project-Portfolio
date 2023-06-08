@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { Helmet } from "react-helmet";
+
 import scss from "./Home.module.scss";
 
 const Home = () => {
@@ -24,12 +26,18 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Nowy - Portfolio</title>
+      </Helmet>
       <div className={scss.page_wrapper}>
         <div className={scss.container}>
           <div className={scss.home_content}>
             <div className={scss.home_image}></div>
 
-            <div className={`${scss.home_title} ${headerScroll ? scss.active : ""}`}>
+            <div
+              className={`${scss.home_title} ${
+                headerScroll ? scss.active : ""
+              }`}>
               <h3 className={`${scss.h3} ${headerScroll ? scss.active : ""}`}>
                 Hi! I Am Toktosunov Zhusup <span className="span2">(Nowy)</span>{" "}
                 <span className={scss.fullstack}>
@@ -53,7 +61,10 @@ const Home = () => {
                 user-friendly products.
               </h3>
             </div>
-            <div className={`${scss.box_container} ${headerScroll ? scss.active : ""}`}>
+            <div
+              className={`${scss.box_container} ${
+                headerScroll ? scss.active : ""
+              }`}>
               <div className={scss.box_title}>
                 <div className={scss.photo}>
                   <img
@@ -105,7 +116,10 @@ const Home = () => {
                 <h1 className={scss.Title_Anim}>Projects</h1>
               </div>
             </div>
-            <div className={`${scss.box_container} ${headerScroll ? scss.active : ""}`}>
+            <div
+              className={`${scss.box_container} ${
+                headerScroll ? scss.active : ""
+              }`}>
               <div className={scss.box_title}>
                 <div className={scss.title}>
                   <h3>Projects</h3>

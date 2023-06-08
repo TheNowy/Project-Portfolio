@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import scss from "./Conctacts.module.scss";
+import { Helmet } from "react-helmet";
 
 const Contacts = () => {
   const handleSubmit = () => {};
@@ -24,20 +25,35 @@ const Contacts = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Nowy - Contacts</title>
+      </Helmet>
       <div className={scss.page_wrapper}>
         <div className={scss.container}>
-          <div className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>
-          <div className={`${scss.gif_image} ${headerScroll ? scss.active : ""}`}>
-          <h1 className={`${scss.h1} ${headerScroll ? scss.active : ""}`}>
+          <div
+            className={`${scss.home_content} ${
+              headerScroll ? scss.active : ""
+            }`}>
+            <div
+              className={`${scss.gif_image} ${
+                headerScroll ? scss.active : ""
+              }`}>
+              <h1 className={`${scss.h1} ${headerScroll ? scss.active : ""}`}>
                 Contact Me
               </h1>
             </div>
-            <form className={`${scss.form} ${headerScroll ? scss.active : ""}`} onSubmit={handleSubmit}>
-              <label className = {`${scss.label} ${headerScroll ? scss.active : ""}`} htmlFor="name">
+            <form
+              className={`${scss.form} ${headerScroll ? scss.active : ""}`}
+              onSubmit={handleSubmit}>
+              <label
+                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                htmlFor="name">
                 Name
                 <input id="name" className={scss.input} type="text" required />
               </label>
-              <label className = {`${scss.label} ${headerScroll ? scss.active : ""}`} htmlFor="email">
+              <label
+                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                htmlFor="email">
                 Email
                 <input
                   id="email"
@@ -46,7 +62,9 @@ const Contacts = () => {
                   required
                 />
               </label>
-              <label className = {`${scss.label} ${headerScroll ? scss.active : ""}`} htmlFor="comment">
+              <label
+                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                htmlFor="comment">
                 Message
                 <textarea
                   id="comment"

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import scss from "./Blog.module.scss";
 
 const Blog = () => {
@@ -23,6 +24,9 @@ const Blog = () => {
   }, []);
   return (
     <div className={scss.page_wrapper}>
+      <Helmet>
+        <title>Nowy - Blog</title>
+      </Helmet>
       <div className={scss.container}>
         <div
           className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>

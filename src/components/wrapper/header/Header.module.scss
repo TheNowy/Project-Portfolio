@@ -85,15 +85,12 @@
       color: rgb(255, 255, 255);
       border-radius: 5px;
       padding: 10px 10px;
-      transition: 0.2s;
+      transition: 0.5s;
       font-weight: 400;
       font-family: "Rubik", sans-serif;
 
       &:hover {
-        width: 5rem;
-        background-color: rgb(255, 255, 255);
-        border: solid 1px blue;
-        color: blue;
+        background-color: rgb(3, 3, 96);
       }
     }
     .link {
