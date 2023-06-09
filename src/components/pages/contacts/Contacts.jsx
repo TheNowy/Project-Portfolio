@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import scss from "./Conctacts.module.scss";
 import { Helmet } from "react-helmet";
 
 const Contacts = () => {
-  const handleSubmit = () => {};
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [headerScroll, setHeaderScroll] = useState(false);
 
   useEffect(() => {
@@ -23,6 +26,23 @@ const Contacts = () => {
     };
   }, []);
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("/api/messages", {
+        username,
+        email,
+        message,
+      });
+      console.log("Сообщение успешно отправлено");
+      setUsername("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error("Ошибка при отправке сообщения", error);
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -33,43 +53,61 @@ const Contacts = () => {
           <div
             className={`${scss.home_content} ${
               headerScroll ? scss.active : ""
-            }`}>
+            }`}
+          >
             <div
               className={`${scss.gif_image} ${
                 headerScroll ? scss.active : ""
-              }`}>
+              }`}
+            >
               <h1 className={`${scss.h1} ${headerScroll ? scss.active : ""}`}>
                 Contact Me
               </h1>
             </div>
             <form
               className={`${scss.form} ${headerScroll ? scss.active : ""}`}
-              onSubmit={handleSubmit}>
+              onSubmit={handleSubmit}
+            >
               <label
                 className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="name">
+                htmlFor="name"
+              >
                 Name
-                <input id="name" className={scss.input} type="text" required />
-              </label>
-              <label
-                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="email">
-                Email
                 <input
-                  id="email"
+                  id="name"
                   className={scss.input}
-                  type="email"
+                  type="text"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                   required
                 />
               </label>
               <label
                 className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="comment">
+                htmlFor="email"
+              >
+                Email
+                <input
+                  id="email"
+                  className={scss.input}
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </label>
+              <label
+                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                htmlFor="comment"
+              >
                 Message
                 <textarea
                   id="comment"
                   className={scss.message}
-                  required></textarea>
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                ></textarea>
               </label>
 
               <button type="submit" className={scss.button}>
