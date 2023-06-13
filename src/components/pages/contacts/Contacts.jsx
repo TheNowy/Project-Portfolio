@@ -75,7 +75,7 @@ const Contacts = () => {
                 Name
                 <input
                   id="name"
-                  className={scss.input}
+                  className={`${scss.input} ${headerScroll ? scss.active : ""}`}
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
@@ -89,7 +89,7 @@ const Contacts = () => {
                 Email
                 <input
                   id="email"
-                  className={scss.input}
+                  className={`${scss.input} ${headerScroll ? scss.active : ""}`}
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -103,7 +103,7 @@ const Contacts = () => {
                 Message
                 <textarea
                   id="comment"
-                  className={scss.message}
+                  className={`${scss.message} ${headerScroll ? scss.active : ""}`}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
