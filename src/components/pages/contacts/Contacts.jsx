@@ -27,7 +27,7 @@ const Contacts = () => {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     try {
       await axios.post("http://localhost:5000/api/messages", {
         username,
