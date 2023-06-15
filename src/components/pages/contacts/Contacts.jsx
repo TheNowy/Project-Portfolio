@@ -8,6 +8,7 @@ const Contacts = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [headerScroll, setHeaderScroll] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
 
   useEffect(() => {
     const changeBackground = () => {
@@ -27,21 +28,29 @@ const Contacts = () => {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     try {
       await axios.post("http://localhost:5000/api/messages", {
         username,
         email,
         message,
       });
-      console.log("Сообщение успешно отправлено");
+      setAlertMessage("Сообщение успешно отправлено , ожидайте ответа в течении дня");
       setUsername("");
       setEmail("");
       setMessage("");
     } catch (error) {
-      console.error("Ошибка при отправке сообщения", error);
+      console.error("Ошибка при отправке сообщения, вероятно сервера выключены или находятся в разработке", error);
+      setAlertMessage("Ошибка при отправке сообщения");
     }
   };
+
+  useEffect(() => {
+    if (alertMessage) {
+      alert(alertMessage);
+      setAlertMessage("");
+    }
+  }, [alertMessage]);
 
   return (
     <>
