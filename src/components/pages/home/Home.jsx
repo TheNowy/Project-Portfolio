@@ -72,7 +72,7 @@ const Home = () => {
                     alt=""
                   />
                 </div>
-                <div className={scss.title}>
+                <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
                   <h3>About Me</h3>
                   <p>
                     16 years old, Passionate and dedicated 
@@ -106,7 +106,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={scss.projects_carus}>
+            <div className={`${scss.projects_carus} ${headerScroll ? scss.active : ""}`}>
               <div className={scss.carus_main}>
                 <h1 className={scss.Title_Anim}>Projects</h1>
                 <h1 className={scss.Title_Anim}>Projects</h1>
