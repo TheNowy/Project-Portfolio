@@ -121,7 +121,7 @@ const Home = () => {
                 headerScroll ? scss.active : ""
               }`}>
               <div className={scss.box_title}>
-                <div className={scss.title}>
+              <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
                   <h3>Projects</h3>
                   <p>
                     I develop the user interface, Web page development, I create <br />
