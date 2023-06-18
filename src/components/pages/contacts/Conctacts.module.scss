@@ -27,27 +27,26 @@
         max-width: 2000px;
         padding: 18.4rem 13rem;
         border: solid 1px #0d1117;
-        background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
-        background-position: center;
+        background-image: url("https://images.unsplash.com/photo-1535332371349-a5d229f49cb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmlnaHQlMjBtb29ufGVufDB8fDB8fHww&w=1000&q=80");
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        transition: .1s;
+        transition: 0.1s;
 
         &.active {
+          background-position: center;
           background-image: url(https://images.unsplash.com/photo-1627324676650-2c311d3c74b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
         }
 
         .h1 {
-          color: #e46300;
-          text-shadow: 0 0 10px #ffffff;
-
-          &.active {
-            color: white;
-          }
+        background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background-clip: border-box;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: rgba(0, 0, 0, 0);
         }
       }
 
@@ -114,7 +113,7 @@
           font-weight: 600;
           padding: 1rem;
           border: none;
-          background-color: #4209ed;
+          background: -webkit-linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
           color: white;
           border-radius: 13px;
         }

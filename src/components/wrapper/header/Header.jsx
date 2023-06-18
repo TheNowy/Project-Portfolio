@@ -63,9 +63,7 @@ export const Header = () => {
         }>
         <NavLink
           to="/"
-          className={
-            headerScroll3 ? `${scss.logo} ${scss.activeLinks}` : `${scss.logo}`
-          }>
+          className={scss.logo}>
           Zhusup<span>.</span>
         </NavLink>
         <div className={scss.header_wrap}>

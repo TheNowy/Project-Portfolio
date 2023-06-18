@@ -8,10 +8,14 @@ footer {
     justify-content: center;
       
       h1{
-        font-family: sans-serif;
-        color: rgb(0, 0, 0);
-        font-size: 1.1rem;
-        font-weight: 200;
+        font-family: 'Rubik' sans-serif;
+        background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        font-size: 1.3rem;
+        font-weight: 500;
       }
   }
 }

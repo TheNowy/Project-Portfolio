@@ -7,7 +7,7 @@ export const Footer = () => {
     <div>
       <footer>
         <div className="footer_cont">
-          <h1>© Toktosunov Jhusup 2023</h1>
+          <h1>© Toktosunov Zhusup 2023</h1>
         </div>
       </footer>
     </div>

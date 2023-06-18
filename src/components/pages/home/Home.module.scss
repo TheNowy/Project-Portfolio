@@ -56,10 +56,9 @@
           }
 
           .Title_Anim {
-            padding: 0 20px;
+            padding: 3% 20px;
             color: transparent;
-            -webkit-text-stroke: 2px #4d01ff;
-            font-size: 4rem;
+            font-size: 3.4rem;
             font-weight: 900;
             text-transform: uppercase;
             animation: animation 6s linear infinite;
@@ -91,7 +90,7 @@
 
         &.active {
           padding: 14% 0;
-          transition: .3s ease;
+          transition: 0.3s ease;
           background-color: #fff;
         }
         .h3 {
@@ -117,7 +116,11 @@
             font-size: 20px;
             margin-left: 5px;
             padding: 10px 15px;
-            background-color: rgb(57, 77, 230);
+            background: -webkit-linear-gradient(
+              -70deg,
+              #6d2aff 0%,
+              #ea00ff 100%
+            );
             border-radius: 21px 10px 21px 10px;
             transition: 0.5s;
 
@@ -128,7 +131,11 @@
         }
 
         .text_animation {
-          color: blue;
+          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background-clip: border-box;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: rgba(0, 0, 0, 0);
         }
       }
     }
@@ -141,9 +148,8 @@
       background-color: black;
       transition: 1s ease;
 
-
       &.active {
-        transition: .3s ease;
+        transition: 0.3s ease;
         background-color: #fff;
       }
 
@@ -179,18 +185,20 @@
         transition: 0.2s;
         overflow: hidden;
         .photo {
-          width: 600px;
+          padding: 10px;
+          width: 500px;
           display: flex;
           justify-content: start;
           align-items: center;
           img {
-            width: 600px;
+            border-radius: 15px;
+            width: 500px;
             padding: -14rem;
           }
         }
         .title {
           width: 100%;
-          margin-left: 20px;
+          margin-left: 50px;
           font-weight: 500;
           color: rgb(255, 255, 255);
 
@@ -203,11 +211,18 @@
           }
 
           h3 {
-            font-size: 40px;
+            background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            font-size: 3.5rem;
+            margin-left: 9px;
+            margin-bottom: 15px;
           }
           p {
             font-size: 20px;
-            margin: 15px;
+            margin: 10px;
           }
         }
       }
@@ -455,35 +470,43 @@
   .page_wrapper {
     .container {
       .home_content {
-          .home_title {
-            width: 100%;
+        .home_title {
+          
+          width: 100%;
+          padding: 40% 0 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(255, 255, 255);
+
+          &.active {
             padding: 40% 0 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(255, 255, 255);
+            background-color: #fff;
+          }
+          .h3 {
+            color: rgb(0, 0, 0);
 
             &.active {
-              padding: 40% 0 20%;
-              background-color: #fff;
-            }
-            .h3 {
               color: rgb(0, 0, 0);
-
-              &.active {
-                color: rgb(0, 0, 0);
-              }
             }
           }
-          .box_container {
-            background-color: rgb(255, 255, 255);
-      
-      
-            &.active {
-              background-color: #fff;
-            }
+        }
+        .box_container {
+          background-color: rgb(255, 255, 255);
+
+          &.active {
+            background-color: #fff;
+          }
+        }
+      }
+      .box_container {
+        .box_title {
+          .title {
+            width: 100%;
+            margin-left: 15px;
           }
         }
       }
     }
   }
+}

@@ -28,8 +28,7 @@ const Blog = () => {
         <title>Nowy - Blog</title>
       </Helmet>
       <div className={scss.container}>
-        <div
-          className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>
+        <div className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>
           <div className={scss.blog_title}>
             <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
               <h3>Zhusup Toktosunov | Personal Blog</h3>
@@ -53,13 +52,11 @@ const Blog = () => {
               alt="Logo"
             />
           </div>
-        </div>
-        <div
-          className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>
           <div className={scss.blog_title}>
-            <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
-              <h3>SOON</h3>
-            </div>
+            <div
+              className={`${scss.title} ${
+                headerScroll ? scss.active : ""
+              }`}></div>
           </div>
         </div>
       </div>

@@ -69,7 +69,7 @@ const Contacts = () => {
                 headerScroll ? scss.active : ""
               }`}
             >
-              <h1 className={`${scss.h1} ${headerScroll ? scss.active : ""}`}>
+              <h1 className={scss.h1}>
                 Contact Me
               </h1>
             </div>

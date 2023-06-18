@@ -54,6 +54,7 @@ const Quick = () => {
         <NavLink to="https://cloud.mail.ru/public/MaXo/vZTgfh65W" className={`${scss.link}`}>
           Quick View
         </NavLink>
+        <hr />
         <NavLink to="https://cloud.mail.ru/public/MaXo/vZTgfh65W" className={`${scss.link}`}>
           Download
         </NavLink>

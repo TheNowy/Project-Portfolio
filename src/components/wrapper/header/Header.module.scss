@@ -48,16 +48,17 @@
   }
 
   .logo {
-    color: rgb(0, 0, 0);
+    background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
     font-weight: 700;
     font-size: 25px;
     padding: 5px 10px;
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
 
-    &.activeLinks {
-      color: white;
-    }
     &.activeLinks:hover {
       background-color: rgb(54, 54, 54);
       border-radius: 7px;
@@ -81,7 +82,7 @@
       align-items: center;
       width: 5rem;
       margin-left: 20px;
-      background-color: #4d01ff;
+      background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
       color: rgb(255, 255, 255);
       border-radius: 5px;
       padding: 10px 10px;
@@ -90,7 +91,7 @@
       font-family: "Rubik", sans-serif;
 
       &:hover {
-        background-color: rgb(3, 3, 96);
+        background: -webkit-linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
       }
     }
     .link {
@@ -123,7 +124,7 @@
 
       width: 5rem;
       padding: 10px 15px;
-      background-color: #4d01ff;
+      background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
 
       border-radius: 5px;
       font-family: "Rubik", sans-serif;
@@ -133,7 +134,7 @@
       transition: 0.5s;
 
       &:hover {
-        background-color: rgb(3, 3, 96);
+        background: -webkit-linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
       }
     }
     .burger_menu {
