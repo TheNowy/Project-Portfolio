@@ -48,7 +48,7 @@ const Blog = () => {
 
           <div className={scss.blog_img}>
             <img
-              src="https://s.abcnews.com/images/Business/elon-musk-file-gty-jef-220711_1657563938913_hpMain_4x3_992.jpg"
+              src="https://i.pinimg.com/736x/c6/75/fc/c675fc1fe79fff321d9e820345397cbe.jpg"
               alt="Logo"
             />
           </div>

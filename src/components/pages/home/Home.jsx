@@ -39,17 +39,17 @@ const Home = () => {
                 headerScroll ? scss.active : ""
               }`}>
               <h3 className={`${scss.h3} ${headerScroll ? scss.active : ""}`}>
-                Hi! I Am Toktosunov Zhusup <span className="span2">(Nowy)</span>{" "}
+                Hi! I Am Zhusup <span className={scss.span2}>(Nowy)</span>{" "}
                 <span className={scss.fullstack}>
                   <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
                     FullStack
                   </a>
                 </span>
                 <br />
-                And I
+                I AM A
                 <span className={scss.text_animation}>
                   <Typewriter
-                    words={[" develop", " design", " create"]}
+                    words={[" DevXer", " Frontend Developer", " Freelancer"]}
                     loop={true}
                     cursor
                     cursorStyle="|"
@@ -58,7 +58,6 @@ const Home = () => {
                     delaySpeed={1000}
                   />
                 </span>
-                user-friendly products.
               </h3>
             </div>
             <div

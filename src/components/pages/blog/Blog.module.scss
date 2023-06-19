@@ -66,15 +66,31 @@
       }
 
       .blog_img {
-        width: 620px;
-        padding: 30px 0;
+        width: 720px;
+        padding: 0;
         overflow: hidden;
-        border-radius: 50%;
-        border: 6px solid #ea00ff;
+        animation: animation 8s ease-in-out infinite;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        border: 3px solid rgb(242, 0, 255);
+        box-shadow: 0 0 10px rgba(8, 0, 255, 0.3);
+        transition: all .1s ease-in-out;
+        
+
+        @keyframes animation {
+          0% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+          }
+          50% {
+            border-radius: 30% 75% 55% 90%/30% 75% 55% 90%;
+          }
+          100% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+          }
+        }
 
         img {
           width: 100%;
-          transform: scale(1.6);
+          transform: scale(1.1);
         }
       }
     }
