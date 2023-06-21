@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Tilt from "react-parallax-tilt";
 import scss from "./Blog.module.scss";
 
 const Blog = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
-
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined" && window.scrollY >= 10) {
@@ -28,7 +28,8 @@ const Blog = () => {
         <title>Nowy - Blog</title>
       </Helmet>
       <div className={scss.container}>
-        <div className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>
+        <div
+          className={`${scss.home_content} ${headerScroll ? scss.active : ""}`}>
           <div className={scss.blog_title}>
             <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
               <h3>Zhusup Toktosunov | Personal Blog</h3>
@@ -45,13 +46,14 @@ const Blog = () => {
               </button>
             </Link>
           </div>
-
+        <Tilt>
           <div className={scss.blog_img}>
             <img
               src="https://i.pinimg.com/736x/c6/75/fc/c675fc1fe79fff321d9e820345397cbe.jpg"
               alt="Logo"
             />
           </div>
+          </Tilt>
           <div className={scss.blog_title}>
             <div
               className={`${scss.title} ${
@@ -59,6 +61,7 @@ const Blog = () => {
               }`}></div>
           </div>
         </div>
+        <div className={scss.succses_projects}></div>
       </div>
     </div>
   );

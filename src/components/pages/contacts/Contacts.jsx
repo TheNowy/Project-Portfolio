@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import scss from "./Conctacts.module.scss";
 import { Helmet } from "react-helmet";
+import Tilt from "react-parallax-tilt";
 
 const Contacts = () => {
   const [username, setUsername] = useState("");
@@ -64,6 +65,7 @@ const Contacts = () => {
               headerScroll ? scss.active : ""
             }`}
           >
+            <Tilt>
             <div
               className={`${scss.gif_image} ${
                 headerScroll ? scss.active : ""
@@ -73,6 +75,8 @@ const Contacts = () => {
                 Contact Me
               </h1>
             </div>
+            </Tilt>
+            <Tilt>
             <form
               className={`${scss.form} ${headerScroll ? scss.active : ""}`}
               onSubmit={handleSubmit}
@@ -123,6 +127,7 @@ const Contacts = () => {
                 Submit
               </button>
             </form>
+            </Tilt>
           </div>
         </div>
       </div>
