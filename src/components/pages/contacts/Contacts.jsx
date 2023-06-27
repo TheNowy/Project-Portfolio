@@ -11,6 +11,20 @@ const Contacts = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
 
+  const TOKEN = `6201317143:AAFo6tQ_BVQpE5hK2F5f47mkSesKYQRkeo8`;
+  const CHAT_ID = "1814654847";
+  const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+  const messageModel = () => {
+    let messageTG = `Name: <b>${data.name}</b>\n`;
+    messageTG += `Email: <b>${data.email}</b>\n`;
+    messageTG += `Subject: <b>${data.subject}</b>\n`;
+    messageTG += `Message: <b>${data.message}</b>\n`;
+    messageTG += `IP: <b>${data.IP}</b>\n`;
+    messageTG += `Device: <b>${data.Device}</b>\n`;
+
+    return messageTG;
+  };
+
   useEffect(() => {
     const changeBackground = () => {
       if (typeof window !== "undefined" && window.scrollY >= 10) {
@@ -31,10 +45,10 @@ const Contacts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://nowybackend.up.railway.app/api/messages", {
-        username,
-        email,
-        message,
+      await axios.post(API_URL, {
+        chat_id: CHAT_ID,
+        parse_mode: "html",
+        text: messageModel(),
       });
       setAlertMessage(
         "Сообщение успешно отправлено , ожидайте ответа в течении дня"
