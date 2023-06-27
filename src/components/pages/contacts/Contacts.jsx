@@ -15,12 +15,9 @@ const Contacts = () => {
   const CHAT_ID = "1814654847";
   const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
   const messageModel = () => {
-    let messageTG = `Name: <b>${data.name}</b>\n`;
-    messageTG += `Email: <b>${data.email}</b>\n`;
-    messageTG += `Subject: <b>${data.subject}</b>\n`;
-    messageTG += `Message: <b>${data.message}</b>\n`;
-    messageTG += `IP: <b>${data.IP}</b>\n`;
-    messageTG += `Device: <b>${data.Device}</b>\n`;
+    let messageTG = `Name: <b>${username}</b>\n`;
+    messageTG += `Email: <b>${email}</b>\n`;
+    messageTG += `Message: <b>${message}</b>\n`;
 
     return messageTG;
   };
