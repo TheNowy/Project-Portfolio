@@ -133,7 +133,7 @@ const Home = () => {
                 </div>
                 <div className={scss.photo}>
                   <img
-                    src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/kac1/3ce5VQwcL"
+                    src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/YPrX/4uPkdp2vD"
                     alt=""
                   />
                 </div>

@@ -31,18 +31,25 @@ const Contacts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/messages", {
+      await axios.post("https://nowybackend.up.railway.app/api/messages", {
         username,
         email,
         message,
       });
-      setAlertMessage("Сообщение успешно отправлено , ожидайте ответа в течении дня");
+      setAlertMessage(
+        "Сообщение успешно отправлено , ожидайте ответа в течении дня"
+      );
       setUsername("");
       setEmail("");
       setMessage("");
     } catch (error) {
-      console.error("Ошибка при отправке сообщения, вероятно сервера выключены или находятся в разработке", error);
-      setAlertMessage("Ошибка при отправке сообщения, вероятно сервера выключены или находятся в разработке");
+      console.error(
+        "Ошибка при отправке сообщения, вероятно сервера выключены или находятся в разработке",
+        error
+      );
+      setAlertMessage(
+        "Ошибка при отправке сообщения, вероятно сервера выключены или находятся в разработке"
+      );
     }
   };
 
@@ -63,70 +70,67 @@ const Contacts = () => {
           <div
             className={`${scss.home_content} ${
               headerScroll ? scss.active : ""
-            }`}
-          >
+            }`}>
             <Tilt>
-            <div
-              className={`${scss.gif_image} ${
-                headerScroll ? scss.active : ""
-              }`}
-            >
-              <h1 className={scss.h1}>
-                Contact Me
-              </h1>
-            </div>
+              <div
+                className={`${scss.gif_image} ${
+                  headerScroll ? scss.active : ""
+                }`}>
+                <h1 className={scss.h1}>Contact Me</h1>
+              </div>
             </Tilt>
             <Tilt>
-            <form
-              className={`${scss.form} ${headerScroll ? scss.active : ""}`}
-              onSubmit={handleSubmit}
-            >
-              <label
-                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="name"
-              >
-                Name
-                <input
-                  id="name"
-                  className={`${scss.input} ${headerScroll ? scss.active : ""}`}
-                  type="text"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  required
-                />
-              </label>
-              <label
-                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="email"
-              >
-                Email
-                <input
-                  id="email"
-                  className={`${scss.input} ${headerScroll ? scss.active : ""}`}
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </label>
-              <label
-                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="comment"
-              >
-                Message
-                <textarea
-                  id="comment"
-                  className={`${scss.message} ${headerScroll ? scss.active : ""}`}
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  required
-                ></textarea>
-              </label>
+              <form
+                className={`${scss.form} ${headerScroll ? scss.active : ""}`}
+                onSubmit={handleSubmit}>
+                <label
+                  className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                  htmlFor="name">
+                  Name
+                  <input
+                    id="name"
+                    className={`${scss.input} ${
+                      headerScroll ? scss.active : ""
+                    }`}
+                    type="text"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    required
+                  />
+                </label>
+                <label
+                  className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                  htmlFor="email">
+                  Email
+                  <input
+                    id="email"
+                    className={`${scss.input} ${
+                      headerScroll ? scss.active : ""
+                    }`}
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </label>
+                <label
+                  className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                  htmlFor="comment">
+                  Message
+                  <textarea
+                    id="comment"
+                    className={`${scss.message} ${
+                      headerScroll ? scss.active : ""
+                    }`}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required></textarea>
+                </label>
 
-              <button type="submit" className={scss.button}>
-                Submit
-              </button>
-            </form>
+                <button type="submit" className={scss.button}>
+                  Submit
+                </button>
+              </form>
             </Tilt>
           </div>
         </div>

@@ -162,14 +162,16 @@
 
           &:hover {
             img {
-              filter: drop-shadow(0 0 2em rgb(14, 6, 255));
+
             }
           }
           .photo {
-            width: 550px;
+            overflow: hidden;
+            width: 1000px;
+            height: 400px;
 
             img {
-              width: 550px;
+            width: 600px;
             }
           }
         }
