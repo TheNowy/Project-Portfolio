@@ -101,6 +101,7 @@ const Contacts = () => {
                       headerScroll ? scss.active : ""
                     }`}
                     type="text"
+                    placeholder="Nowy"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     required
@@ -116,6 +117,7 @@ const Contacts = () => {
                       headerScroll ? scss.active : ""
                     }`}
                     type="email"
+                    placeholder="nowy@example.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -131,6 +133,7 @@ const Contacts = () => {
                       headerScroll ? scss.active : ""
                     }`}
                     value={message}
+                    placeholder="Your Message"
                     onChange={(e) => setMessage(e.target.value)}
                     required></textarea>
                 </label>
