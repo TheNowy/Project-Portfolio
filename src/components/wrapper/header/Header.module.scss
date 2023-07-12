@@ -41,10 +41,10 @@
   &.active {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.57);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(6px);
     transition: 0.3s;
     padding: 20px 1% 20px 1%;
-    border-bottom: solid 2px blue;
+    border-bottom: solid 1px blue;
   }
 
   .logo {
