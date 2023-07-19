@@ -9,6 +9,11 @@ export const Header = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
   const [openProfile, closeProfile] = useState(false);
   const [openProfile2, closeProfile2] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   const activeLink = ({ isActive }) => {
     return {
@@ -61,9 +66,7 @@ export const Header = () => {
         className={
           headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
         }>
-        <NavLink
-          to="/"
-          className={scss.logo}>
+        <NavLink to="/" className={scss.logo}>
           Zhusup<span>.</span>
         </NavLink>
         <div className={scss.header_wrap}>
@@ -108,8 +111,11 @@ export const Header = () => {
             GitHub
           </NavLink>
           <div
-            className={scss.burger_menu}
-            onClick={() => closeProfile((prev) => !prev)}>
+            className={`${scss.burger_menu} ${isOpen ? scss.open : ""}`}
+            onClick={() => {
+              closeProfile((prev) => !prev);
+              toggleMenu();
+            }}>
             <span></span>
             <span></span>
           </div>
