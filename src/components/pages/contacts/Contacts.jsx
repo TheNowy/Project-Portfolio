@@ -48,9 +48,9 @@ const Contacts = () => {
         text: messageModel(),
       });
       setAlertMessage(
-        "Сообщение успешно отправлено , ожидайте ответа в течении дня"
+        `Сообщение успешно отправлено , ожидайте ответа в течении дня, ${username} !`
       );
-      setUsername("");
+      setUsername("use");
       setEmail("");
       setMessage("");
     } catch (error) {
