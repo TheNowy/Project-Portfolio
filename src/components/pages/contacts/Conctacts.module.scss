@@ -204,3 +204,17 @@
     }
   }
 }
+.modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  padding: 20px;
+  background: -webkit-linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.modalOverlay {
+  background-color: transparent;
+}
