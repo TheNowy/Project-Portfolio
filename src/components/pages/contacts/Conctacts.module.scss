@@ -34,11 +34,19 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        transition: 0.1s;
+        transition: 0.3s;
+
+        &:hover {
+          box-shadow: 0 0 15px rgb(255, 255, 255);
+        }
 
         &.active {
           background-position: center;
           background-image: url(https://images.unsplash.com/photo-1627324676650-2c311d3c74b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
+       
+          &:hover {
+            box-shadow: 0 0 15px rgb(0, 0, 0);
+          }
         }
 
         .h1 {
@@ -66,8 +74,16 @@
 
         gap: 3rem;
 
+        &:hover {
+          box-shadow: 0 0 15px rgb(255, 255, 255);
+        }
+
         &.active {
           background-color: #fff;
+
+          &:hover {
+            box-shadow: 0 0 15px rgb(0, 0, 0);
+          }
         }
 
         .label {
@@ -109,13 +125,19 @@
           padding: 1rem;
         }
         .button {
+          cursor: pointer;
           font-size: 16px;
           font-weight: 600;
           padding: 1rem;
           border: none;
-          background: -webkit-linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
+          background: linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
           color: white;
           border-radius: 13px;
+          transition: .3s;
+
+          &:hover {
+            box-shadow: 0 0 15px black;
+          }
         }
       }
     }
