@@ -67,7 +67,7 @@ const Home = () => {
               <div className={scss.box_title}>
                 <div className={scss.photo}>
                   <img
-                    src="../../../../public/kurapica.jpg"
+                    src="/../../../../public/kurapica.jpg"
                     alt=""
                   />
                 </div>
@@ -133,7 +133,7 @@ const Home = () => {
                 </div>
                 <div className={scss.photo}>
                   <img
-                    src="../../../../public/project_1.png"
+                    src="/../../../../public/project_1.png"
                     alt=""
                   />
                 </div>
@@ -144,7 +144,7 @@ const Home = () => {
                 <div className={scss.project_img}>
                   <img
                     className={scss.left_photo}
-                    src="../../../../public/project_3.jpg"
+                    src="/../../../../public/project_3.jpg"
                     alt=""
                   />
                 </div>
@@ -153,7 +153,7 @@ const Home = () => {
                 <div className={scss.project_img}>
                   <img
                     className={scss.right_photo}
-                    src="../../../../public/project_2.png"
+                    src="/../../../../public/project_2.png"
                     alt=""
                   />
                 </div>
