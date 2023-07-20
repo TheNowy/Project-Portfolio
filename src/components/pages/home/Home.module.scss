@@ -259,6 +259,7 @@
           .left_photo {
             width: 100%;
             transition: 0.3s;
+            transform: scale(1.03);
 
             &:hover {
               transform: scale(1.1);
@@ -266,7 +267,7 @@
           }
 
           .right_photo {
-            width: 97.1%;
+            width: 98.6%;
             transition: 0.3s;
             transform: scale(1.03);
 
