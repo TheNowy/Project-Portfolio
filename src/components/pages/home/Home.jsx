@@ -67,7 +67,7 @@ const Home = () => {
               <div className={scss.box_title}>
                 <div className={scss.photo}>
                   <img
-                    src="https://i.pinimg.com/originals/8b/90/3e/8b903e622251c9a3b959cb28ffdb86c1.jpg"
+                    src="../../../../public/kurapica.jpg"
                     alt=""
                   />
                 </div>
@@ -133,7 +133,7 @@ const Home = () => {
                 </div>
                 <div className={scss.photo}>
                   <img
-                    src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/7R2n/QPJH7RFzu"
+                    src="../../../../public/project_1.png"
                     alt=""
                   />
                 </div>
@@ -144,7 +144,7 @@ const Home = () => {
                 <div className={scss.project_img}>
                   <img
                     className={scss.left_photo}
-                    src="https://cdn.dribbble.com/users/1346196/screenshots/6176280/attachments/1324203/web_mockup.png"
+                    src="../../../../public/project_3.jpg"
                     alt=""
                   />
                 </div>
@@ -153,7 +153,7 @@ const Home = () => {
                 <div className={scss.project_img}>
                   <img
                     className={scss.right_photo}
-                    src="https://assets.justinmind.com/wp-content/uploads/2020/08/travel-ecommerce-app-mockup.png"
+                    src="../../../../public/project_2.png"
                     alt=""
                   />
                 </div>

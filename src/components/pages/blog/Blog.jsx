@@ -46,13 +46,10 @@ const Blog = () => {
               </button>
             </Link>
           </div>
-        <Tilt>
-          <div className={scss.blog_img}>
-            <img
-              src="https://i.pinimg.com/736x/c6/75/fc/c675fc1fe79fff321d9e820345397cbe.jpg"
-              alt="Logo"
-            />
-          </div>
+          <Tilt>
+            <div className={scss.blog_img}>
+              <img src="../../../../public/killua_smail.jpg" alt="Logo" />
+            </div>
           </Tilt>
           <div className={scss.blog_title}>
             <div
