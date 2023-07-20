@@ -3,7 +3,6 @@ import axios from "axios";
 import scss from "./Conctacts.module.scss";
 import { Helmet } from "react-helmet";
 import Modal from "react-modal";
-import { CSSTransition } from "react-transition-group";
 // import Tilt from "react-parallax-tilt";
 
 const Contacts = () => {
