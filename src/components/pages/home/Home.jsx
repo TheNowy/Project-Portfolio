@@ -67,7 +67,7 @@ const Home = () => {
               <div className={scss.box_title}>
                 <div className={scss.photo}>
                   <img
-                    src="/../../../../public/kurapica.jpg"
+                    src="/../../../..//kurapica.jpg"
                     alt=""
                   />
                 </div>
