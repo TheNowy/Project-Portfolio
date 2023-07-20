@@ -153,7 +153,7 @@ const Home = () => {
                 <div className={scss.project_img}>
                   <img
                     className={scss.right_photo}
-                    src="/../../../..project_2.png"
+                    src="/../../../../project_2.png"
                     alt=""
                   />
                 </div>
