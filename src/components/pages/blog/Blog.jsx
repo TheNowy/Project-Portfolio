@@ -48,7 +48,7 @@ const Blog = () => {
           </div>
           <Tilt>
             <div className={scss.blog_img}>
-              <img src="/../../../../public/killua_smail.jpg" alt="Logo" />
+              <img src="/../../../../killua_smail.jpg" alt="Logo" />
             </div>
           </Tilt>
           <div className={scss.blog_title}>
