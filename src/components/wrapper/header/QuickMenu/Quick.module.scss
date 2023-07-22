@@ -9,13 +9,13 @@
   width: 150px;
   background-color: rgb(0, 0, 0);
   border: solid 1px white;
-  border-radius: 14px;
+  border-radius: 6px;
   transition: 0.3s;
   z-index: 100000000;
   overflow: hidden;
 
   &.active2 {
-    right: 13rem;
+    right: 13.8rem;
   }
 
   &.active {

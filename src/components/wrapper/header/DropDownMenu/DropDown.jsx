@@ -34,18 +34,18 @@ const DropDown = () => {
         <NavLink to="/" className={`${scss.link}`} style={activeLink}>
           Home
         </NavLink>
-        <NavLink to="/blog" className={`${scss.link}`} style={activeLink}>
+        {/* <NavLink to="/blog" className={`${scss.link}`} style={activeLink}>
           Blog
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/contacts" className={`${scss.link}`} style={activeLink}>
           Contact
         </NavLink>
         <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
           Quick View
         </NavLink>
-        <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
+        {/* <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
           Download
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="https://github.com/NowyTeam"
           className={`${scss.gitlink} ${scss.activeLink}`}>

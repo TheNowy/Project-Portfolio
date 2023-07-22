@@ -23,6 +23,7 @@
     padding: 10px 0;
     flex-direction: column;
     .link {
+      margin-bottom: 15px;
       display: flex;
       width: 120px;
       padding: 10px 0;
@@ -31,13 +32,11 @@
       color: rgb(255, 255, 255);
       border-radius: 8px;
 
-      &:nth-child(4) {
-        margin-top: 20px;
+      &:nth-child(3) {
+        margin-top: 15px;
+        margin-bottom: 15px;
         color: #4d01ff;
         background-color: white;
-      }
-      &:nth-child(5) {
-        color: #af90f6;
       }
     }
   }

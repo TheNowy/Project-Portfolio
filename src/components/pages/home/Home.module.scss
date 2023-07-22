@@ -21,9 +21,11 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        background-color: #000000;
+        background-color: black;
+        transition: 1s ease;
 
         &.active {
+          transition: .3s;
           background-color: rgb(255, 255, 255);
         }
 
@@ -34,6 +36,8 @@
           justify-content: center;
           align-items: center;
           overflow: hidden;
+
+          
 
           &::before,
           &::after {

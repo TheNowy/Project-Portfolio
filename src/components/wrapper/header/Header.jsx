@@ -80,7 +80,7 @@ export const Header = () => {
             style={activeLink}>
             Home
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/blog"
             className={
               headerScroll3
@@ -89,7 +89,7 @@ export const Header = () => {
             }
             style={activeLink}>
             Blog
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/contacts"
             className={
