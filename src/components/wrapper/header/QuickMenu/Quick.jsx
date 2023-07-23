@@ -3,25 +3,7 @@ import scss from "./Quick.module.scss";
 import { NavLink } from "react-router-dom";
 
 const Quick = () => {
-  const [headerScroll, setHeaderScroll] = useState(false);
   const [headerScroll2, setHeaderScroll2] = useState(false);
-
-  useEffect(() => {
-    const changeBackground = () => {
-      if (typeof window !== "undefined" && window.scrollY >= 0) {
-        setHeaderScroll(true);
-      } else {
-        setHeaderScroll(false);
-      }
-    };
-
-    changeBackground();
-    window.addEventListener("scroll", changeBackground);
-
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
-  }, []);
 
   useEffect(() => {
     const changeBackground = () => {
@@ -41,24 +23,29 @@ const Quick = () => {
   }, []);
 
   return (
-    <div
-      className={
-        headerScroll && headerScroll2
-          ? `${scss.DropDownMenu} ${scss.active}`
-          : headerScroll
-          ? `${scss.DropDownMenu} ${scss.active2}`
-          : `${scss.DropDownMenu}`
-      }
-    >
-      <ul className={`${scss.gap_4}`}>
-        <NavLink to="https://cloud.mail.ru/public/MaXo/vZTgfh65W" className={`${scss.link}`}>
-          Quick View
-        </NavLink>
-        <hr />
-        <NavLink to="https://cloud.mail.ru/public/MaXo/vZTgfh65W" className={`${scss.link}`}>
-          Download
-        </NavLink>
-      </ul>
+    <div className={scss.wrapper_adpt}>
+      <div
+        className={
+          headerScroll2
+            ? `${scss.wrapper_adpt_hlp} ${scss.active}`
+            : `${scss.wrapper_adpt_hlp}`
+        }>
+        <div className={scss.wrapper}>
+          <div className={scss.wrapper_box}>
+            <NavLink
+              to="https://cloud.mail.ru/public/MaXo/vZTgfh65W"
+              className={`${scss.link}`}>
+              Quick View
+            </NavLink>
+            <hr />
+            <NavLink
+              to="https://cloud.mail.ru/public/MaXo/vZTgfh65W"
+              className={`${scss.link}`}>
+              Download
+            </NavLink>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
