@@ -107,7 +107,7 @@ export const Header = () => {
           </NavLink>
           <NavLink
             to="https://github.com/NowyTeam"
-            className={`${scss.gitlink} ${scss.activeLink}`}>
+            className={`${scss.gitlink}`}>
             GitHub
           </NavLink>
           <div

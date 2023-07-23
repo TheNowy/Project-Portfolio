@@ -131,10 +131,11 @@
       font-weight: 300;
       color: white;
       margin-left: 50px;
-      transition: 0.5s;
-
+      transition: 1s;
+      
       &:hover {
-        background: -webkit-linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
+        box-shadow: 0 0 10px white;
+        transition: 0.2s;
       }
     }
     .burger_menu {
