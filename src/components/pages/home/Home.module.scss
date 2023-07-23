@@ -348,6 +348,14 @@
             }
           }
         }
+        .box_container {
+          .box_title {
+            .title {
+              width: 100%;
+              margin-left: 15px;
+            }
+          }
+        }
         .project_container {
           width: 100vw;
           max-width: 100%;
@@ -489,12 +497,12 @@
             background-color: #fff;
           }
         }
-      }
-      .box_container {
-        .box_title {
-          .title {
-            width: 100%;
-            margin-left: 15px;
+        .box_container {
+          .box_title {
+            .title {
+              width: 100%;
+              margin-left: 15px;
+            }
           }
         }
       }
