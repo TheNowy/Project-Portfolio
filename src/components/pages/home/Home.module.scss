@@ -155,26 +155,11 @@
           background-color: #fff;
         }
 
-        &:nth-child(5) {
-          .box_title {
-            margin: 1rem;
-            border-radius: 15px 15px 0 0;
-
-            .photo {
-              width: 1000px;
-
-              img {
-                width: 600px;
-              }
-            }
-          }
-        }
-
         .box_title {
           width: 80vw;
           background-color: rgba(0, 0, 0, 0);
           border-radius: 15px;
-          border: solid 2px #d4d4d4;
+          border: solid 1px #d4d4d4;
           margin: 1rem;
           display: flex;
           justify-content: center;
@@ -183,14 +168,17 @@
           overflow: hidden;
           .photo {
             padding: 10px;
-            width: 500px;
+            width: 100%;
             display: flex;
             justify-content: start;
             align-items: center;
+
+            &:last-child {
+              justify-content: center;
+            }
             img {
               border-radius: 15px;
-              width: 500px;
-              padding: -14rem;
+              width: 100%;
             }
           }
           .title {

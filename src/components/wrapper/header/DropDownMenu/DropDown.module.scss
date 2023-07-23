@@ -5,7 +5,7 @@
   padding: 10px 0 10px;
   width: 150px;
   background-color: rgb(0, 0, 0);
-  border: solid 2px orange;
+  border: solid 2px rgb(255, 0, 208);
   border-radius: 14px;
   transition: 0.3s;
   z-index: 110000000000000000000000000;
@@ -46,7 +46,7 @@
     align-items: center;
     width: 80%;
     padding: 10px;
-    background-color: #4d01ff;
+    background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
     color: white;
     border: solid 1px white;
     border-radius: 8px;
