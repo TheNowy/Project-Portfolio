@@ -13,10 +13,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 75%;
+    width: 71.5%;
 
     &.active {
-      width: 93%;
+      width: 89%;
     }
 
     .wrapper {
@@ -46,15 +46,15 @@
         }
 
         .link {
-          padding: 15px 55px;
+          padding: 5px 25px;
           display: flex;
           justify-content: center;
           align-items: center;
           width: 100%;
-          color: white;
+          color: rgb(255, 255, 255);
           text-decoration: none;
           border-radius: 5px;
-          background-color: rgba(93, 93, 93, 0.556);
+          background-color: rgba(255, 255, 255, 0.353);
 
           &:hover {
             color: black;
@@ -65,7 +65,7 @@
     }
   }
 }
-@media (max-width: 1015px) {
+@media (max-width: 848px) {
   .wrapper_adpt {
     display: none;
   }
