@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { Helmet } from "react-helmet";
+import Tilt from "react-parallax-tilt";
 
 import scss from "./Home.module.scss";
 
@@ -31,13 +32,15 @@ const Home = () => {
       </Helmet>
       <div className={scss.page_wrapper}>
         <div className={scss.container}>
-          <div className={scss.home_content}>
-            <div className={scss.home_image}></div>
-
+          <div
+            className={`${scss.home_content} ${
+              headerScroll ? scss.active : ""
+            }`}>
             <div
               className={`${scss.home_title} ${
                 headerScroll ? scss.active : ""
               }`}>
+              <div className={scss.column_text}>
               <h3 className={`${scss.h3} ${headerScroll ? scss.active : ""}`}>
                 Hi! I Am Zhusup <span className={scss.span2}>(Nowy)</span>{" "}
                 <span className={scss.fullstack}>
@@ -52,12 +55,33 @@ const Home = () => {
                     loop={true}
                     cursor
                     cursorStyle="|"
-                    typeSpeed={50}
-                    deleteSpeed={100}
+                    typeSpeed={10}
+                    deleteSpeed={50}
                     delaySpeed={1000}
                   />
                 </span>
               </h3>
+              {/* <p className={`${scss.p} ${headerScroll ? scss.active : ""}`}>
+                <span className={scss.text_animation_parag}>
+                  <Typewriter
+                    words={["As a skilled Front-End developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in Next.js and Web development"]}
+                    loop={true}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={10}
+                    deleteSpeed={10000000000000}
+                    delaySpeed={100}
+                  />
+                </span>
+              </p> */}
+              </div>
+              <Tilt>
+                <img
+                  className={scss.home_img}
+                  src="../../../68747470733a2f2f6170692e7a616877617a65696e2e78797a2f75706c6f61642f69636f6e2e706e67.png"
+                  alt=""
+                />
+              </Tilt>
             </div>
             <div
               className={`${scss.box_container} ${
@@ -128,12 +152,16 @@ const Home = () => {
                   }`}>
                   <h3>NowyTeam</h3>
                   <p>
-                    The site was developed for <span>Kwork</span> and was abandoned,<br /> 
-                    but in the future I will rewrite this Web-site on <span>TypeScript</span>
+                    The site was developed for <span>Kwork</span> and was
+                    abandoned,
+                    <br />
+                    but in the future I will rewrite this Web-site on{" "}
+                    <span>TypeScript</span>
                     <br />
                   </p>
                   <p>
-                    <span>The site will be updated,</span> follow the news in my GitHub.
+                    <span>The site will be updated,</span> follow the news in my
+                    GitHub.
                     <br />
                   </p>
                 </div>

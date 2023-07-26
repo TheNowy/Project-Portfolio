@@ -12,8 +12,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
       min-height: 45vh;
+      transition: 1s ease;
+
+      &.active {
+        transition: 0.3s;
+        background-color: #fff;
+      }
 
       .projects_carus {
         width: 100%;
@@ -63,9 +69,9 @@
             font-size: 3.4rem;
             font-weight: 900;
             text-transform: uppercase;
-            animation: animation 6s linear infinite;
+            animation: animation2 6s linear infinite;
 
-            @keyframes animation {
+            @keyframes animation2 {
               from {
                 transform: translateX(0%);
                 color: transparent;
@@ -82,55 +88,72 @@
       }
 
       .home_title {
-        width: 100%;
-        padding: 21% 0;
+        width: 83%;
+        padding: 11% 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         background-color: rgb(0, 0, 0);
         transition: 1s ease;
 
         &.active {
-          padding: 14% 0;
+          padding: 7% 0;
           transition: 0.3s ease;
           background-color: #fff;
         }
-        .h3 {
-          color: rgb(255, 255, 255);
-          font-weight: 500;
-          font-size: 60px;
-
-          &.active {
-            color: black;
-          }
-
-          .span2 {
-            color: #3f04c8;
-            opacity: 6;
-          }
-
-          a {
-            color: white;
-          }
-
-          .fullstack {
-            position: absolute;
+        .column_text {
+          .h3 {
+            width: 50rem;
+            padding: 10px 0;
+            color: rgb(255, 255, 255);
             font-weight: 500;
-            font-size: 20px;
-            margin-left: 5px;
-            padding: 10px 15px;
-            background: -webkit-linear-gradient(
-              -70deg,
-              #6d2aff 0%,
-              #ea00ff 100%
-            );
-            border-radius: 21px 10px 21px 10px;
-            transition: 0.5s;
+            font-size: 60px;
 
-            &:hover {
-              background-color: rgb(3, 6, 192);
+            &.active {
+              color: black;
+            }
+
+            .span2 {
+              color: #3f04c8;
+              opacity: 6;
+            }
+
+            a {
+              color: white;
+            }
+
+            .fullstack {
+              position: absolute;
+              font-weight: 500;
+              font-size: 20px;
+              margin-left: 5px;
+              padding: 10px 15px;
+              background: -webkit-linear-gradient(
+                -70deg,
+                #6d2aff 0%,
+                #ea00ff 100%
+              );
+              border-radius: 21px 10px 21px 10px;
+              transition: 0.5s;
+
+              &:hover {
+                background-color: rgb(3, 6, 192);
+              }
             }
           }
+          .p {
+            width: 36rem;
+            padding: 0;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            font-size: 20px;
+
+            &.active {
+              color: black;
+            }
+          }
+        }
+        .text_animation_parag {
         }
 
         .text_animation {
@@ -139,6 +162,28 @@
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        }
+        .home_img {
+          width: 420px;
+          padding: 0;
+          overflow: hidden;
+          animation: animation 8s ease-in-out infinite;
+          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+          border: 3px solid rgb(242, 0, 255);
+          box-shadow: 0 0 10px rgba(8, 0, 255, 0.3);
+          transition: all 0.1s ease-in-out;
+
+          @keyframes animation {
+            0% {
+              border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+            }
+            50% {
+              border-radius: 30% 75% 55% 60%/30% 75% 55% 45%;
+            }
+            100% {
+              border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+            }
+          }
         }
       }
       .box_container {
