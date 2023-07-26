@@ -101,18 +101,18 @@ export const Header = () => {
             Contact
           </NavLink>
           <NavLink
-            className={
-              headerScroll ? `${scss.resume} ${scss.active}` : `${scss.resume}`
-            }
-            onClick={() => closeProfile2((prev) => !prev)}>
-            Resume
-          </NavLink>
-          <NavLink
             to="https://github.com/NowyTeam"
             className={
               headerScroll ? `${scss.gitlink} ${scss.active}` : `${scss.gitlink}`
             }>
             GitHub
+          </NavLink>
+          <NavLink
+            className={
+              headerScroll ? `${scss.resume} ${scss.active}` : `${scss.resume}`
+            }
+            onClick={() => closeProfile2((prev) => !prev)}>
+            Resume
           </NavLink>
           <div
             className={`${scss.burger_menu} ${isOpen ? scss.open : ""}`}

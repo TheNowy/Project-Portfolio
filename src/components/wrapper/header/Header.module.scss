@@ -1,49 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:200,300,400,500,600,700,800,900);
 
-// .beta {
-//   margin-bottom: 3rem;
-//   position: fixed;
-//   left: 0;
-//   top: 0;
-
-//   width: 100%;
-//   padding: 0px 10%;
-
-//   background-color: rgb(255, 0, 0);
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   z-index: 10000000;
-
-//   h1 {
-//     color: white;
-//     font-size: 15px;
-//     font-family: sans-serif;
-//     font-weight: 100;
-//   }
-// }
-
 .header {
   position: fixed;
   left: 0;
   top: 0;
 
   width: 100%;
-  padding: 20px 10%;
+  padding: 1.4rem 8%;
 
   background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000000;
-  transition: 0.3s;
+  transition: 0.4s;
 
   &.active {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.57);
     backdrop-filter: blur(6px);
     transition: 0.3s;
-    padding: 20px 1% 20px 1%;
+    padding: 1.4rem 5%;
     border-bottom: solid 1px blue;
   }
 
@@ -81,7 +58,7 @@
       justify-content: center;
       align-items: center;
       width: 5rem;
-      margin-left: 20px;
+      margin-left: 50px;
       background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
       color: rgb(255, 255, 255);
       border-radius: 5px;
@@ -136,7 +113,7 @@
       font-family: "Rubik", sans-serif;
       font-weight: 300;
       color: white;
-      margin-left: 50px;
+      margin-left: 20px;
       transition: 1s;
 
       &:hover {

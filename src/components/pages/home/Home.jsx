@@ -45,8 +45,7 @@ const Home = () => {
                     FullStack
                   </a>
                 </span>
-                <br />
-                I AM A
+                <br />I AM A
                 <span className={scss.text_animation}>
                   <Typewriter
                     words={[" DevXer", " Frontend Developer", " Freelancer"]}
@@ -66,15 +65,15 @@ const Home = () => {
               }`}>
               <div className={scss.box_title}>
                 <div className={scss.photo}>
-                  <img
-                    src="/../../../..//kurapica.jpg"
-                    alt=""
-                  />
+                  <img src="/../../../..//kurapica.jpg" alt="" />
                 </div>
-                <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
+                <div
+                  className={`${scss.title} ${
+                    headerScroll ? scss.active : ""
+                  }`}>
                   <h3>About Me</h3>
                   <p>
-                    16 years old, Passionate and dedicated 
+                    16 years old, Passionate and dedicated
                     <span> Full Stack Developer</span> <br />
                   </p>
                   <p>
@@ -82,7 +81,7 @@ const Home = () => {
                   </p>
                   <p>
                     <span>
-                      React, NodeJS, JavaScript, MySQL, HTML, CSS, SASS 
+                      React, NodeJS, JavaScript, MySQL, HTML, CSS, SASS
                     </span>
                     ,and <span> SCSS</span>.<br />
                   </p>
@@ -105,7 +104,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={`${scss.projects_carus} ${headerScroll ? scss.active : ""}`}>
+            <div
+              className={`${scss.projects_carus} ${
+                headerScroll ? scss.active : ""
+              }`}>
               <div className={scss.carus_main}>
                 <h1 className={scss.Title_Anim}>Projects</h1>
                 <h1 className={scss.Title_Anim}>Projects</h1>
@@ -120,22 +122,23 @@ const Home = () => {
                 headerScroll ? scss.active : ""
               }`}>
               <div className={scss.box_title}>
-              <div className={`${scss.title} ${headerScroll ? scss.active : ""}`}>
-                  <h3>Projects</h3>
+                <div
+                  className={`${scss.title} ${
+                    headerScroll ? scss.active : ""
+                  }`}>
+                  <h3>NowyTeam</h3>
                   <p>
-                    I develop the user interface, Web page development, I create <br />
-                    <span> UX element interactions</span>, <br />
+                    The site was developed for <span>Kwork</span> and was abandoned,<br /> 
+                    but in the future I will rewrite this Web-site on <span>TypeScript</span>
+                    <br />
                   </p>
                   <p>
-                    <span>Design and mockups</span> of products for companies.
+                    <span>The site will be updated,</span> follow the news in my GitHub.
                     <br />
                   </p>
                 </div>
                 <div className={scss.photo}>
-                  <img
-                    src="/../../../../project_1.png"
-                    alt=""
-                  />
+                  <img src="/../../../../project_1.png" alt="" />
                 </div>
               </div>
             </div>
