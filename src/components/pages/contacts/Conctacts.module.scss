@@ -43,14 +43,14 @@
         &.active {
           background-position: center;
           background-image: url(https://images.unsplash.com/photo-1627324676650-2c311d3c74b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
-       
+
           &:hover {
             box-shadow: 0 0 15px rgb(0, 0, 0);
           }
         }
 
         .h1 {
-        background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
           background-clip: border-box;
           -webkit-background-clip: text;
           background-clip: text;
@@ -133,7 +133,7 @@
           background: linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
           color: white;
           border-radius: 13px;
-          transition: .3s;
+          transition: 0.3s;
 
           &:hover {
             box-shadow: 0 0 15px black;
@@ -174,20 +174,6 @@
         &.active {
           background-color: none;
         }
-        .gif_image {
-          background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
-          &.active {
-            background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
-          }
-
-          .h1 {
-            color: #e46300;
-
-            &.active {
-              color: #e46300;
-            }
-          }
-        }
 
         .form {
           background-color: #fff;
@@ -211,6 +197,10 @@
       .home_content {
         padding: 8rem 3rem;
         .gif_image {
+          background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
+          &.active {
+            background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
+          }
           min-width: 300px;
           max-width: 200px;
           padding: 2rem 3.5rem;
