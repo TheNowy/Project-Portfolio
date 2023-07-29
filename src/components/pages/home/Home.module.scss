@@ -27,13 +27,6 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        background-color: black;
-        transition: 1s ease;
-
-        &.active {
-          transition: 0.3s;
-          background-color: rgb(255, 255, 255);
-        }
 
         .carus_main {
           padding: 40px 15px;
