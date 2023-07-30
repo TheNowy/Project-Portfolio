@@ -36,16 +36,6 @@
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
 
-    &.activeLinks:hover {
-      background-color: rgb(54, 54, 54);
-      border-radius: 7px;
-    }
-
-    &:hover {
-      background-color: rgb(236, 236, 236);
-      border-radius: 7px;
-    }
-
     span {
       color: blue;
     }

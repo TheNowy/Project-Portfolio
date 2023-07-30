@@ -86,13 +86,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgb(0, 0, 0);
         transition: 1s ease;
 
         &.active {
           padding: 7% 0;
-          transition: 0.3s ease;
-          background-color: #fff;
         }
         .column_text {
           .h3 {
