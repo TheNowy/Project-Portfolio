@@ -41,27 +41,27 @@ const Home = () => {
                 headerScroll ? scss.active : ""
               }`}>
               <div className={scss.column_text}>
-              <h3 className={`${scss.h3} ${headerScroll ? scss.active : ""}`}>
-                Hi! I Am Zhusup <span className={scss.span2}>(Nowy)</span>{" "}
-                <span className={scss.fullstack}>
-                  <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
-                    FullStack
-                  </a>
-                </span>
-                <br />I AM A
-                <span className={scss.text_animation}>
-                  <Typewriter
-                    words={[" DevXer", " Frontend Developer", " Freelancer"]}
-                    loop={true}
-                    cursor
-                    cursorStyle="|"
-                    typeSpeed={10}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                  />
-                </span>
-              </h3>
-              {/* <p className={`${scss.p} ${headerScroll ? scss.active : ""}`}>
+                <h3 className={`${scss.h3} ${headerScroll ? scss.active : ""}`}>
+                  Hi! I Am Zhusup <span className={scss.span2}>(Nowy)</span>{" "}
+                  <span className={scss.fullstack}>
+                    <a href="https://www.google.com/search?q=fullstack+is&sxsrf=APwXEdeH7BGmAgzdOE2nCNENHr0qvAJZ7w%3A1683709672459&ei=6F5bZPjNG5WTwPAPgOKQmAI&ved=0ahUKEwj44bmns-r-AhWVCRAIHQAxBCMQ4dUDCA8&uact=5&oq=fullstack+is&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQFhAeMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoKCAAQigUQsAMQQzoMCAAQigUQsAMQChBDOgUIABCABDoICAAQgAQQywE6CggAEIAEEBQQhwI6CAguEIAEEMsBOgoIABCABBAKEMsBSgQIQRgAUPIFWN4QYIUSaAFwAXgAgAG4AYgB-wOSAQMwLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
+                      FullStack
+                    </a>
+                  </span>
+                  <br />I AM A
+                  <span className={scss.text_animation}>
+                    <Typewriter
+                      words={[" DevXer", " Frontend Developer", " Freelancer"]}
+                      loop={true}
+                      cursor
+                      cursorStyle="|"
+                      typeSpeed={10}
+                      deleteSpeed={50}
+                      delaySpeed={1000}
+                    />
+                  </span>
+                </h3>
+                {/* <p className={`${scss.p} ${headerScroll ? scss.active : ""}`}>
                 <span className={scss.text_animation_parag}>
                   <Typewriter
                     words={["As a skilled Front-End developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in Next.js and Web development"]}
@@ -189,6 +189,26 @@ const Home = () => {
                   />
                 </div>
               </div>
+            </div>
+            <div className={scss.skill_wrapper}>
+                <div className={scss.skill_box}>
+                  <h1>React</h1>
+                </div>
+                <div className={scss.skill_box}>
+                  <h1>TypeScript</h1>
+                </div>
+                <div className={scss.skill_box}>
+                  <h1>JavaScript</h1>
+                </div>
+                <div className={scss.skill_box}>
+                  <h1>NodeJS</h1>
+                </div>
+                <div className={scss.skill_box}>
+                  <h1>MongoDB</h1>
+                </div>
+                <div className={scss.skill_box}>
+                  <h1>SCSS & SASS</h1>
+                </div>
             </div>
           </div>
         </div>
