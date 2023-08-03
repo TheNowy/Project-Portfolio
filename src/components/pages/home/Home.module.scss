@@ -367,15 +367,6 @@
           }
         }
       }
-
-      @media screen and (max-width: 768px) {
-        .skill_bd {
-          padding: 1rem 0;
-          .skill_box {
-            padding: 1rem 0.5rem;
-          }
-        }
-      }
     }
   }
 }
@@ -537,6 +528,11 @@
               font-size: 3rem;
               font-weight: 800;
             }
+          }
+        }
+        .skill_wrapper {
+          h3 {
+            font-size: 2.2rem;
           }
         }
       }
