@@ -307,22 +307,26 @@
         }
       }
       .skill_wrapper {
+        padding: 10rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         background-color: rgb(255, 255, 255);
-        flex-wrap: wrap;
-        padding: 10rem 0;
-        
+        .skill_bd {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10rem 0;
+          flex-wrap: wrap;
+          width: 90%;
+
           .skill_box {
             display: flex;
             justify-content: center;
             align-items: center;
 
-            padding: 10rem 0;
-            max-width: 1000px;
-            min-width: 20vw;
+            padding: 10rem 5rem;
             width: 25vw;
             margin: 30px;
             overflow: hidden;
@@ -340,11 +344,12 @@
               background-clip: text;
               -webkit-text-fill-color: rgba(0, 0, 0, 0);
             }
-          }          
+          }
         }
       }
     }
   }
+}
 
 @media (max-width: 1467px) {
   .page_wrapper {
@@ -571,6 +576,7 @@
           }
           .column_text {
             .h3 {
+              padding: 0 2rem;
               color: rgb(0, 0, 0);
               font-size: 30px;
 
@@ -599,6 +605,9 @@
 
               &.active {
                 color: black;
+              }
+              h3 {
+                font-size: 2.3rem;
               }
             }
           }
