@@ -191,6 +191,7 @@ const Home = () => {
               </div>
             </div>
             <div className={scss.skill_wrapper}>
+              <h3>Skills ( in developing)</h3>
               <div className={scss.skill_bd}>
                 <div className={scss.skill_box}>
                   <h1>React</h1>

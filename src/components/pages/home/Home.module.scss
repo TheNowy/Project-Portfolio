@@ -307,17 +307,31 @@
         }
       }
       .skill_wrapper {
-        padding: 10rem 0;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+
+        h3 {
+          padding: 3rem 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 3.3rem;
+        }
+
         .skill_bd {
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 10rem 0;
+          padding: 2rem 0;
           flex-wrap: wrap;
           width: 90%;
 
@@ -326,24 +340,39 @@
             justify-content: center;
             align-items: center;
 
-            padding: 10rem 5rem;
-            width: 25vw;
-            margin: 30px;
+            padding: 2rem 1rem;
+            width: 100%;
+            margin: 10px;
             overflow: hidden;
 
-            border: solid 1px black;
+            border: 1px solid black;
+            border-radius: 8px;
 
+            &:hover {
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.562);
+            }
             h1 {
               background: -webkit-linear-gradient(
                 -70deg,
                 #6d2aff 0%,
                 #ea00ff 100%
               );
-              background-clip: border-box;
+              background-clip: text;
               -webkit-background-clip: text;
               background-clip: text;
-              -webkit-text-fill-color: rgba(0, 0, 0, 0);
+              -webkit-text-fill-color: transparent;
+              font-size: 24px;
+              margin: 0;
             }
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .skill_bd {
+          padding: 1rem 0;
+          .skill_box {
+            padding: 1rem 0.5rem;
           }
         }
       }
