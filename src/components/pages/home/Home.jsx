@@ -55,9 +55,9 @@ const Home = () => {
                       loop={true}
                       cursor
                       cursorStyle="|"
-                      typeSpeed={10}
-                      deleteSpeed={50}
-                      delaySpeed={1000}
+                      typeSpeed={30}
+                      deleteSpeed={10}
+                      delaySpeed={2000}
                     />
                   </span>
                 </h3>
