@@ -441,63 +441,61 @@
     .container {
       .home_content {
         .home_title {
-          .column_text {
-            .h3 {
-              padding: 10px 0;
-              font-size: 50px;
+          .h3 {
+            padding: 10px 0;
+            font-size: 50px;
+          }
+        }
+
+        .box_container {
+          .box_title {
+            flex-wrap: wrap;
+
+            .photo {
+              display: flex;
+              justify-content: center;
+              img {
+                width: 100%;
+              }
             }
           }
         }
-      }
-
-      .box_container {
-        .box_title {
-          flex-wrap: wrap;
-
-          .photo {
-            display: flex;
-            justify-content: center;
-            img {
+        .box_container {
+          .box_title {
+            .title {
               width: 100%;
+              margin-left: 15px;
             }
           }
         }
-      }
-      .box_container {
-        .box_title {
-          .title {
-            width: 100%;
-            margin-left: 15px;
-          }
-        }
-      }
-      .project_container {
-        width: 100vw;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: 0.3s;
-
-        .box_project {
-          width: 80vw;
+        .project_container {
+          width: 100vw;
+          max-width: 100%;
+          display: flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s;
 
-          &:first-child {
-            border-radius: 0;
-          }
-          &:last-child {
-            border-radius: 0;
-          }
-          .project_img {
+          .box_project {
             width: 80vw;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            img {
-              width: 100%;
-              padding: -14rem;
+            flex-direction: column;
+
+            &:first-child {
+              border-radius: 0;
+            }
+            &:last-child {
+              border-radius: 0;
+            }
+            .project_img {
+              width: 80vw;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              img {
+                width: 100%;
+                padding: -14rem;
+              }
             }
           }
         }
