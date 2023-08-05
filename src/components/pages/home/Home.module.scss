@@ -554,7 +554,9 @@
     .container {
       .home_content {
         .home_title {
+          line-height: 5rem;
           .column_text {
+            line-height: 3rem;
             .h3 {
               font-size: 38px;
               .fullstack {
@@ -610,7 +612,7 @@
           }
           .column_text {
             .h3 {
-              padding: 0 2rem;
+              padding: 1rem;
               color: rgb(255, 255, 255);
               font-size: 39px;
 
@@ -644,7 +646,7 @@
           .column_text {
             line-height: 2rem;
             .h3 {
-              padding: 0 2rem;
+              padding: 1rem;
               color: rgb(0, 0, 0);
               font-size: 30px;
 
@@ -677,6 +679,23 @@
               h3 {
                 font-size: 2.3rem;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .page_wrapper {
+    .container {
+      .home_content {
+        .home_title {
+          .column_text {
+            .h3 {
+              color: rgb(0, 0, 0);
+              font-size: 24px;
             }
           }
         }
