@@ -1,11 +1,17 @@
 footer {
   .footer_cont {
     width: 100%;
-    margin-top: 1.5rem;
+    background-color: #000000;
     padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s ease;
+
+    &.active {
+      transition: 0.3s;
+      background-color: #fff;
+    }
       
       h1{
         font-family: 'Rubik' sans-serif;
@@ -17,5 +23,21 @@ footer {
         font-size: 1.3rem;
         font-weight: 500;
       }
+  }
+}
+@media (max-width:500px) {
+  footer {
+    .footer_cont {
+      background-color: #ffffff;
+      transition: none;
+  
+      &.active {
+        transition: none;
+        background-color: none;
+      }
+      h1{
+        font-size: 1rem;
+      }
+    }
   }
 }
