@@ -51,29 +51,21 @@ const Home = () => {
                   <br />I AM A
                   <span className={scss.text_animation}>
                     <Typewriter
-                      words={[" DevXer", " Frontender", " Devoloper", " Freelancer"]}
-                      loop={true}
+                      words={[
+                        " DevXer",
+                        " Frontender",
+                        " Devoloper",
+                        " Freelancer",
+                      ]}
+                      Loop={true}
                       cursor
                       cursorStyle="|"
-                      typeSpeed={30}
+                      typeSpeed={100}
                       deleteSpeed={10}
                       delaySpeed={2000}
                     />
                   </span>
                 </h3>
-                {/* <p className={`${scss.p} ${headerScroll ? scss.active : ""}`}>
-                <span className={scss.text_animation_parag}>
-                  <Typewriter
-                    words={["As a skilled Front-End developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in Next.js and Web development"]}
-                    loop={true}
-                    cursor
-                    cursorStyle="|"
-                    typeSpeed={10}
-                    deleteSpeed={10000000000000}
-                    delaySpeed={100}
-                  />
-                </span>
-              </p> */}
               </div>
               <Tilt>
                 <img
@@ -190,29 +182,37 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={scss.skill_wrapper}>
-              <h3>Skills ( in developing)</h3>
-              <div className={scss.skill_bd}>
-                <div className={scss.skill_box}>
-                  <h1>React</h1>
+            {/* <div className={scss.skills}>
+              <div className={scss.cards}>
+                <div className={scss.card}>
+                  <div className={scss.info_skill}>
+                    <h3>FrontEnd</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Architecto voluptate quibusdam illo. Architecto ducimus.
+                    </p>
+                  </div>
                 </div>
-                <div className={scss.skill_box}>
-                  <h1>TypeScript</h1>
+                <div className={scss.card}>
+                  <div className={scss.info_skill}>
+                    <h3>Languages</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Architecto voluptate quibusdam illo. Architecto ducimus.
+                    </p>
+                  </div>
                 </div>
-                <div className={scss.skill_box}>
-                  <h1>JavaScript</h1>
-                </div>
-                <div className={scss.skill_box}>
-                  <h1>NodeJS</h1>
-                </div>
-                <div className={scss.skill_box}>
-                  <h1>MongoDB</h1>
-                </div>
-                <div className={scss.skill_box}>
-                  <h1>SCSS & SASS</h1>
+                <div className={scss.card}>
+                  <div className={scss.info_skill}>
+                    <h3>Database</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Architecto voluptate quibusdam illo. Architecto ducimus.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
