@@ -51,7 +51,7 @@ const Home = () => {
                   <br />I AM A
                   <span className={scss.text_animation}>
                     <Typewriter
-                      words={[" DevXer", " Frontend Developer", " Freelancer"]}
+                      words={[" DevXer", " Frontender", " Devoloper", " Freelancer"]}
                       loop={true}
                       cursor
                       cursorStyle="|"
