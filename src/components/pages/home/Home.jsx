@@ -57,12 +57,10 @@ const Home = () => {
                         " Devoloper",
                         " Freelancer",
                       ]}
-                      Loop={true}
-                      cursor
-                      cursorStyle="|"
-                      typeSpeed={100}
+                      loop={false}
+                      typeSpeed={70}
                       deleteSpeed={10}
-                      delaySpeed={2000}
+                      delaySpeed={1300}
                     />
                   </span>
                 </h3>
