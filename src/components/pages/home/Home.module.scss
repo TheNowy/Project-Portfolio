@@ -48,12 +48,21 @@
 
           &::before {
             left: 8rem;
-            background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+            background: linear-gradient(to right, black 0%, transparent 100%);
+          }
+
+          &.active::before {
+            left: 8rem;
+            background: linear-gradient(to right, white 0%, transparent 100%);
           }
 
           &::after {
             right: 8rem;
-            background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+            background: linear-gradient(to left, black 0%, transparent 100%);
+          }
+          &.active::after {
+            right: 8rem;
+            background: linear-gradient(to left, white 0%, transparent 100%);
           }
 
           .Title_Anim {
@@ -179,13 +188,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
-        transition: 1s ease;
-
-        &.active {
-          transition: 0.3s ease;
-          background-color: #fff;
-        }
 
         .box_title {
           width: 80vw;
@@ -303,6 +305,83 @@
           }
         }
       }
+      .skill_container {
+        width: 100vw;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7rem 0;
+
+        flex-direction: column;
+
+        .skill_title {
+          padding-bottom: 4rem;
+          text-align: center;
+          font-size: 3rem;
+          font-weight: 500;
+          background: -webkit-linear-gradient(
+            -70deg,
+            #6d2aff 0%,
+            #ea00ff 100%
+          );
+          background-clip: border-box;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        }
+      }
+
+      .box_container_twm_skill {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(270px, 1fr));
+        gap: 45px;
+      }
+
+      .box_twm_skill {
+        width: 100%;
+        padding: 1.8rem;
+        background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+        border-radius: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        transition: 0.4s;
+
+        &:hover {
+          transition: 0.3s;
+          box-shadow: 0 0 20px rgb(0, 0, 0);
+        }
+
+        h3 {
+          color: white;
+          width: 100%;
+          font-size: 2rem;
+          font-weight: 600;
+        }
+
+        p {
+          color: rgba(255, 255, 255, 0.906);
+          width: 100%;
+          font-size: 1rem;
+          font-weight: 500;
+          letter-spacing: 0.02rem;
+        }
+      }
+
+      @media (max-width: 1025px) {
+        .box_container_twm_skill {
+          grid-template-columns: repeat(2, minmax(270px, 1fr));
+        }
+      }
+
+      @media (max-width: 825px) {
+        .box_container_twm_skill {
+          grid-template-columns: minmax(270px, 1fr);
+        }
+      }
     }
   }
 }
@@ -346,24 +425,16 @@
       .home_content {
         .projects_carus {
           .carus_main {
-            &::before {
+            &.active::before {
               left: 6rem;
-              background: linear-gradient(
-                to right,
-                #ffffff 0%,
-                transparent 100%
-              );
+              background: linear-gradient(to right, white 0%, transparent 100%);
             }
-            &::after {
+            &.active::after {
               right: 6rem;
-              background: linear-gradient(
-                to left,
-                #ffffff 0%,
-                transparent 100%
-              );
+              background: linear-gradient(to left, white 0%, transparent 100%);
             }
             .Title_Anim {
-              font-size: 1rem;
+              font-size: 3rem;
             }
           }
         }
@@ -453,31 +524,18 @@
         }
         .projects_carus {
           .carus_main {
-            &::before {
+            &.active::before {
               left: 4rem;
-              background: linear-gradient(
-                to right,
-                #ffffff 0%,
-                transparent 100%
-              );
+              background: linear-gradient(to right, white 0%, transparent 100%);
             }
-            &::after {
+            &.active::after {
               right: 4rem;
-              background: linear-gradient(
-                to left,
-                #ffffff 0%,
-                transparent 100%
-              );
+              background: linear-gradient(to left, white 0%, transparent 100%);
             }
             .Title_Anim {
               font-size: 3rem;
               font-weight: 800;
             }
-          }
-        }
-        .skill_wrapper {
-          h3 {
-            font-size: 2.2rem;
           }
         }
       }
@@ -512,10 +570,10 @@
       .home_content {
         .projects_carus {
           .carus_main {
-            &::before {
+            &.active::before {
               background: none;
             }
-            &::after {
+            &.active::after {
               background: none;
             }
             .Title_Anim {

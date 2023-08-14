@@ -122,7 +122,10 @@ const Home = () => {
               className={`${scss.projects_carus} ${
                 headerScroll ? scss.active : ""
               }`}>
-              <div className={scss.carus_main}>
+              <div
+                className={`${scss.carus_main} ${
+                  headerScroll ? scss.active : ""
+                }`}>
                 <h1 className={scss.Title_Anim}>Projects</h1>
                 <h1 className={scss.Title_Anim}>Projects</h1>
                 <h1 className={scss.Title_Anim}>Projects</h1>
@@ -180,37 +183,59 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* <div className={scss.skills}>
-              <div className={scss.cards}>
-                <div className={scss.card}>
-                  <div className={scss.info_skill}>
-                    <h3>FrontEnd</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Architecto voluptate quibusdam illo. Architecto ducimus.
-                    </p>
-                  </div>
+            <div className={scss.skill_container}>
+            <h3 className={scss.skill_title}>Skills</h3>
+              <div className={scss.box_container_twm_skill}>
+                <div className={scss.box_twm_skill}>
+                  <h3>FullStack</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod animi voluptate praesentium nesciunt beatae, dolorem
+                    aspernatur magnam.
+                  </p>
                 </div>
-                <div className={scss.card}>
-                  <div className={scss.info_skill}>
-                    <h3>Languages</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Architecto voluptate quibusdam illo. Architecto ducimus.
-                    </p>
-                  </div>
+                <div className={scss.box_twm_skill}>
+                  <h3>SoftSkills</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod animi voluptate praesentium nesciunt beatae, dolorem
+                    aspernatur magnam.
+                  </p>
                 </div>
-                <div className={scss.card}>
-                  <div className={scss.info_skill}>
-                    <h3>Database</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Architecto voluptate quibusdam illo. Architecto ducimus.
-                    </p>
-                  </div>
+                <div className={scss.box_twm_skill}>
+                  <h3>JavaScript | TypeScipt</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod animi voluptate praesentium nesciunt beatae, dolorem
+                    aspernatur magnam.
+                  </p>
+                </div>
+                <div className={scss.box_twm_skill}>
+                  <h3>Languages</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod animi voluptate praesentium nesciunt beatae, dolorem
+                    aspernatur magnam.
+                  </p>
+                </div>
+                <div className={scss.box_twm_skill}>
+                  <h3>Database</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod animi voluptate praesentium nesciunt beatae, dolorem
+                    aspernatur magnam.
+                  </p>
+                </div>
+                <div className={scss.box_twm_skill}>
+                  <h3>Git</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod animi voluptate praesentium nesciunt beatae, dolorem
+                    aspernatur magnam.
+                  </p>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
