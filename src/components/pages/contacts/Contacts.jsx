@@ -114,7 +114,7 @@ const Contacts = () => {
                   id="name"
                   className={`${scss.input} ${headerScroll ? scss.active : ""}`}
                   type="text"
-                  placeholder="Nowy"
+                  placeholder="Your Name"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   required

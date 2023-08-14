@@ -72,7 +72,7 @@
         border: solid 1px rgb(189, 189, 189);
         border-radius: 13px;
 
-        gap: 3rem;
+        gap: 2.9rem;
 
         &:hover {
           box-shadow: 0 0 15px rgb(255, 255, 255);
@@ -123,6 +123,7 @@
           min-height: 174px;
           max-height: 300px;
           padding: 1rem;
+          resize: none;
         }
         .button {
           cursor: pointer;
