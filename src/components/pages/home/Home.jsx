@@ -227,7 +227,9 @@ const Home = () => {
                   </p>
                 </div>
                 <div className={scss.box_twm_skill}>
-                  <h3>Git</h3>
+                  <h3>GitHub | <br />
+                      Git
+                  </h3>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Quod animi voluptate praesentium nesciunt beatae, dolorem
