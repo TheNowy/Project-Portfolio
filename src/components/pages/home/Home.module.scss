@@ -333,7 +333,7 @@
       }
 
       .box_container_twm_skill {
-        width: 80%;
+        width: 81%;
         display: grid;
         grid-template-columns: repeat(3, minmax(270px, 1fr));
         gap: 45px;
@@ -343,7 +343,7 @@
         width: 100%;
         padding: 1.8rem;
         background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
-        box-shadow: 0 0 15px rgb(0, 0, 0);
+        box-shadow: 0 0 5px rgb(0, 0, 0);
         border-radius: 0.75rem;
         display: flex;
         flex-direction: column;
@@ -352,7 +352,7 @@
 
         &:hover {
           transition: 0.3s;
-          box-shadow: 0 0 20px rgb(0, 0, 0);
+          box-shadow: 0 0 15px rgb(0, 0, 0);
         }
 
         h3 {
