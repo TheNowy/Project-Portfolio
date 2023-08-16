@@ -150,7 +150,7 @@ const Contacts = () => {
               </label>
 
               <button type="submit" className={scss.button}>
-                Submit
+                Send
               </button>
             </form>
           </div>
