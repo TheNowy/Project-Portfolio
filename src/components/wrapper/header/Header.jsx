@@ -59,15 +59,14 @@ export const Header = () => {
 
   return (
     <nav className={scss.nav}>
-      {/* <header className={scss.beta}>
-        <h1>Beta-Test</h1>
-      </header> */}
       <header
         className={
           headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
         }>
         <NavLink to="/" className={scss.logo}>
-          Zhusup<span>.</span>
+          <img src="../../../../Logo&Bigest.png" alt="" />
+          <h3 className={scss.logo_text}>nowy</h3>
+          <span>BETA</span>
         </NavLink>
         <div className={scss.header_wrap}>
           <NavLink
@@ -103,7 +102,9 @@ export const Header = () => {
           <NavLink
             to="https://github.com/NowyTeam"
             className={
-              headerScroll ? `${scss.gitlink} ${scss.active}` : `${scss.gitlink}`
+              headerScroll
+                ? `${scss.gitlink} ${scss.active}`
+                : `${scss.gitlink}`
             }>
             GitHub
           </NavLink>
