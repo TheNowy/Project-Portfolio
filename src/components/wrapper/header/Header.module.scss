@@ -198,7 +198,7 @@
 @media (max-width: 500px) {
   .header {
     width: 100%;
-    padding: 10px 10%;
+    padding: 10px 15px;
 
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -206,23 +206,62 @@
     align-items: center;
     transition: none;
 
-    .logo {
-      color: rgb(0, 0, 0);
-      font-weight: 700;
-      font-size: 25px;
-      padding: 5px 10px;
-      font-family: "Rubik", sans-serif;
-      text-transform: uppercase;
+    .header_wrap {
+      .burger_menu {
+        span {
+          width: 35px;
+          height: 5px;
 
-      &.activeLinks {
-        color: rgb(0, 0, 0);
+          &:last-child {
+            width: 25px;
+          }
+        }
+      }
+    }
+
+    .logo {
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0;
+
+      text-decoration: none;
+      font-style: none;
+      .logo_text {
+        background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-size: 23px;
+        font-weight: 600;
+        font-family: "Rubik", sans-serif;
+      }
+      span {
+        border: 1px solid #20d74b;
+        border-radius: 16px;
+        color: #23dc4e;
+        font-size: 8pt;
+        font-weight: 600;
+        padding: 0.1rem 0.3rem;
+        text-transform: uppercase;
+      }
+      img {
+        width: 35px;
+        height: 35px;
+      }
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.216);
       }
     }
 
     &.active {
       background-color: rgb(255, 255, 255);
       width: 100%;
-      padding: 10px 10%;
+      padding: 10px 15px;
       border-bottom: none;
       backdrop-filter: none;
     }
