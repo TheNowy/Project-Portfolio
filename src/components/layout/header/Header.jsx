@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import DropDownMenu from "../../wrapper/header/DropDownMenu/DropDown";
-import QuickDrop from "../../wrapper/header/QuickMenu/Quick";
+import DropDownMenu from "../../layout/header/DropDownMenu/DropDown";
+import QuickDrop from "../../layout/header/QuickMenu/Quick";
 import scss from "./Header.module.scss";
 
 export const Header = () => {

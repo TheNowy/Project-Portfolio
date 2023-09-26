@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Wrapper } from "./components/wrapper/Wrapper";
+import { Wrapper } from "./components/layout/Layout";
 import BarLoader from "react-spinners/MoonLoader";
 import "./App.scss";
 
