@@ -184,57 +184,65 @@ const Home = () => {
               </div>
             </div>
             <div className={scss.skill_container}>
-            <h3 className={scss.skill_title}>Skills</h3>
+              <h3 className={scss.skill_title}>Skills</h3>
               <div className={scss.box_container_twm_skill}>
                 <div className={scss.box_twm_skill}>
                   <h3>FullStack</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod animi voluptate praesentium nesciunt beatae, dolorem
-                    aspernatur magnam.
+                    As a full-stack developer, I have a variety of skills that
+                    allow me to handle both the front-end and back-end aspects
+                    of web development. These skills allow me to create
+                    comprehensive and interactive web applications from start to
+                    finish.
                   </p>
                 </div>
                 <div className={scss.box_twm_skill}>
-                  <h3>SoftSkills</h3>
+                  <h3>Front-End</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod animi voluptate praesentium nesciunt beatae, dolorem
-                    aspernatur magnam.
-                  </p>
-                </div>
-                <div className={scss.box_twm_skill}>
-                  <h3>JavaScript | <br />
-                   TypeScipt</h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod animi voluptate praesentium nesciunt beatae, dolorem
-                    aspernatur magnam.
+                    Having knowledge in front-end technologies such as
+                    JavaScript, React, TypeScript, HTML5, CSS3, SCSS, Tailwind,
+                    Bootstrap, Material-UI, Figma. I can create intuitive user
+                    interfaces and responsive web designs. I have a keen eye for
+                    design aesthetics, which ensures that the user experience is
+                    fluid and visually appealing.
                   </p>
                 </div>
                 <div className={scss.box_twm_skill}>
                   <h3>Languages</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod animi voluptate praesentium nesciunt beatae, dolorem
-                    aspernatur magnam.
+                    I am proficient in several programming languages such as
+                    JavaScript , TypeScript, and Node JS. This versatility
+                    allows me to adapt to different project requirements and
+                    choose the best language for each task.
                   </p>
                 </div>
                 <div className={scss.box_twm_skill}>
                   <h3>Database</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod animi voluptate praesentium nesciunt beatae, dolorem
-                    aspernatur magnam.
+                    I have experience with various database systems such as
+                    MySQL, MongoDB. I can efficiently design and
+                    optimize database schemas, write complex queries, ensure
+                    data integrity and security.
                   </p>
                 </div>
                 <div className={scss.box_twm_skill}>
-                  <h3>GitHub | <br />
-                      Git
-                  </h3>
+                  <h3>Back-End</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod animi voluptate praesentium nesciunt beatae, dolorem
-                    aspernatur magnam.
+                    I am well versed in back-end technologies such as Node.js,
+                    Express, Fastify , RESTful APIs, Prisma, and GraphQL. This
+                    knowledge allows me to design and implement server-side
+                    logic, manage data storage and retrieval, and create robust
+                    APIs to ensure seamless communication between external and
+                    internal systems.
+                  </p>
+                </div>
+                <div className={scss.box_twm_skill}>
+                  <h3>Git</h3>
+                  <p>
+                    I am able to use Git and other version control tools to
+                    effectively manage code repositories. This allows me to
+                    collaborate with other developers, easily integrate code,
+                    and track changes throughout the development process.
                   </p>
                 </div>
               </div>
