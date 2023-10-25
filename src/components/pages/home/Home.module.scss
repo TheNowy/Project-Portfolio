@@ -320,11 +320,7 @@
           text-align: center;
           font-size: 3rem;
           font-weight: 500;
-          background: -webkit-linear-gradient(
-            -70deg,
-            #6d2aff 0%,
-            #ea00ff 100%
-          );
+          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
           background-clip: border-box;
           -webkit-background-clip: text;
           background-clip: text;
@@ -342,9 +338,14 @@
       .box_twm_skill {
         width: 100%;
         padding: 1.8rem;
-        background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
-        box-shadow: 0 0 5px #000000;
+        border: none;
         border-radius: 0.75rem;
+        background: linear-gradient(
+          131.01deg,
+          #9d49f2 12.15%,
+          #7d62fb 75.57%,
+          #706cff 97.89%
+        );
         display: flex;
         flex-direction: column;
         gap: 0.8rem;
@@ -352,18 +353,19 @@
 
         &:hover {
           transition: 0.3s;
+          border: none;
           box-shadow: 0 0 15px rgb(0, 0, 0);
         }
 
         h3 {
-          color: white;
+          color: #ffffff;
           width: 100%;
           font-size: 2rem;
           font-weight: 600;
         }
 
         p {
-          color: rgba(255, 255, 255, 0.906);
+          color: rgba(255, 255, 255, 0.756);
           width: 100%;
           font-size: 1rem;
           font-weight: 500;
