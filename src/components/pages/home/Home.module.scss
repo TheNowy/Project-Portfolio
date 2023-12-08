@@ -91,7 +91,7 @@
 
       .home_title {
         width: 83%;
-        padding: 12% 0;
+        padding: 20% 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -264,7 +264,7 @@
           padding: 0;
           width: 39.8vw;
           background-color: rgba(0, 0, 0, 0);
-          border: solid 2px #d4d4d4;
+          border: solid 1px #d4d4d4;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -294,12 +294,12 @@
             }
 
             .right_photo {
-              width: 98.6%;
+              width: 117%;
               transition: 0.3s;
-              transform: scale(1.03);
+              transform: scale(1);
 
               &:hover {
-                transform: scale(1.1);
+                transform: scale(1.05);
               }
             }
           }
