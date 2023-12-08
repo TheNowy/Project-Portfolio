@@ -35,13 +35,13 @@ const Quick = () => {
             <NavLink
               to="https://cloud.mail.ru/public/MaXo/vZTgfh65W"
               className={`${scss.link}`}>
-              Quick View
+              Job Resume
             </NavLink>
             <hr />
             <NavLink
-              to="https://cloud.mail.ru/public/MaXo/vZTgfh65W"
+              to="https://cloud.mail.ru/public/2Cvu/4RkyuGRgJ"
               className={`${scss.link}`}>
-              Download
+              Student Resume
             </NavLink>
           </div>
         </div>
