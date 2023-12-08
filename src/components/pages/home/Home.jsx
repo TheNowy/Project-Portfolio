@@ -65,13 +65,6 @@ const Home = () => {
                   </span>
                 </h3>
               </div>
-              <Tilt>
-                <img
-                  className={scss.home_img}
-                  src="../../../68747470733a2f2f6170692e7a616877617a65696e2e78797a2f75706c6f61642f69636f6e2e706e67.png"
-                  alt=""
-                />
-              </Tilt>
             </div>
             <div
               className={`${scss.box_container} ${
@@ -79,7 +72,7 @@ const Home = () => {
               }`}>
               <div className={scss.box_title}>
                 <div className={scss.photo}>
-                  <img src="/../../../..//kurapica.jpg" alt="" />
+                  <img src="https://media.idownloadblog.com/wp-content/uploads/2020/11/snow-wallpaper-mountain-lake-idownloadblog-unsplash-fynn-ipad.jpg" alt="" />
                 </div>
                 <div
                   className={`${scss.title} ${
