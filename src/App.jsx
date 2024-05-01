@@ -10,14 +10,14 @@ export const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 2000);
   }, []);
 
   return (
     <>
       {loading ? (
         <div className="loader">
-          <BarLoader color="#ea00ff" loading={loading} size={100} />
+          <BarLoader color="#6d2aff" loading={loading} size={100} />
         </div>
       ) : (
         <Wrapper />

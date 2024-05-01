@@ -70,7 +70,7 @@
       align-items: center;
       width: 5rem;
       margin-left: 50px;
-      background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+      background: #6d2aff;
       color: rgb(255, 255, 255);
       border-radius: 5px;
       padding: 10px 10px;
@@ -79,13 +79,7 @@
       font-family: "Rubik", sans-serif;
 
       &:hover {
-        box-shadow: 0 0 10px white;
-        transition: 0.2s;
-
-        &:hover.active {
-          box-shadow: 0 0 10px rgb(0, 0, 0);
-          transition: 0.2s;
-        }
+        background: #5220bd;
       }
     }
     .link {
@@ -118,7 +112,7 @@
 
       width: 5rem;
       padding: 10px 15px;
-      background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+      background: #6d2aff;
 
       border-radius: 5px;
       font-family: "Rubik", sans-serif;
@@ -128,13 +122,7 @@
       transition: 1s;
 
       &:hover {
-        box-shadow: 0 0 10px white;
-        transition: 0.2s;
-
-        &:hover.active {
-          box-shadow: 0 0 10px rgb(0, 0, 0);
-          transition: 0.2s;
-        }
+        background: #5220bd;
       }
     }
     .burger_menu {
@@ -182,7 +170,7 @@
           width: 40px;
           height: 6px;
           margin: 6px auto;
-          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background: #6d2aff;
           border-radius: 2px;
           transition: 0.2s;
 
@@ -228,7 +216,7 @@
       text-decoration: none;
       font-style: none;
       .logo_text {
-        background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+        background: #6d2aff;
         background-clip: border-box;
         -webkit-background-clip: text;
         background-clip: text;

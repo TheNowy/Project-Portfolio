@@ -36,21 +36,13 @@
         overflow: hidden;
         transition: 0.3s;
 
-        &:hover {
-          box-shadow: 0 0 15px rgb(255, 255, 255);
-        }
-
         &.active {
           background-position: center;
           background-image: url(https://images.unsplash.com/photo-1627324676650-2c311d3c74b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
-
-          &:hover {
-            box-shadow: 0 0 15px rgb(0, 0, 0);
-          }
         }
 
         .h1 {
-          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background: #6d2aff;
           background-clip: border-box;
           -webkit-background-clip: text;
           background-clip: text;
@@ -74,16 +66,8 @@
 
         gap: 2.9rem;
 
-        &:hover {
-          box-shadow: 0 0 15px rgb(255, 255, 255);
-        }
-
         &.active {
           background-color: #fff;
-
-          &:hover {
-            box-shadow: 0 0 15px rgb(0, 0, 0);
-          }
         }
 
         .label {
@@ -131,13 +115,13 @@
           font-weight: 600;
           padding: 1rem;
           border: none;
-          background: linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
+          background: #6d2aff;
           color: white;
           border-radius: 13px;
           transition: 0.3s;
 
           &:hover {
-            box-shadow: 0 0 15px black;
+            background: #3e1891;
           }
         }
       }
@@ -223,7 +207,7 @@
   right: 20px;
   width: 350px;
   padding: 20px;
-  background: -webkit-linear-gradient(-70deg, #ea00ff 0%, #6d2aff 100%);
+  background: #6d2aff;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
