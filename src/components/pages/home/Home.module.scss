@@ -127,11 +127,7 @@
               font-size: 20px;
               margin-left: 5px;
               padding: 10px 15px;
-              background: -webkit-linear-gradient(
-                -70deg,
-                #6d2aff 0%,
-                #ea00ff 100%
-              );
+              background: #6d2aff;
               border-radius: 21px 10px 21px 10px;
               transition: 0.5s;
 
@@ -153,7 +149,7 @@
           }
         }
         .text_animation {
-          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background: #6d2aff;
           background-clip: border-box;
           -webkit-background-clip: text;
           background-clip: text;
@@ -231,11 +227,8 @@
             }
 
             h3 {
-              background: -webkit-linear-gradient(
-                -70deg,
-                #6d2aff 0%,
-                #ea00ff 100%
-              );
+              background: #6d2aff;
+
               background-clip: border-box;
               -webkit-background-clip: text;
               background-clip: text;
@@ -320,7 +313,8 @@
           text-align: center;
           font-size: 3rem;
           font-weight: 500;
-          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background: #6d2aff;
+
           background-clip: border-box;
           -webkit-background-clip: text;
           background-clip: text;
@@ -340,21 +334,14 @@
         padding: 1.8rem;
         border: none;
         border-radius: 0.75rem;
-        background: linear-gradient(
-          131.01deg,
-          #9d49f2 12.15%,
-          #7d62fb 75.57%,
-          #706cff 97.89%
-        );
+        background: #6d2aff;
         display: flex;
         flex-direction: column;
         gap: 0.8rem;
         transition: 0.4s;
 
         &:hover {
-          transition: 0.3s;
-          border: none;
-          box-shadow: 0 0 15px rgb(0, 0, 0);
+          background: #481ba7;
         }
 
         h3 {

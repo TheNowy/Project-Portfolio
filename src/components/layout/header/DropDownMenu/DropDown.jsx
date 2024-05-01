@@ -7,7 +7,7 @@ const DropDown = () => {
 
   const activeLink = ({ isActive }) => {
     return {
-      border: isActive ? "solid 1px #4d01ff" : "none",
+      border: isActive ? "solid 1px #6d2aff" : "none",
     };
   };
 
@@ -29,7 +29,12 @@ const DropDown = () => {
   }, []);
 
   return (
-    <div className={headerScroll ? `${scss.DropDownMenu} ${scss.active}` : `${scss.DropDownMenu}`}>
+    <div
+      className={
+        headerScroll
+          ? `${scss.DropDownMenu} ${scss.active}`
+          : `${scss.DropDownMenu}`
+      }>
       <ul className={`${scss.gap_4}`}>
         <NavLink to="/" className={`${scss.link}`} style={activeLink}>
           Home
@@ -40,7 +45,9 @@ const DropDown = () => {
         <NavLink to="/contacts" className={`${scss.link}`} style={activeLink}>
           Contact
         </NavLink>
-        <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
+        <NavLink
+          to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX"
+          className={`${scss.link}`}>
           Quick View
         </NavLink>
         {/* <NavLink to="https://cloud.mail.ru/public/Kv1A/oYjpkqoqX" className={`${scss.link}`}>
@@ -57,4 +64,3 @@ const DropDown = () => {
 };
 
 export default DropDown;
-

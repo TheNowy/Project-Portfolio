@@ -6,31 +6,32 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s ease;
+    transition: 0.3s ease;
 
     &.active {
       transition: 0.3s;
       background-color: #fff;
     }
-      
-      h1{
-        font-family: 'Rubik' sans-serif;
-        background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: rgba(0, 0, 0, 0);
-        font-size: 1.1rem;
-        font-weight: 500;
-      }
+
+    h1 {
+      font-family: "Rubik" sans-serif;
+      background: #6d2aff;
+
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
   }
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   footer {
     .footer_cont {
       background-color: #ffffff;
       transition: none;
-  
+
       &.active {
         transition: none;
         background-color: none;
