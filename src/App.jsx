@@ -17,7 +17,7 @@ export const App = () => {
     <>
       {loading ? (
         <div className="loader">
-          <BarLoader color="#6d2aff" loading={loading} size={100} />
+          <BarLoader color="#6d2aff" loading={loading} size={25} />
         </div>
       ) : (
         <Wrapper />
