@@ -8,7 +8,7 @@
   backdrop-filter: blur(6px);
 
   width: 100%;
-  padding: 1.4rem 8%;
+  padding: 1rem 8%;
 
   display: flex;
   justify-content: space-between;
@@ -17,10 +17,9 @@
   transition: 0.2s;
 
   &.active {
+    padding: 1rem 9.4%;
     transition: 0.3s;
-    padding: 1.4rem 5%;
-    border-bottom: solid 1px blue;
-    background-color: rgba(255, 255, 255, 0.586);
+    background-color: #fff;
   }
 
   .logo {
