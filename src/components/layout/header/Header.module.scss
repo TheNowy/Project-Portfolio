@@ -163,7 +163,7 @@
         span {
           display: block;
           width: 40px;
-          height: 6px;
+          height: 4.5px;
           margin: 6px auto;
           background: #6d2aff;
           border-radius: 2px;
@@ -171,6 +171,7 @@
 
           &:last-child {
             width: 30px;
+            height: 4.5px;
           }
         }
       }
