@@ -17,7 +17,13 @@ const Home = () => {
       }
     };
 
+    const setZoom = () => {
+      document.body.style.zoom = "90%";
+    };
+
     changeBackground();
+    setZoom();
+
     window.addEventListener("scroll", changeBackground);
 
     return () => {
@@ -72,7 +78,10 @@ const Home = () => {
               }`}>
               <div className={scss.box_title}>
                 <div className={scss.photo}>
-                  <img src="https://media.idownloadblog.com/wp-content/uploads/2020/11/snow-wallpaper-mountain-lake-idownloadblog-unsplash-fynn-ipad.jpg" alt="" />
+                  <img
+                    src="https://media.idownloadblog.com/wp-content/uploads/2020/11/snow-wallpaper-mountain-lake-idownloadblog-unsplash-fynn-ipad.jpg"
+                    alt=""
+                  />
                 </div>
                 <div
                   className={`${scss.title} ${
@@ -213,9 +222,9 @@ const Home = () => {
                   <h3>Database</h3>
                   <p>
                     I have experience with various database systems such as
-                    MySQL, MongoDB. I can efficiently design and
-                    optimize database schemas, write complex queries, ensure
-                    data integrity and security.
+                    MySQL, MongoDB. I can efficiently design and optimize
+                    database schemas, write complex queries, ensure data
+                    integrity and security.
                   </p>
                 </div>
                 <div className={scss.box_twm_skill}>
