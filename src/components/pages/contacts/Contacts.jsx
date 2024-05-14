@@ -45,7 +45,13 @@ const Contacts = () => {
       }
     };
 
+    const setZoom = () => {
+      document.body.style.zoom = "90%";
+    };
+
     changeBackground();
+    setZoom();
+
     window.addEventListener("scroll", changeBackground);
 
     return () => {
