@@ -14,6 +14,12 @@ const Quick = () => {
       }
     };
 
+    const setZoom = () => {
+      document.body.style.zoom = "90%";
+    };
+
+    setZoom();
+
     changeBackground();
     window.addEventListener("scroll", changeBackground);
 

@@ -18,7 +18,7 @@ const Home = () => {
     };
 
     const setZoom = () => {
-      document.body.style.zoom = "90%";
+      document.body.style.zoom = "100%";
     };
 
     changeBackground();
