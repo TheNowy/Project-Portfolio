@@ -8,7 +8,7 @@
   backdrop-filter: blur(6px);
 
   width: 100%;
-  padding: 1rem 8%;
+  padding: 1rem 13%;
 
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@
   transition: 0.2s;
 
   &.active {
-    padding: 1rem 9.4%;
+    padding: 1rem 14%;
     transition: 0.3s;
     background-color: #fff;
   }
