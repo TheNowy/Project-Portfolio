@@ -1,6 +1,5 @@
 .page_wrapper {
   width: 100%;
-  max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
 
@@ -13,9 +12,7 @@
       justify-content: center;
       background-color: rgb(0, 0, 0);
 
-      min-height: 130vh;
-
-      padding: 5rem 7rem;
+      min-height: 140vh;
 
       &.active {
         background-color: #fff;
@@ -23,11 +20,10 @@
       .gif_image {
         margin-right: 50px;
         border-radius: 13px;
-        min-width: 600px;
-        max-width: 2000px;
-        padding: 18.4rem 13rem;
-        border: solid 1px #0d1117;
-        background-image: url("https://images.unsplash.com/photo-1535332371349-a5d229f49cb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmlnaHQlMjBtb29ufGVufDB8fDB8fHww&w=1000&q=80");
+        min-width: 550px;
+        height: 35rem;
+        background-image: url("https://wallpapers.com/images/hd/grand-blue-derp-face-x0co2as3x6ioif88.jpg");
+        background-position: -400px;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -37,14 +33,16 @@
         transition: 0.3s;
 
         &.active {
-          background-position: center;
-          background-image: url(https://images.unsplash.com/photo-1627324676650-2c311d3c74b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
+          background-position: -10px;
+          background-image: url(https://wallpapers.com/images/hd/grand-blue-derp-face-x0co2as3x6ioif88.jpg);
         }
 
         .h1 {
           background: #6d2aff;
           background-clip: border-box;
+          font-size: 28px;
           -webkit-background-clip: text;
+          display: none;
           background-clip: text;
           -webkit-text-fill-color: rgba(0, 0, 0, 0);
         }
@@ -55,16 +53,14 @@
         justify-content: center;
         flex-direction: column;
 
-        min-width: 600px;
+        min-width: 500px;
         max-width: 2000px;
 
-        padding: 2rem;
-
-        background-color: #212121;
-        border: solid 1px rgb(189, 189, 189);
+        padding: 0rem;
+        background-color: #000000;
         border-radius: 13px;
 
-        gap: 2.9rem;
+        gap: 3rem;
 
         &.active {
           background-color: #fff;
@@ -76,6 +72,7 @@
           margin-bottom: 13px;
           font-weight: 100;
           font-family: sans-serif;
+          font-size: 14px;
 
           &.active {
             color: black;
@@ -136,16 +133,20 @@
         flex-direction: column;
         padding: 8rem 3rem;
         .gif_image {
+          background-position: center;
           display: flex;
           margin-right: 0;
           margin-bottom: 20px;
           border-radius: 13px;
-          min-width: 400px;
-          max-width: 400px;
-          padding: 8rem 6rem;
+          min-width: 340px;
+          height: 10rem;
+          &.active {
+            background-position: center;
+          }
         }
         .form {
           min-width: 400px;
+          padding: 2rem;
         }
       }
     }
@@ -176,20 +177,24 @@
     }
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   .page_wrapper {
     .container {
       .home_content {
         padding: 8rem 3rem;
         .gif_image {
-          background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
+          border-radius: 4px;
+          border: none;
+          background-position: center;
+          background-image: url("https://wallpapers.com/images/hd/grand-blue-derp-face-x0co2as3x6ioif88.jpg");
           &.active {
-            background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
+            background-position: center;
+            background-image: url("https://wallpapers.com/images/hd/grand-blue-derp-face-x0co2as3x6ioif88.jpg");
           }
-          min-width: 300px;
-          max-width: 200px;
+          min-width: 220px;
+          max-width: 300px;
+          height: 0;
           padding: 2rem 3.5rem;
-
           .h1 {
             font-size: 20px;
           }

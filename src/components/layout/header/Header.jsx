@@ -34,7 +34,7 @@ export const Header = () => {
       if (window.innerWidth > 500) {
         document.body.style.zoom = "90%";
       } else {
-        document.body.style.zoom = "100%"; // Сбрасываем зум, если ширина меньше 500px
+        document.body.style.zoom = "100%";
       }
     };
 
