@@ -185,7 +185,7 @@
         align-items: center;
 
         .box_title {
-          width: 80vw;
+          width: 80%;
           background-color: rgba(0, 0, 0, 0);
           border-radius: 15px;
           border: solid 1px #d4d4d4;
@@ -232,7 +232,7 @@
               -webkit-background-clip: text;
               background-clip: text;
               -webkit-text-fill-color: rgba(0, 0, 0, 0);
-              font-size: 3.5rem;
+              font-size: 2.5rem;
               margin-left: 9px;
               margin-bottom: 15px;
             }
@@ -270,7 +270,7 @@
           }
 
           .project_img {
-            width: 100vw;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -286,7 +286,7 @@
             }
 
             .right_photo {
-              width: 117%;
+              width: 100%;
               transition: 0.3s;
               transform: scale(1);
 
@@ -310,7 +310,7 @@
         .skill_title {
           padding-bottom: 4rem;
           text-align: center;
-          font-size: 3rem;
+          font-size: 2.7rem;
           font-weight: 500;
           background: #6d2aff;
 
