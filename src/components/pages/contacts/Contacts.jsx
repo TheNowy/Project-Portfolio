@@ -3,6 +3,7 @@ import axios from "axios";
 import scss from "./Conctacts.module.scss";
 import { Helmet } from "react-helmet";
 import Modal from "react-modal";
+import { motion } from "framer-motion";
 // import Tilt from "react-parallax-tilt";
 
 const Contacts = () => {
@@ -103,67 +104,77 @@ const Contacts = () => {
       </Helmet>
       <div className={scss.page_wrapper}>
         <div className={scss.container}>
-          <div
-            className={`${scss.home_content} ${
-              headerScroll ? scss.active : ""
-            }`}>
+          <motion.ul
+            className="container"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}>
             <div
-              className={`${scss.gif_image} ${
+              className={`${scss.home_content} ${
                 headerScroll ? scss.active : ""
               }`}>
-              <h1 className={scss.h1}>Contact Me</h1>
-            </div>
-            <form
-              className={`${scss.form} ${headerScroll ? scss.active : ""}`}
-              onSubmit={handleSubmit}>
-              <label
-                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="name">
-                Name
-                <input
-                  id="name"
-                  className={`${scss.input} ${headerScroll ? scss.active : ""}`}
-                  type="text"
-                  placeholder="Your Name"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  required
-                />
-              </label>
-              <label
-                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="email">
-                Email
-                <input
-                  id="email"
-                  className={`${scss.input} ${headerScroll ? scss.active : ""}`}
-                  type="email"
-                  placeholder="nowy@example.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </label>
-              <label
-                className={`${scss.label} ${headerScroll ? scss.active : ""}`}
-                htmlFor="comment">
-                Message
-                <textarea
-                  id="comment"
-                  className={`${scss.message} ${
-                    headerScroll ? scss.active : ""
-                  }`}
-                  value={message}
-                  placeholder="Your Message"
-                  onChange={(e) => setMessage(e.target.value)}
-                  required></textarea>
-              </label>
+              <div
+                className={`${scss.gif_image} ${
+                  headerScroll ? scss.active : ""
+                }`}>
+                <h1 className={scss.h1}>Contact Me</h1>
+              </div>
+              <form
+                className={`${scss.form} ${headerScroll ? scss.active : ""}`}
+                onSubmit={handleSubmit}>
+                <label
+                  className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                  htmlFor="name">
+                  Name
+                  <input
+                    id="name"
+                    className={`${scss.input} ${
+                      headerScroll ? scss.active : ""
+                    }`}
+                    type="text"
+                    placeholder="Your Name"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    required
+                  />
+                </label>
+                <label
+                  className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                  htmlFor="email">
+                  Email
+                  <input
+                    id="email"
+                    className={`${scss.input} ${
+                      headerScroll ? scss.active : ""
+                    }`}
+                    type="email"
+                    placeholder="nowy@example.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </label>
+                <label
+                  className={`${scss.label} ${headerScroll ? scss.active : ""}`}
+                  htmlFor="comment">
+                  Message
+                  <textarea
+                    id="comment"
+                    className={`${scss.message} ${
+                      headerScroll ? scss.active : ""
+                    }`}
+                    value={message}
+                    placeholder="Your Message"
+                    onChange={(e) => setMessage(e.target.value)}
+                    required></textarea>
+                </label>
 
-              <button type="submit" className={scss.button}>
-                Send
-              </button>
-            </form>
-          </div>
+                <button type="submit" className={scss.button}>
+                  Send
+                </button>
+              </form>
+            </div>
+          </motion.ul>
         </div>
       </div>
       <Modal
@@ -171,12 +182,11 @@ const Contacts = () => {
         onRequestClose={() => setIsModalOpen(false)}
         contentLabel="Message Sent Modal"
         className={scss.modal}
-        overlayClassName={scss.modalOverlay}
-      >
+        overlayClassName={scss.modalOverlay}>
         <h2>Сообщение отправлено!</h2>
         <p>
-           Спасибо! Ваше сообщение было успешно отправлено. Ожидайте
-          ответа в течение дня.
+          Спасибо! Ваше сообщение было успешно отправлено. Ожидайте ответа в
+          течение дня.
         </p>
       </Modal>
     </>
