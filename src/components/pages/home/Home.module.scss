@@ -45,25 +45,6 @@
             z-index: 20;
           }
 
-          &::before {
-            left: 8rem;
-            background: linear-gradient(to right, black 0%, transparent 100%);
-          }
-
-          &.active::before {
-            left: 8rem;
-            background: linear-gradient(to right, white 0%, transparent 100%);
-          }
-
-          &::after {
-            right: 8rem;
-            background: linear-gradient(to left, black 0%, transparent 100%);
-          }
-          &.active::after {
-            right: 8rem;
-            background: linear-gradient(to left, white 0%, transparent 100%);
-          }
-
           .Title_Anim {
             padding: 3% 20px;
             color: transparent;
