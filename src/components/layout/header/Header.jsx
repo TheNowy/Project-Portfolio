@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import DropDownMenu from "../../layout/header/DropDownMenu/DropDown";
 import QuickDrop from "../../layout/header/QuickMenu/Quick";
 import scss from "./Header.module.scss";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   const [headerScroll3, setHeaderScroll3] = useState(false);
@@ -69,27 +70,32 @@ export const Header = () => {
 
   return (
     <nav className={scss.nav}>
-      <header
-        className={
-          headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
-        }>
-        <NavLink to="/" className={scss.logo}>
-          <img src="../../../../Logo&Bigest.png" alt="" />
-          <h3 className={scss.logo_text}>nowy</h3>
-          <span>BETA</span>
-        </NavLink>
-        <div className={scss.header_wrap}>
-          <NavLink
-            to="/"
-            className={
-              headerScroll3
-                ? `${scss.link} ${scss.activeLinks}`
-                : `${scss.link}`
-            }
-            style={activeLink}>
-            Home
+      <motion.ul
+        className="container"
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.1 }}>
+        <header
+          className={
+            headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
+          }>
+          <NavLink to="/" className={scss.logo}>
+            <img src="../../../../Logo&Bigest.png" alt="" />
+            <h3 className={scss.logo_text}>nowy</h3>
+            <span>BETA</span>
           </NavLink>
-          {/* <NavLink
+          <div className={scss.header_wrap}>
+            <NavLink
+              to="/"
+              className={
+                headerScroll3
+                  ? `${scss.link} ${scss.activeLinks}`
+                  : `${scss.link}`
+              }
+              style={activeLink}>
+              Home
+            </NavLink>
+            {/* <NavLink
             to="/blog"
             className={
               headerScroll3
@@ -99,45 +105,48 @@ export const Header = () => {
             style={activeLink}>
             Blog
           </NavLink> */}
-          <NavLink
-            to="/contacts"
-            className={
-              headerScroll3
-                ? `${scss.link} ${scss.activeLinks}`
-                : `${scss.link}`
-            }
-            style={activeLink}>
-            Contact
-          </NavLink>
-          <NavLink
-            to="https://github.com/NowyTeam"
-            className={
-              headerScroll
-                ? `${scss.gitlink} ${scss.active}`
-                : `${scss.gitlink}`
-            }>
-            GitHub
-          </NavLink>
-          <NavLink
-            className={
-              headerScroll ? `${scss.resume} ${scss.active}` : `${scss.resume}`
-            }
-            onClick={() => closeProfile2((prev) => !prev)}>
-            Resume
-          </NavLink>
-          <div
-            className={`${scss.burger_menu} ${isOpen ? scss.open : ""}`}
-            onClick={() => {
-              closeProfile((prev) => !prev);
-              toggleMenu();
-            }}>
-            <span></span>
-            <span></span>
+            <NavLink
+              to="/contacts"
+              className={
+                headerScroll3
+                  ? `${scss.link} ${scss.activeLinks}`
+                  : `${scss.link}`
+              }
+              style={activeLink}>
+              Contact
+            </NavLink>
+            <NavLink
+              to="https://github.com/NowyTeam"
+              className={
+                headerScroll
+                  ? `${scss.gitlink} ${scss.active}`
+                  : `${scss.gitlink}`
+              }>
+              GitHub
+            </NavLink>
+            <NavLink
+              className={
+                headerScroll
+                  ? `${scss.resume} ${scss.active}`
+                  : `${scss.resume}`
+              }
+              onClick={() => closeProfile2((prev) => !prev)}>
+              Resume
+            </NavLink>
+            <div
+              className={`${scss.burger_menu} ${isOpen ? scss.open : ""}`}
+              onClick={() => {
+                closeProfile((prev) => !prev);
+                toggleMenu();
+              }}>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
-      </header>
-      {openProfile && <DropDownMenu />}
-      {openProfile2 && <QuickDrop />}
+        </header>
+        {openProfile && <DropDownMenu />}
+        {openProfile2 && <QuickDrop />}
+      </motion.ul>
     </nav>
   );
 };

@@ -41,12 +41,12 @@ const Home = () => {
       <Helmet>
         <title>Nowy - Portfolio</title>
       </Helmet>
-      <motion.ul
-        className="container"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}>
-        <div className={scss.page_wrapper}>
+      <div className={scss.page_wrapper}>
+        <motion.ul
+          className="container"
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}>
           <div className={scss.container}>
             <div
               className={`${scss.home_content} ${
@@ -262,8 +262,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </motion.ul>
+        </motion.ul>
+      </div>
     </>
   );
 };
