@@ -102,13 +102,14 @@ const Contacts = () => {
       <Helmet>
         <title>Nowy - Contacts</title>
       </Helmet>
-      <div className={scss.page_wrapper}>
+      <div
+        className={`${scss.page_wrapper} ${headerScroll ? scss.active : ""}`}>
         <div className={scss.container}>
           <motion.ul
             className="container"
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}>
+            transition={{ duration: 0.2 }}>
             <div
               className={`${scss.home_content} ${
                 headerScroll ? scss.active : ""
