@@ -3,6 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Helmet } from "react-helmet";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+// import SmoothScroll from "../Scroll-Animation/Scroll";
 
 import scss from "./Home.module.scss";
 
@@ -41,6 +42,7 @@ const Home = () => {
       <Helmet>
         <title>Nowy - Portfolio</title>
       </Helmet>
+      {/* <SmoothScroll /> */}
       <div className={scss.page_wrapper}>
         <motion.ul
           className="container"
