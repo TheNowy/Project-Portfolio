@@ -102,7 +102,7 @@ const Home = () => {
                     }`}>
                     <h3>About Me</h3>
                     <p>
-                      16 years old, Passionate and dedicated
+                      17 years old, Passionate and dedicated
                       <span> Full Stack Developer</span> <br />
                     </p>
                     <p>
