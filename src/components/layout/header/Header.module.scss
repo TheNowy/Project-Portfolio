@@ -14,7 +14,8 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1000000;
-  transition: 0.2s;
+  background-color: black;
+  transition: .3s;
 
   &.active {
     padding: 1rem 14%;
@@ -163,7 +164,7 @@
         span {
           display: block;
           width: 40px;
-          height: 4.5px;
+          height: 4px;
           margin: 6px auto;
           background: #6d2aff;
           border-radius: 2px;

@@ -12,7 +12,7 @@
       justify-content: center;
       background-color: rgb(0, 0, 0);
       min-height: 45vh;
-      transition: 1s ease;
+      transition: .3s ease;
 
       &.active {
         transition: 0.3s;
@@ -632,6 +632,9 @@
         }
         .box_container {
           .box_title {
+            .photo {
+              width: 100%;
+            }
             .title {
               width: 100%;
               margin-left: 15px;
