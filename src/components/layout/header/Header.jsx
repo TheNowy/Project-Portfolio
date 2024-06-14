@@ -85,7 +85,7 @@ export const Header = () => {
             <NavLink to="/" className={scss.logo}>
               <img src="../../../../Logo&Bigest.png" alt="" />
               <h3 className={scss.logo_text}>nowy</h3>
-              <span>BETA</span>
+              <span>RELS</span>
             </NavLink>
             <div className={scss.header_wrap}>
               <NavLink
