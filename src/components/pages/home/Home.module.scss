@@ -12,7 +12,7 @@
       justify-content: center;
       background-color: rgb(0, 0, 0);
       min-height: 45vh;
-      transition: .3s ease;
+      transition: 0.3s ease;
 
       &.active {
         transition: 0.3s;
@@ -192,9 +192,10 @@
           }
           .title {
             width: 100%;
-            margin-left: 50px;
+            margin-left: 25px;
             font-weight: 500;
             color: rgb(255, 255, 255);
+            transition: .1s;
 
             &.active {
               transition: 0.1s;
@@ -212,14 +213,14 @@
               -webkit-background-clip: text;
               background-clip: text;
               -webkit-text-fill-color: rgba(0, 0, 0, 0);
-              font-size: 2.3rem;
+              font-size: 1.9600rem;
               margin-left: 9px;
               margin-bottom: 15px;
             }
             p {
-              font-size: 19px;
+              font-size: 1.1925rem;
               margin-top: 16px;
-              margin:10px;
+              margin: 10px;
             }
           }
         }
