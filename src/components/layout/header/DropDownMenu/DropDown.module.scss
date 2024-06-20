@@ -10,10 +10,6 @@
   transition: 0.3s;
   z-index: 110000000000000000000000000;
 
-  &.active {
-    position: fixed;
-    right: 1rem;
-  }
 
   .gap_4 {
     display: flex;
