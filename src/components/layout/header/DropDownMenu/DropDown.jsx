@@ -1,9 +1,27 @@
 import React, { useEffect, useState } from "react";
 import scss from "./DropDown.module.scss";
 import { NavLink } from "react-router-dom";
+import { animate, motion, AnimatePresence } from "framer-motion";
 
 const DropDown = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
+
+  const Menu = {
+    initial: {
+      scale: 0.9,
+      opacity: 0,
+    },
+    animate: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.1 },
+    },
+    exit: {
+      scale: 0.9,
+      opacity: 0,      
+      transition: { duration: 0.1 },
+    }
+  };
 
   const activeLink = ({ isActive }) => {
     return {
@@ -29,7 +47,12 @@ const DropDown = () => {
   }, []);
 
   return (
-    <div
+    <motion.div
+      key="dropdown"
+      variants={Menu}
+      initial="initial"
+      animate="animate"
+      exit="exit"
       className={
         headerScroll
           ? `${scss.DropDownMenu} ${scss.active}`
@@ -59,7 +82,7 @@ const DropDown = () => {
           GitHub
         </NavLink>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
