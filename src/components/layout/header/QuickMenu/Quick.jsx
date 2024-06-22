@@ -1,9 +1,27 @@
 import React, { useEffect, useState } from "react";
 import scss from "./Quick.module.scss";
 import { NavLink } from "react-router-dom";
+import { animate, motion, AnimatePresence } from "framer-motion";
 
 const Quick = () => {
   const [headerScroll2, setHeaderScroll2] = useState(false);
+
+  const Menu = {
+    initial: {
+      scale: 0.9,
+      opacity: 0,
+    },
+    animate: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.1 },
+    },
+    exit: {
+      scale: 0.9,
+      opacity: 0,
+      transition: { duration: 0.1 },
+    },
+  };
 
   useEffect(() => {
     const changeBackground = () => {
@@ -29,7 +47,13 @@ const Quick = () => {
   }, []);
 
   return (
-    <div className={scss.wrapper_adpt}>
+    <motion.div
+      key="dropdown"
+      variants={Menu}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className={scss.wrapper_adpt}>
       <div
         className={
           headerScroll2
@@ -52,7 +76,7 @@ const Quick = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
