@@ -92,7 +92,7 @@ const Home = () => {
                 <div className={scss.box_title}>
                   <div className={scss.photo}>
                     <img
-                      src="https://media.idownloadblog.com/wp-content/uploads/2020/11/snow-wallpaper-mountain-lake-idownloadblog-unsplash-fynn-ipad.jpg"
+                      src="../../../../aboutme.jpg"
                       alt=""
                     />
                   </div>
